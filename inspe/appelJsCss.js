@@ -19,7 +19,7 @@ function loadjscssfile(filename, filetype){
 }
 //loadjscssfile("https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.css", "css")
 //loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css", "css")//dynamically load and add this .css file
-loadjscssfile("https://ega1001.github.io/inspe/inspe/custom_newMoodle.css", "css") ////dynamically load and add this .css file
+loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodle.css", "css") ////dynamically load and add this .css file
 loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodleGrey.css", "css") ////dynamically load and add this .css file
 loadjscssfile("https://www.univ-amu.fr/themes/amu_zurb/fontawesome/css/all.min.css?r5kqqk", "css") ///
 loadjscssfile("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap", "css")
