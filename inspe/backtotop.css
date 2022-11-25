@@ -11,13 +11,13 @@
 	right: 2rem;
 	/* As a start = on really small screens, the back to top button is shown in the bottom right corner. */
 	bottom: 5rem;
+	/* Make sure that the back to top button is not covered by anything else. */
+	z-index: 10000;
 	/* On larger screens, there is the footer button already in the bottom right corner and
        the back to top button has to be shown above of the footer button. */
 	@include media-breakpoint-up(sm) {
 		bottom: 5rem;
 	}
-	/* Make sure that the back to top button is not covered by anything else. */
-	z-index: 10000;
 	/* Animate position together with footer button. */
 	@include transition(0.5s);
 }
