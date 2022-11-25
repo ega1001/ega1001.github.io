@@ -32,7 +32,7 @@ window.onload = (event) => {
 
         // Add a fontawesome icon after the footer as the back to top button.
         $('#page-footer').after('<button id="back-to-top" ' +
-            'class="btn btn-icon shadow-sm icon-no-margin d-print-none"' +
+            'class="btn btn-icon ombre icon-no-margin d-print-none"' +
             'aria-label="">' +
             '<i aria-hidden="true" class="fa fa-chevron-up fa-fw "></i></button>');
 
