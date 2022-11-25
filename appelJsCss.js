@@ -35,3 +35,4 @@ loadjscssfile("https://applis.inspe.univ-amu.fr/fad/js/backtotopbutton.js", "js"
 //loadjscssfile("https://applis.inspe.univ-amu.fr/fad/BackToTop/BackToTop.js", "js") //dynamically load and add this .js file
 //loadjscssfile("https://applis.inspe.univ-amu.fr/fad/js/hiddenCourse.js", "js") //dynamically load and add this .js file
 //loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js", "js") //dynamically load "javascript.php" as a JavaScript file
+//
