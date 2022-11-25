@@ -3,6 +3,7 @@
  --------------------------------------*/
 
 #back-to-top {
+	background-color: #fff !important;
 	/* Hide the back to top icon initially. It will be unhidden by JS only. */
 	display: none;
 	/* Place the back to top button at a fixed place. */
