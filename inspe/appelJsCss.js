@@ -24,7 +24,7 @@ loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodleGrey.css", "css")
 loadjscssfile("https://www.univ-amu.fr/themes/amu_zurb/fontawesome/css/all.min.css?r5kqqk", "css") ///
 loadjscssfile("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap", "css")
 loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css", "css")
-loadjscssfile("https://ega1001.github.io/inspe/github.css", "css")
+loadjscssfile("https://ega1001.github.io/inspe/github.min.css", "css")
 loadjscssfile("https://ega1001.github.io/inspe/backtotop.css", "css") ////dynamically load and add this .css file
 
 
@@ -33,5 +33,4 @@ loadjscssfile("https://ega1001.github.io/inspe/uneditableIcon.js", "js")
 loadjscssfile("https://ega1001.github.io/inspe/deleteClass.js", "js") //dynamically load and add this .js file
 loadjscssfile("https://ega1001.github.io/inspe/backtotopbutton.js", "js") //dynamically load and add this .js file
 //loadjscssfile("https://ega1001.github.io/inspe/BackToTop/BackToTop.js", "js") //dynamically load and add this .js file
-//loadjscssfile("https://ega1001.github.io/inspe/hiddenCourse.js", "js") //dynamically load and add this .js file
 //loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js", "js") //dynamically load "javascript.php" as a JavaScript file
