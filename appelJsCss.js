@@ -32,6 +32,6 @@ loadjscssfile("https://ega1001.github.io/backtotop.css", "css") ////dynamically 
 loadjscssfile("https://ega1001.github.io/uneditableIcon.js", "js")
 loadjscssfile("https://ega1001.github.io/deleteClass.js", "js") //dynamically load and add this .js file
 loadjscssfile("https://ega1001.github.io/backtotopbutton.js", "js") //dynamically load and add this .js file
-//loadjscssfile("https://applis.inspe.univ-amu.fr/fad/BackToTop/BackToTop.js", "js") //dynamically load and add this .js file
-//loadjscssfile("https://applis.inspe.univ-amu.fr/fad/js/hiddenCourse.js", "js") //dynamically load and add this .js file
+//loadjscssfile("https://ega1001.github.io/BackToTop/BackToTop.js", "js") //dynamically load and add this .js file
+//loadjscssfile("https://ega1001.github.io/hiddenCourse.js", "js") //dynamically load and add this .js file
 //loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js", "js") //dynamically load "javascript.php" as a JavaScript file
