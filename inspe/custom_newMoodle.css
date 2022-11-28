@@ -1364,13 +1364,17 @@ a:not([class]):focus,
   justify-content: center !important;
 }
 
-.format-grid .thegrid .card {
+.format-grid .thegrid .grid-section {
+  border: none !important;
+}
+
+.format-grid .thegrid .card a {
   border: none !important;
   box-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
     0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
     0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046),
     0 0px 10px rgba(0, 0, 0, 0.053), 0 0px 20px rgba(0, 0, 0, 0.07) !important;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
   background-color: transparent !important;
 }
 
