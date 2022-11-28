@@ -1,89 +1,89 @@
 /*En-tête de page - bandeau - recherche (Titre caché) */
 
 #above-header {
-  background-color: #b3bbc7 !important;
+  background-color: #6c757d !important;
 }
 
 /* Book links */
 
 .navtop.navtext a:hover,
 .navbottom.navtext a:hover {
-  background-color: #b3bbc7 !important;
+  background-color: #6c757d !important;
 }
 
 /*Questionnaire*/
 
 .qn-content p.lead.font-weight-bold {
-  background-color: #b3bbc7 !important;
+  background-color: #6c757d !important;
 }
 
 .que .formulation {
-  border: 1px solid #b3bbc7 !important;
+  border: 1px solid #6c757d !important;
 }
 
 .que .info {
-  border: 1px solid #b3bbc7 !important;
+  border: 1px solid #6c757d !important;
 }
 
 /*titre des etiquettes modules et surlignage*/
 
 hr.LabelTitle {
-  border: 1px solid #b3bbc7;
-  background-color: #b3bbc7;
+  border: 1px solid #6c757d;
+  background-color: #6c757d;
 }
 
 hr.ProdTitle {
-  border: 1px solid #b3bbc7;
+  border: 1px solid #6c757d;
 }
 
 /*Bandeau et Titres : master-cours-UE-Enseignement*/
 
 .ens,
 .ueEns {
-  background-color: #b3bbc7 !important;
+  background-color: #6c757d !important;
 }
 
 /* Chiffres en couleur */
 
 ol.custom-numbers li::before {
-  color: #b3bbc7;
+  color: #6c757d;
 }
 
 /* List with bullets */
 
 .list-bullets li::before {
-  background: #b3bbc7;
+  background: #6c757d;
 }
 
 /*bouton download*/
 
 .btn-download:hover {
-  color: #b3bbc7 !important;
+  color: #6c757d !important;
 }
 
 /*Boutons Compétences et attendus*/
 
 .comp-btn {
-  border-left: 2px solid #b3bbc7 !important;
+  border-left: 2px solid #6c757d !important;
   color: #7f858d !important;
   border-color: #dee7f5 !important;
-  border-left-color: #b3bbc7 !important;
+  border-left-color: #6c757d !important;
 }
 
 .comp-btn:hover {
-  background-color: #b3bbc7 !important;
+  background-color: #6c757d !important;
 }
 
 /*badge de disponibilité des activités*/
 
 .availabilityinfo span {
-  background-color: #b3bbc7 !important;
+  background-color: #6c757d !important;
 }
 
 /*Etiquette Module et présentation*/
 
 .partie {
-  background-color: #b3bbc7 !important;
+  background-color: #6c757d !important;
   color: #ffffff !important;
 }
 
@@ -92,7 +92,7 @@ ol.custom-numbers li::before {
 /*Barre de chargement*/
 
 .pace .pace-progress {
-  background-color: #b3bbc7 !important;
+  background-color: #6c757d !important;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -105,7 +105,7 @@ ol.custom-numbers li::before {
 
 .breadcrumb ul i,
 .breadcrumb li.lastli span {
-  color: #b3bbc7;
+  color: #6c757d;
   text-decoration: none;
   font-weight: 600 !important;
 }
@@ -117,7 +117,7 @@ ol.custom-numbers li::before {
 }
 
 /*section.block h5 {
-	background-color: #b3bbc7 !important;
-	border-color: #b3bbc7 !important;
+	background-color: #6c757d !important;
+	border-color: #6c757d !important;
 	color: #ffffff !important;
 }*/
