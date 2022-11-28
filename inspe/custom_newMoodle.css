@@ -1276,10 +1276,6 @@ h4:first-child {
     margin: 0rem;
   }
 }
-ul {
-  padding-left: 0 !important;
-}
-
 /*Box mise en forme Livre et leçon*/
 
 .book_content {
@@ -1482,4 +1478,118 @@ a:not([class]):focus,
 svg en noir*/
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/*Taille image de cours dans catégorie de cours*/
+.coursebox .content .courseimage img {
+  max-width: 250px;
+  max-height: 100px;
+}
+
+/*Mise en forme catégorie fadPe*/
+
+#fadPe .card-deck .card .card-img-top {
+  height: 100px !important;
+  max-width: 350px !important;
+  padding-top: 0% !important;
+}
+
+#fadPe .card-deck {
+  justify-content: center !important;
+}
+/*Tables Bootstrap révision*/
+
+.table-striped tbody tr:nth-of-type(2n + 2) {
+  /* background-color: rgba(0,0,0,.05); */
+  background-color: #f1f4f7 !important;
+}
+
+.table-striped tbody tr:nth-of-type(2n + 1) {
+  /* background-color: rgba(0,0,0,.03); */
+  background-color: #fbfbfb !important;
+}
+
+.table-hover tbody tr:hover {
+  /* background-color: rgba(0,0,0,.075); */
+  background-color: #e9ecef !important;
+}
+
+.table {
+  /* margin-bottom: 1rem; */
+  margin-bottom: 0 !important;
+}
+
+/* Bdd tertiary-navigation sticky buttons "Enregistrer et exporter en tant que préréglage" */
+
+.tertiary-navigation .navitem {
+  margin-right: 5px !important;
+}
+
+/* Suppression Consignes/descriptions + titres en doublon*/
+/*Questionnaire*/
+
+.mod_questionnaire_viewpage .intro {
+  display: none !important;
+}
+
+.mod_questionnaire_viewpage h2 {
+  display: none !important;
+}
+/*Poodll ReadAloud (Lecture à voix haute)*/
+
+.box.py-3.mod_intro_box.mod_readaloud_center {
+  display: none !important;
+}
+
+/*Amélioration Logo Activité de lecture à voix haute Poodll*/
+
+.readaloud .activityiconcontainer.assessment .activityicon {
+  filter: none !important;
+}
+
+.modicon_readaloud .icon.activityicon {
+  filter: none !important;
+}
+
+/*Amélioration de l'affichage du tableau "travaux remis" de l'activité devoir
+thead en gris et bordered - police -80% - suppression des colonnes mail et identifiant*/
+
+.gradingtable .generaltable td:nth-child(7) .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8203125rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+.gradingtable .generaltable th {
+  color: #495057;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.gradingtable .generaltable.generalbox {
+  font-size: 80%;
+}
+
+.gradingtable .header.c3,
+.c4 {
+  display: none !important;
+}
+.gradingtable .cell.c3 {
+  display: none !important;
+}
+
+.gradingtable .header.c0 {
+  font-size: 0 !important;
+}
+
+.gradingtable .generaltable {
+  border: 1px solid #dee2e6;
+}
+
+/*tableau entretiens*/
+.tbody-space::before {
+  content: '\200C';
+  display: block;
+  line-height: 1rem;
+  background-color: white !important;
 }
