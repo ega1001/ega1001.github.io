@@ -1,0 +1,51 @@
+/* Feuille de style intégrée #20 | https://ametice.univ-amu.fr/course/view.php?id=92600 */
+
+#topofscroll {
+  max-height: 10.875rem;
+  height: 0;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 80%;
+  background-image: url('https://madeinmarseille.net/actualites-marseille/2019/04/B%C3%A2timent-Porte-cr%C3%A9dit-Jean-Fondacci.jpg');
+  background-color: #00558bb3;
+}
+
+#page-navbar {
+  background-color: #fbfbfb !important;
+  padding: 0.3em 0.6em 0.3em 0.6em !important;
+  opacity: 0.85;
+  border-radius: 5px;
+  color: #020202 !important;
+  margin-bottom: 0.2em !important;
+}
+
+.topofscroll .d-flex.align-items-center {
+  background-color: #fff !important;
+  opacity: 90%;
+  margin: 0.2rem;
+  border-radius: 5px !important;
+  padding: 0.3rem !important;
+}
+
+#topofscroll {
+  /* max-height: 10.875rem; */
+  /* background-position: center 80%; */
+  /* background-image: url("https://madeinmarseille.net/actualites-marseille/2019/04/B%C3%A2timent-Porte-cr%C3%A9dit-Jean-Fondacci.jpg"); */
+  max-height: 8.9em;
+  background-position: center 75%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url('https://madeinmarseille.net/actualites-marseille/2019/04/B%C3%A2timent-Porte-cr%C3%A9dit-Jean-Fondacci.jpg');
+}
+
+/* all | https://ametice.univ-amu.fr/theme/styles.php/amuboost/1669698233_1669698254/all */
+
+.page-context-header .page-header-headings {
+  /* color: #0c8714; */
+  color: #fff !important;
+  background-color: #333 !important;
+  padding: 0.3em 0.6em 0.3em 0.6em !important;
+  border-radius: 5px;
+}
