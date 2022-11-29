@@ -1,0 +1,137 @@
+/*=======================================
+ * Settings: AMU.
+ ======================================*/
+/* Suppression Consignes/descriptions + titres en doublon*/
+/*Questionnaire*/
+
+.mod_questionnaire_viewpage .intro {
+  display: none !important;
+}
+.mod_questionnaire_viewpage h2 {
+  display: none !important;
+}
+
+.dashboard-card-deck .dashboard-card {
+  max-width: 300px !important;
+}
+
+#page,
+.drawercontent {
+  scrollbar-color: $scrollbar-thumb transparent !important;
+}
+
+.navbar.fixed-top {
+  background-color: #5a0cb9 !important; // Il faut changer le template boost/templates/navbar.mustache
+}
+
+// User picture dans le header et profil
+.userpicture {
+  border: 2px solid #fff;
+}
+
+.page-context-header .page-header-headings {
+  color: $secondary;
+}
+
+.card-title {
+  color: $secondary;
+}
+
+/* Fix la maj du thème qui met les liens en #555 */
+a.btn.btn-primary:link,
+a.btn.btn-primary:visited,
+a.btn.btn-secondary:link,
+a.btn.btn-secondary:visited {
+  color: #fff;
+}
+
+a.btn-outline-secondary:hover {
+  color: #fff;
+}
+
+/* Blanc au survol sinon pas lisible */
+.btn-footer-popover:hover i {
+  color: #fff;
+}
+
+.navbar-nav {
+  .nav-link,
+  .btn,
+  a.btn,
+  .login a {
+    color: $navbar-light-color;
+
+    @include hover-focus() {
+      color: $navbar-light-hover-color;
+    }
+
+    &.disabled {
+      color: $navbar-light-disabled-color;
+    }
+  }
+
+  .nav-link:focus,
+  a.dropdown-toggle:focus {
+    box-shadow: none;
+  }
+
+  .count-container {
+    padding: 1px 4px;
+    border-radius: 7px;
+    background-color: $secondary;
+    color: $primary;
+    right: -3px;
+  }
+
+  .dropdown-toggle::after {
+    color: $white;
+  }
+}
+
+.primary-navigation {
+  .navigation {
+    height: $navbar-height;
+    .nav-link {
+      height: $navbar-height;
+      color: $white;
+      border-top: 3px solid transparent;
+    }
+    .nav-link:hover,
+    .nav-link.active,
+    .nav-link:focus {
+      color: $white;
+      background-color: $primary;
+      border-bottom: 3px solid #9cfb04;
+    }
+  }
+}
+
+// Switch dans la top bar
+.editmode-switch-form,
+.editmode-switch-form .text-primary {
+  color: $white !important; // Surcharge un important
+}
+
+.editmode-switch-form
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
+  background-color: #9cfb04;
+  border-color: #9cfb04;
+}
+
+// Icone des activités
+.activityiconcontainer {
+  border-radius: 50%;
+}
+.footer-popover .btn-footer-popover {
+  background-color: #9cfb04 !important; // Surcharge un important
+}
+/*=======================================
+ * Changement label Bali
+ ======================================*/
+.editmode-switch-form,
+.editmode-switch-form label {
+  color: #fff !important;
+  font-weight: normal !important;
+  font-size: 15px !important;
+}
