@@ -8,13 +8,14 @@
 }
 
 #page-header {
-  max-height: 11.9em;
-  background-position: center 75%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
-    url('https://madeinmarseille.net/actualites-marseille/2019/04/B%C3%A2timent-Porte-cr%C3%A9dit-Jean-Fondacci.jpg');
+  max-height: 30.9em;
+  background-position: center 20%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://applis.inspe.univ-amu.fr/fad/img/general/code.jpg');
   background-color: #fff !important;
   border-radius: 5px !important;
   padding: 3.3em 0.5em 3.3em 0.5em !important;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-context-header .page-header-headings {
