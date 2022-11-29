@@ -1477,7 +1477,13 @@ a:not([class]):focus,
 .collapsible-link[aria-expanded='true']::before {
   transform: rotate(180deg);
 }
-
+/*===========================================*
+Fixed-navbar - Moodle Academy-like
+*============================================*/
+.navbar.fixed-top.navbar-light.bg-white.navbar-expand {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2) !important;
+  border: none !important;
+}
 /*Menu Burger
 svg en noir*/
 .navbar-light .navbar-toggler-icon {
@@ -1490,7 +1496,6 @@ svg en noir*/
 }
 
 /*Mise en forme catégorie fadPe*/
-
 #fadPe .card-deck .card .card-img-top {
   height: 100px !important;
   max-width: 350px !important;
