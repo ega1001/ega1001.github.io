@@ -957,14 +957,14 @@ section.block div.card-body {
 .activityiconcontainer {
   /*! background-color: #a4a7aa !important; */
   border-radius: 5px !important;
-  -webkit-filter: grayscale(80%) !important;
+  -webkit-filter: grayscale(40%) !important;
   filter: saturate(0%);
 }
 
-/*scrollbar en trop sur la page de la section en vue image*/
+/*scrollbar en trop sur la page de la section en vue image (corrigé ?)
 #region-main {
   overflow-x: visible !important ;
-}
+}*/
 
 /**scrollbar violet trop voyant**/
 #page,
@@ -1077,7 +1077,7 @@ section.block div.card-body {
 
 .icons::before {
   display: inline-block;
-  margin-right: 0.5rem;
+  margin-right: var(--fa-pull-margin, 0.5em);
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
