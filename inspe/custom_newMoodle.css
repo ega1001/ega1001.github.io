@@ -1359,23 +1359,32 @@ a:not([class]):focus,
   color: #a2aab3 !important;
 }
 
-/** Modification affichage card (nouvelle version grid format : 15/09/2022**/
+/** ================================================================================
+Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/11/22
+=================================================================================**/
 .format-grid .thegrid {
   justify-content: center !important;
 }
 
-.format-grid .thegrid .grid-section {
+.format-grid .thegrid .grid-section.card {
   border: none !important;
-}
-
-.format-grid .thegrid .card a {
-  border: none !important;
+  border-radius: .5rem .5rem 0 0;
   box-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
     0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
     0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046),
     0 0px 10px rgba(0, 0, 0, 0.053), 0 0px 20px rgba(0, 0, 0, 0.07) !important;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) !important;*
+}
+.format-grid .thegrid .grid-section.card a:hover {
+  text-decoration: none !important;
+  color: black !important;
+  box-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.034), 0 0px 0.9px rgba(0, 0, 0, 0.049),
+    0 0px 1.6px rgba(0, 0, 0, 0.06), 0 0px 2.5px rgba(0, 0, 0, 0.07),
+    0 0px 3.9px rgba(0, 0, 0, 0.08), 0 0px 6px rgba(0, 0, 0, 0.091),
+    0 0px 10px rgba(0, 0, 0, 0.106), 0 0px 20px rgba(0, 0, 0, 0.14) !important;
   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-  background-color: transparent !important;
+  border-radius: .5rem .5rem 0 0;
+  border:none !important;
 }
 
 .format-grid .thegrid .card-header {
@@ -1396,16 +1405,6 @@ a:not([class]):focus,
   margin-left: 0 !important;
   background-color: #fbfbfb !important;
   white-space: inherit !important;
-}
-
-.format-grid .thegrid .card a:hover {
-  text-decoration: none !important;
-  color: black !important;
-  box-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.034), 0 0px 0.9px rgba(0, 0, 0, 0.049),
-    0 0px 1.6px rgba(0, 0, 0, 0.06), 0 0px 2.5px rgba(0, 0, 0, 0.07),
-    0 0px 3.9px rgba(0, 0, 0, 0.08), 0 0px 6px rgba(0, 0, 0, 0.091),
-    0 0px 10px rgba(0, 0, 0, 0.106), 0 0px 20px rgba(0, 0, 0, 0.14) !important;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
 }
 
 /* Accueil grid : remplacer texte par icone home*/
