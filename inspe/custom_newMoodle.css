@@ -1553,7 +1553,7 @@ Menu Burger svg en noir .navbar-light .navbar-toggler-icon {
 }
 
 /*Amélioration de l'affichage du tableau "travaux remis" de l'activité devoir
-thead en gris et bordered - police -80% - suppression des colonnes mail et identifiant*/
+thead en gris et bordered - police -80% - suppression des colonnes mail et identifiant
 
 .gradingtable .generaltable td:nth-child(7) .btn {
 	padding: 0.25rem 0.5rem;
@@ -1586,7 +1586,7 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 
 .gradingtable .generaltable {
 	border: 1px solid #dee2e6;
-}
+}*/
 
 /*tableau entretiens*/
 .tbody-space::before {
