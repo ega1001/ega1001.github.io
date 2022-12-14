@@ -731,6 +731,10 @@ pre {
   font-family: Consolas, 'liberation mono', Menlo, Courier, monospace;
 }
 
+code {
+  white-space: pre-wrap;
+}
+
 /*Opacité */
 
 .opacity-0 {
