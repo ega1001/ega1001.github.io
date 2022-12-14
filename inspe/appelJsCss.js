@@ -31,6 +31,6 @@ loadjscssfile("https://ega1001.github.io/inspe/backtotop.css", "css") ////dynami
 //loadjscssfile("https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.js", "js")
 loadjscssfile("https://ega1001.github.io/inspe/uneditableIcon.js", "js")
 loadjscssfile("https://ega1001.github.io/inspe/deleteClass.js", "js") //dynamically load and add this .js file
-loadjscssfile("https://ega1001.github.io/inspe/backtotopbutton.js", "js") //dynamically load and add this .js file
+//loadjscssfile("https://ega1001.github.io/inspe/backtotopbutton.js", "js") //dynamically load and add this .js file
 //loadjscssfile("https://ega1001.github.io/inspe/BackToTop/BackToTop.js", "js") //dynamically load and add this .js file
 //loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js", "js") //dynamically load "javascript.php" as a JavaScript file

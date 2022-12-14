@@ -28,22 +28,21 @@ wp.insertBefore(alert, wp.firstChild);
         </div>
     </div>
 </div>
-{ifnotvisible}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+{ /ifnotvisible}
+<!-- Appel script cours caché -->
+{ifnotvisible}
 <script>
     $(document).ready(function() {
-        // Show the Modal on load
-        $("#myModal").modal("show");
-
-        // Hide the Modal
-        $("#myBtn").click(function() {
-            $("#myModal").modal("hide");
-        });
+        function initAlertHidden() {
+            // Add an alert if course is hidden.
+            $('#page-header').after('<div class="course-hidden alert alert-danger mx-3">' +
+                '<div class="media">' + '<i class="fa fa-exclamation-circle fa-3x fa-pull-left"' + 'contenteditable="false"></i>' +
+                '<div class="media-body align-self-center">' + 'Ce cours est actuellement <strong>masqué</strong> pour les étudiants.' + ' Seuls les enseignants inscrits peuvent accéder à ce cours.' + '<br> Vous pouvez modifier la visibilité dans les ' + '<a href="{wwwroot}/course/edit.php?id={courseid}">paramètres du cours</a>.</div>' +
+                ' </div></div>');
+            return true;
+        }
+        initAlertHidden();
     });
 </script>
-
-
-
 {/ifnotvisible}
