@@ -1,10 +1,10 @@
 const alert = document.createElement('div');
 
-    alert.innerHTML = `{ifnotvisible\}<div class="alert alert-danger alert-dismissible fade show m-4" role="alert">\Ce cours est caché. Il n'est pas accessible aux étudiants.<button type="button" class="close" data-dismiss="alert" aria-label="Close">\<span aria-hidden="true">×</span>\</button>{/ifnotvisible}`;
-    var wp = document.getElementsByClassName('course-content')[0];
+alert.innerHTML = `{ifnotvisible\}<div class="alert alert-danger alert-dismissible fade show m-4" role="alert">\Ce cours est caché. Il n'est pas accessible aux étudiants.<button type="button" class="close" data-dismiss="alert" aria-label="Close">\<span aria-hidden="true">×</span>\</button>{/ifnotvisible}`;
+var wp = document.getElementsByClassName('course-content')[0];
 wp.insertBefore(alert, wp.firstChild);
-    
-/** <-- Modal -->  */ 
+
+/** <-- Modal -->  */
 <div id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade ">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -29,20 +29,22 @@ wp.insertBefore(alert, wp.firstChild);
     </div>
 </div>
 
-{ /ifnotvisible}
-<!-- Appel script cours caché -->
-{ifnotvisible}
-<script>
-    $(document).ready(function() {
-        function initAlertHidden() {
-            // Add an alert if course is hidden.
-            $('#page-header').after('<div class="course-hidden alert alert-danger mx-3">' +
-                '<div class="media">' + '<i class="fa fa-exclamation-circle fa-3x fa-pull-left"' + 'contenteditable="false"></i>' +
-                '<div class="media-body align-self-center">' + 'Ce cours est actuellement <strong>masqué</strong> pour les étudiants.' + ' Seuls les enseignants inscrits peuvent accéder à ce cours.' + '<br> Vous pouvez modifier la visibilité dans les ' + '<a href="{wwwroot}/course/edit.php?id={courseid}">paramètres du cours</a>.</div>' +
-                ' </div></div>');
-            return true;
-        }
-        initAlertHidden();
-    });
-</script>
-{/ifnotvisible}
+{
+    /ifnotvisible}
+    < !--Appel script cours caché-- >
+        { ifnotvisible }
+        < script >
+        $(document).ready(function () {
+            function initAlertHidden() {
+                // Add an alert if course is hidden.
+                $('#page-header').after('<div class="course-hidden alert alert-danger mx-3">' +
+                    '<div class="media">' + '<i class="fa fa-exclamation-circle fa-3x fa-pull-left"' + 'contenteditable="false"></i>' +
+                    '<div class="media-body align-self-center">' + 'Ce cours est actuellement <strong>masqué</strong> pour les étudiants.' + ' Seuls les enseignants inscrits peuvent accéder à ce cours.' + '<br> Vous pouvez modifier la visibilité dans les ' + '<a href="{wwwroot}/course/edit.php?id={courseid}">paramètres du cours</a>.</div>' +
+                    ' </div></div>');
+                return true;
+            }
+            initAlertHidden();
+        });
+</script >
+        {/ ifnotvisible
+}
