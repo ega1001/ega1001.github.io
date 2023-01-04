@@ -1626,6 +1626,7 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
   border-radius: 0.5rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-top: 0.25rem !important;
 }
 .comment-link:hover {
   background-color: #490a95;
@@ -1646,4 +1647,10 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
   border-radius: 0.5rem;
   min-height: 1px;
   padding: 1.25rem !important;
+  margin-top: 0.25rem !important;
+}
+
+/*ombre autour des boutons focus*/
+[role='button']:focus {
+  box-shadow: none !important;
 }
