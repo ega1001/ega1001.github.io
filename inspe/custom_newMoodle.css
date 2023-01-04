@@ -1632,3 +1632,18 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
   border-color: #430989;
   text-decoration: none;
 }
+
+.comment-ctrl {
+  -webkit-background-clip: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5rem;
+  min-height: 1px;
+  padding: 1.25rem !important;
+}
