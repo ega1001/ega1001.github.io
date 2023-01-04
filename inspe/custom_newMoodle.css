@@ -1637,7 +1637,7 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 .comment-ctrl {
   -webkit-background-clip: border-box;
   position: relative;
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
