@@ -1616,7 +1616,7 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 
 /*Comments dans bdd*/
 .comment-link {
-  color: fff !important;
+  color: #fff !important;
   background-color: #5a0cb9;
   border-color: #5a0cb9;
   border: 1px solid transparent;
