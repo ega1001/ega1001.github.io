@@ -1650,9 +1650,10 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 }
 
 /*Glossary*/
-.concept h4 {
+.concept h4,
+.glossarycategoryheader h3 {
 	color: #0c8714 !important;
-	font-size: 1.875rem !important;
+	font-size: 2em !important;
 }
 .time {
 	font-size: small !important;
@@ -1666,4 +1667,15 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 }
 .entrybox {
 	padding: 5px !important;
+}
+
+.entryheader {
+	padding: 0.75rem 1.25rem;
+	background-color: rgba(0, 0, 0, 0.03);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.entry {
+	min-height: 1px;
+	padding: 1.25rem;
 }
