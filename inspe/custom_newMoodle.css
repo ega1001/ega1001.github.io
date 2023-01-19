@@ -1660,14 +1660,15 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 	font-weight: 400 !important;
 	font-style: italic !important;
 }
-
 .entryheader {
 	padding: 0.75rem 1.25rem;
 	background-color: rgba(0, 0, 0, 0.03);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
-
 .entry {
 	min-height: 1px;
 	padding: 1.25rem;
+}
+.glossarypost.faq {
+	width: 60% !important;
 }
