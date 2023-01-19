@@ -1652,6 +1652,7 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 /*Glossary*/
 .concept h4 {
 	color: #0c8714 !important;
+	font-size: 1.875rem !important;
 }
 .time {
 	font-size: small !important;
