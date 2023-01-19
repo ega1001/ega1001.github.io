@@ -1660,14 +1660,6 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 	font-weight: 400 !important;
 	font-style: italic !important;
 }
-.entrybox a {
-	font-size: 1.2em !important;
-	padding: 0.3em !important;
-	font-family: "Titillium Web", sans-serif !important;
-}
-.entrybox {
-	padding: 5px !important;
-}
 
 .entryheader {
 	padding: 0.75rem 1.25rem;
