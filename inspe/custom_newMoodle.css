@@ -1674,3 +1674,22 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 	word-break: break-word !important;
 	word-wrap: break-word !important;
 }
+
+/*h5p*/
+/*drag-n-drop*/
+.h5p-label {
+	background-color: rgb(12, 135, 20) !important;
+	color: #fff !important;
+}
+.h5p-dragquestion
+	.h5p-draggable:not(.ui-state-disabled).h5p-draggable-hover:not(.h5p-correct):not(.h5p-wrong) {
+	border: 0.1em solid rgb(212, 190, 216);
+	background: #5a0cb9 !important;
+	color: #ffffff;
+}
+.h5p-dragquestion .h5p-draggable {
+	-webkit-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+	background: #fbfbfb !important;
+}
