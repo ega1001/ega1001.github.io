@@ -943,6 +943,8 @@ section.block h5 {
 
 section.block .card-text {
 	margin-top: 0 !important;
+	padding: 1rem !important;
+	margin-bottom: 0;
 }
 /*section.block h5 {
   display: flex !important;
@@ -955,11 +957,6 @@ section.block .card-text {
 section.block div.card-body {
 	padding: 0px !important;
 }
-
-/*.card-text:last-child {
-	margin-bottom: 0;
-	padding: 1rem !important;
-}*/
 
 /*Icone activités -  Ressources couleur boost => #343a40;* et icône carré*/
 
@@ -1679,12 +1676,12 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 /*drag-n-drop*/
 .h5p-label {
 	background-color: rgb(12, 135, 20) !important;
-	color: #fff !important;
+	color: #ffffff !important;
 }
 .h5p-dragquestion
 	.h5p-draggable:not(.ui-state-disabled).h5p-draggable-hover:not(.h5p-correct):not(.h5p-wrong) {
 	border: 0.1em solid rgb(212, 190, 216);
-	background: #5a0cb9 !important;
+	background-color: #5a0cb9 !important;
 	color: #ffffff;
 }
 .h5p-dragquestion .h5p-draggable {
