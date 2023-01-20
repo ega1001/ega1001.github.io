@@ -1667,7 +1667,6 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .entry {
-	min-height: 1px;
 	padding: 1.25rem;
 }
 .glossarypost {
