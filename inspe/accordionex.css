@@ -1,49 +1,3 @@
-/* # The Rotating Marker # */
-details summary::-webkit-details-marker {
-  display: none;
-}
-summary::before {
-  font-family: 'Hiragino Mincho ProN', 'Open Sans', sans-serif;
-  content: '▶';
-  position: absolute;
-  top: 1rem;
-  left: 0.8rem;
-  transform: rotate(0);
-  transform-origin: center;
-  transition: 0.2s transform ease;
-}
-details[open] > summary:before {
-  transform: rotate(90deg);
-  transition: 0.45s transform ease;
-}
-
-/* # The Sliding Summary # */
-details {
-  overflow: hidden;
-}
-details summary {
-  position: relative;
-  z-index: 10;
-}
-@keyframes details-show {
-  from {
-    margin-bottom: -80%;
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-}
-details > *:not(summary) {
-  animation: details-show 500ms ease-in-out;
-  position: relative;
-  z-index: 1;
-  transition: all 0.3s ease-in-out;
-  color: transparent;
-  overflow: hidden;
-}
-details[open] > *:not(summary) {
-  color: inherit;
-}
-
 /* # Style 2 # */
 details.style2 summary::before {
   content: '×';
@@ -222,21 +176,7 @@ details.style7 .content {
 }
 
 /* # Just Some Pretty Styles # */
-body {
-  font-family: 'Open Sans', sans-serif;
-  padding-bottom: 400px;
-}
-details img {
-  max-width: 100%;
-  text-align: center;
-}
-p {
-  margin: 0;
-  padding-bottom: 10px;
-}
-p:last-child {
-  padding: 0;
-}
+
 details {
   max-width: 500px;
   box-sizing: border-box;
