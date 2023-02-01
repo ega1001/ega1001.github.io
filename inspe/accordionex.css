@@ -1,6 +1,6 @@
 /* # The Rotating Marker # */
-details summary::-webkit-details-marker {
-  display: none;
+details > summary {
+  list-style: none;
 }
 summary::before {
   font-family: 'Hiragino Mincho ProN', 'Open Sans', sans-serif;
@@ -21,7 +21,7 @@ details[open] > summary:before {
 details {
   overflow: hidden;
 }
-details summary {
+details > summary {
   position: relative;
   z-index: 10;
 }
