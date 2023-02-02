@@ -827,8 +827,8 @@ code {
 
 .bouton-jaune:hover {
 	box-shadow: 0 4px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
 .bouton-bleu {
 	position: relative;
 	display: -ms-flexbox;
@@ -1370,7 +1370,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 
 .format-grid .thegrid .grid-section.card {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
-	border-radius: 0.5rem 0.5rem 0 0;
+	/*! border-radius: 0.5rem 0.5rem 0 0; */
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
 	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
 	margin-bottom: 1rem;
@@ -1563,24 +1563,20 @@ Menu Burger svg en noir .navbar-light .navbar-toggler-icon {
 
 /*Amélioration de l'affichage du tableau "travaux remis" de l'activité devoir
 thead en gris et bordered - police -80% - suppression des colonnes mail et identifiant
-
 .gradingtable .generaltable td:nth-child(7) .btn {
 	padding: 0.25rem 0.5rem;
 	font-size: 0.8203125rem;
 	line-height: 1.5;
 	border-radius: 0.2rem;
 }
-
 .gradingtable .generaltable th {
 	color: #495057;
 	background-color: #e9ecef;
 	border-color: #dee2e6;
 }
-
 .gradingtable .generaltable.generalbox {
 	font-size: 80%;
 }
-
 .gradingtable .header.c3,
 .c4 {
 	display: none !important;
@@ -1588,11 +1584,9 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 .gradingtable .cell.c3 {
 	display: none !important;
 }
-
 .gradingtable .header.c0 {
 	font-size: 0 !important;
 }
-
 .gradingtable .generaltable {
 	border: 1px solid #dee2e6;
 }*/
@@ -1644,6 +1638,51 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 /*ombre autour des boutons focus*/
 [role="button"]:focus {
 	box-shadow: none !important;
+}
+
+/*Glossary*/
+
+.concept h4,
+.glossarycategoryheader h3 {
+	color: #0c8714 !important;
+	font-size: 2em !important;
+}
+.time {
+	font-size: small !important;
+	font-weight: 400 !important;
+	font-style: italic !important;
+}
+.entryheader {
+	padding: 0.75rem 1.25rem;
+	background-color: rgba(0, 0, 0, 0.03);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.entry {
+	padding: 1.25rem;
+}
+.glossarypost {
+	width: 60% !important;
+	word-break: break-word !important;
+	word-wrap: break-word !important;
+}
+
+/*h5p*/
+/*drag-n-drop*/
+.h5p-label {
+	background-color: rgb(12, 135, 20) !important;
+	color: #ffffff !important;
+}
+.h5p-dragquestion
+	.h5p-draggable:not(.ui-state-disabled).h5p-draggable-hover:not(.h5p-correct):not(.h5p-wrong) {
+	border: 0.1em solid rgb(212, 190, 216);
+	background-color: #5a0cb9 !important;
+	color: #ffffff;
+}
+.h5p-dragquestion .h5p-draggable {
+	-webkit-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+	background: #fbfbfb !important;
 }
 
 /*Glossary*/
