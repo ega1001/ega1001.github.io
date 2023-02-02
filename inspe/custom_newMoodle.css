@@ -1411,6 +1411,11 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	white-space: inherit !important;
 }
 
+.format-grid .thegrid .grid-image img {
+	border-bottom-right-radius: calc(0.5rem - 1px);
+	border-bottom-left-radius: calc(0.5rem - 1px);
+}
+
 /* Accueil grid : remplacer texte par icone home*/
 .stateready .text-right {
 	font-size: 0px !important;
