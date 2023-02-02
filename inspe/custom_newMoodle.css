@@ -1383,7 +1383,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 		0 0px 3.9px rgba(0, 0, 0, 0.08), 0 0px 6px rgba(0, 0, 0, 0.091), 0 0px 10px rgba(0, 0, 0, 0.106),
 		0 0px 20px rgba(0, 0, 0, 0.14) !important;
 	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-	border-radius: 0.5rem 0.5rem 0 0;
+	/*! border-radius: 0.5rem 0.5rem 0 0; */
 	border: 1px solid rgba(0, 0, 0, 0.12) !important;
 }
 
