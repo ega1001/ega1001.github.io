@@ -1375,7 +1375,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 
 .format-grid .thegrid .grid-section.card {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
-  border-radius: 0.5rem 0.5rem 0 0;
+  /*! border-radius: 0.5rem 0.5rem 0 0; */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
   margin-bottom: 1rem;
@@ -1388,7 +1388,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
     0 0px 3.9px rgba(0, 0, 0, 0.08), 0 0px 6px rgba(0, 0, 0, 0.091),
     0 0px 10px rgba(0, 0, 0, 0.106), 0 0px 20px rgba(0, 0, 0, 0.14) !important;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-  border-radius: 0.5rem 0.5rem 0 0;
+  /*! border-radius: 0.5rem 0.5rem 0 0; */
   border: 1px solid rgba(0, 0, 0, 0.12) !important;
 }
 
@@ -1414,6 +1414,11 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
   margin-left: 0 !important;
   background-color: #fbfbfb !important;
   white-space: inherit !important;
+}
+
+.format-grid .thegrid .grid-image img {
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
 }
 
 /* Accueil grid : remplacer texte par icone home*/
@@ -1643,6 +1648,51 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 /*ombre autour des boutons focus*/
 [role='button']:focus {
   box-shadow: none !important;
+}
+
+/*Glossary*/
+
+.concept h4,
+.glossarycategoryheader h3 {
+  color: #0c8714 !important;
+  font-size: 2em !important;
+}
+.time {
+  font-size: small !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+}
+.entryheader {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.entry {
+  padding: 1.25rem;
+}
+.glossarypost {
+  width: 60% !important;
+  word-break: break-word !important;
+  word-wrap: break-word !important;
+}
+
+/*h5p*/
+/*drag-n-drop*/
+.h5p-label {
+  background-color: rgb(12, 135, 20) !important;
+  color: #ffffff !important;
+}
+.h5p-dragquestion
+  .h5p-draggable:not(.ui-state-disabled).h5p-draggable-hover:not(.h5p-correct):not(.h5p-wrong) {
+  border: 0.1em solid rgb(212, 190, 216);
+  background-color: #5a0cb9 !important;
+  color: #ffffff;
+}
+.h5p-dragquestion .h5p-draggable {
+  -webkit-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+  background: #fbfbfb !important;
 }
 
 /*Glossary*/
