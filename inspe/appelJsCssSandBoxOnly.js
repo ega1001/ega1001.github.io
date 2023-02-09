@@ -1,22 +1,19 @@
 function loadjscssfile(filename, filetype) {
-    if (filetype == "js") { //if filename is a external JavaScript file
-        var fileJs = document.createElement('script')
-        fileJs.setAttribute("type", "text/javascript")
-        fileJs.setAttribute("src", filename)
-    }
-    else if (filetype == "css") { //if filename is an external CSS file
-        var fileref = document.createElement("link")
-        fileref.setAttribute("rel", "stylesheet")
-        fileref.setAttribute("type", "text/css")
-        fileref.setAttribute("href", filename)
-    }
-    if (typeof fileref != "undefined") {
-        document.getElementsByTagName("head")[0].appendChild(fileref)
-    }
-    else if (typeof fileJs != "undefined") {
-        document.getElementsByTagName("body")[0].appendChild(fileJs)
-    }
+  var element;
+  if (filetype === "js") {
+    element = document.createElement("script");
+    element.setAttribute("type", "text/javascript");
+    element.setAttribute("src", filename);
+    document.body.appendChild(element);
+  } else if (filetype === "css") {
+    element = document.createElement("link");
+    element.setAttribute("rel", "stylesheet");
+    element.setAttribute("type", "text/css");
+    element.setAttribute("href", filename);
+    document.head.appendChild(element);
+  }
 }
+
 //loadjscssfile("https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.css", "css")
 //loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css", "css")//dynamically load and add this .css file
 loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodle.css", "css") ////dynamically load and add this .css file
