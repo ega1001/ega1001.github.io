@@ -11,6 +11,7 @@ for (var j=0; j<classNames.length; j++) {
   }
 }
 
+
 for (var i=0; i<uneditIcon.length; i++) {
   uneditIcon[i].setAttribute("contenteditable", "false");
 }
