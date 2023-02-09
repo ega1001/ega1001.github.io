@@ -1,8 +1,8 @@
 /* # The Rotating Marker # */
-details > summary {
+.fad_accordion details > summary {
   list-style: none;
 }
-summary::before {
+.fad_accordion summary::before {
   font-family: 'Hiragino Mincho ProN', 'Open Sans', sans-serif;
   content: '▶';
   position: absolute;
@@ -12,27 +12,27 @@ summary::before {
   transform-origin: center;
   transition: 0.2s transform ease;
 }
-details[open] > summary:before {
+.fad_accordion details[open] > summary:before {
   transform: rotate(90deg);
   transition: 0.45s transform ease;
 }
 
 /* # The Sliding Summary # */
-details {
+.fad_accordion details {
   overflow: hidden;
 }
-details > summary {
+.fad_accordion details > summary {
   position: relative;
   z-index: 10;
 }
-@keyframes details-show {
+.fad_accordion @keyframes details-show {
   from {
     margin-bottom: -80%;
     opacity: 0;
     transform: translateY(-100%);
   }
 }
-details > *:not(summary) {
+.fad_accordion details > *:not(summary) {
   animation: details-show 500ms ease-in-out;
   position: relative;
   z-index: 1;
@@ -40,18 +40,18 @@ details > *:not(summary) {
   color: transparent;
   overflow: hidden;
 }
-details[open] > *:not(summary) {
+.fad_accordion details[open] > *:not(summary) {
   color: inherit;
 }
 
 /* # Just Some Pretty Styles # */
 
-details {
+.fad_accordion details {
   box-sizing: border-box;
   margin-top: 5px;
   background: white;
 }
-summary {
+.fad_accordion summary {
   border: 1px solid #dee2e6;
   outline: none;
   padding: 1rem;
@@ -65,20 +65,20 @@ summary {
   border-radius: 0.5rem 0.5rem 0 0;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-details[open] summary,
+.fad_accordion details[open] summary,
 summary:hover {
   color: #fff;
   background: #6c757d;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-summary:hover strong,
-details[open] summary strong,
-summary:hover::before,
-details[open] summary::before {
+.fad_accordion summary:hover strong,
+.fad_accordion details[open] summary strong,
+.fad_accordion summary:hover::before,
+.fad_accordion details[open] summary::before {
   color: #fff;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-.content {
+.fad_accordion .content {
   padding: 10px;
   border: 1px solid #dee2e6;
   border-top: none;
