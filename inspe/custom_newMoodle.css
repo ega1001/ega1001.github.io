@@ -1852,3 +1852,18 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
   border-radius: 5px;
   color: white !important;
 }
+
+.activitytitle.media.modtype_questionnaire.position-relative.align-self-start
+  img.activityicon {
+  display: none !important;
+}
+
+.activitytitle.media.modtype_questionnaire.position-relative.align-self-start
+  .activityiconcontainer::before {
+  font-family: 'Font Awesome 6 Pro';
+  font-weight: 600;
+  content: '\f682';
+  font-size: xxx-large !important;
+  color: #be7093;
+  /*! font-size: var(--fa-font-light); */
+}
