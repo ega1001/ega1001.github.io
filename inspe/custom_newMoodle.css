@@ -1834,3 +1834,21 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
   box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
   background: #fbfbfb !important;
 }
+
+/*Questionnaire*/
+.qn-container .editor_atto_content {
+  border: 1px solid #8f959e;
+  border-top-color: rgb(143, 149, 158);
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.qn-question {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
+  background-color: #6a737b;
+  border-radius: 5px;
+  color: white !important;
+}
