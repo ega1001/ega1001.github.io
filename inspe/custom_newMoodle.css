@@ -1908,7 +1908,7 @@ h1 {
 	padding-right: 1.25rem;
 }
 
-.faq-card a::before {
+.faq-card a::after {
 	content: "\f0c1";
 	font-family: "Font Awesome 6 Pro";
 	font-weight: 900;
