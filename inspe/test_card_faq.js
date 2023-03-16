@@ -1,6 +1,6 @@
 // Code jQuery à exécuter après que le document soit chargé 
 $(document).ready(function () {
-    $(".faq").html(`<div class="card text-center"> 
+    $(".faq_card").html(`<div class="card text-center"> 
     <div class="card-header"> Featured </div>
     <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
