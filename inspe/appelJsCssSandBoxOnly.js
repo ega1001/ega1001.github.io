@@ -30,7 +30,7 @@ loadjscssfile("https://ega1001.github.io/inspe/accordionex.css", "css") ////dyna
 //loadjscssfile("https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.js", "js")
 loadjscssfile("https://ega1001.github.io/inspe/uneditableIcon.js", "js")
 loadjscssfile("https://ega1001.github.io/inspe/deleteClassoptimized.js", "js") //dynamically load and add this .js file
-//loadjscssfile("https://ega1001.github.io/inspe/scroll-to-top.js", "js") //dynamically load and add this .js file
+loadjscssfile("https://ega1001.github.io/inspe/test_card_faq.js", "js") //dynamically load and add this .js file
 loadjscssfile("https://ega1001.github.io/inspe/backtotopbutton.js", "js") //dynamically load and add this .js file
 //loadjscssfile("https://ega1001.github.io/inspe/aos.js", "js") //dynamically load and add this .js file
 //loadjscssfile("https://ega1001.github.io/inspe/aosInit.js", "js") //dynamically load and add this .js file
