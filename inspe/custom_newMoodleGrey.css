@@ -11,20 +11,6 @@
   background-color: #6c757d !important;
 }
 
-/*Questionnaire*/
-
-.qn-content p.lead.font-weight-bold {
-  background-color: #6c757d !important;
-}
-
-.que .formulation {
-  border: 1px solid #6c757d !important;
-}
-
-.que .info {
-  border: 1px solid #6c757d !important;
-}
-
 /*titre des etiquettes modules et surlignage*/
 
 hr.LabelTitle {

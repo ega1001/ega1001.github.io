@@ -1834,3 +1834,36 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
   box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
   background: #fbfbfb !important;
 }
+
+/*Questionnaire*/
+.qn-container .editor_atto_content {
+  border: 1px solid #8f959e;
+  border-top-color: rgb(143, 149, 158);
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.qn-question {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
+  background-color: #6a737b;
+  border-radius: 5px;
+  color: white !important;
+}
+
+.activitytitle.media.modtype_questionnaire.position-relative.align-self-start
+  img.activityicon {
+  display: none !important;
+}
+
+.activitytitle.media.modtype_questionnaire.position-relative.align-self-start
+  .activityiconcontainer::before {
+  font-family: 'Font Awesome 6 Pro';
+  font-weight: 600;
+  content: '\f682';
+  font-size: xxx-large !important;
+  color: #be7093;
+  /*! font-size: var(--fa-font-light); */
+}
