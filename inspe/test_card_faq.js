@@ -1,6 +1,6 @@
 // Code jQuery à exécuter après que le document soit chargé 
 $(document).ready(function () {
-    $(".faq_card").html(`<div class="card" contenteditable = "true"> 
+    $(".faq_card").html(`<div class="card"> 
     < div class = "card-header"
     contenteditable = "true" > < /div>
     < div class = "card-body"
