@@ -1879,7 +1879,7 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 	border-radius: 0.5rem;
 	flex: 1 1 auto;
 	min-height: 1px;
-	padding: 1.25rem;
+	padding-bottom: 1.25rem;
 }
 
 .faq-card h5:first-child {
