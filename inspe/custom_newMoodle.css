@@ -1339,9 +1339,9 @@ h4:first-child {
 
 /*Dossier déplié : Suppression icône origine (bleu clair) Activité "Dossier" */
 
-.fp-icon {
+/*.fp-icon {
   display: none;
-}
+}*/
 
 .fp-filename-icon {
   margin-top: 0px !important;
