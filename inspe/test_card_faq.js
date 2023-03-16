@@ -6,11 +6,9 @@ $(document).ready(function () {
     < div class = "card-body"
     contenteditable = "true" >
     
-    < p class = "card-text"
-    contenteditable = "true" > < /p>
+    < p class = "card-text"> < /p>
     
     </div>
-    < div class = "card-footer text-muted"
-    contenteditable = "true" > < /div>
+    < div class = "card-footer text-muted"> < /div>
     </div>`); // sélectionner la div avec la classe faq et lui assigner le code HTML avec la méthode .html()
 });
