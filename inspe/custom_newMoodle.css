@@ -1950,7 +1950,7 @@ h1 {
 }
 
 /*Badges colors*/
-badge-warning {
+.badge-warning {
 	color: #212529;
 	background-color: #f27f22 !important;
 }
