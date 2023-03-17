@@ -371,17 +371,19 @@ hr.ProdTitle {
 }
 
 /*Liste avec tiret "-"*/
-
-.sousliste li {
-	list-style-type: none !important;
-	line-height: 1.9em !important;
-	text-align: left !important;
+.sousliste {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 0;
+	padding-left: 24px;
 }
 
 .sousliste li:before {
 	content: "- ";
 	/* on affiche une chaîne de caractère */
-	padding-right: 0.5em;
+	margin-right: 1rem;
 }
 
 /*Liste avec Icônes Fontawesome*/
@@ -398,18 +400,23 @@ hr.ProdTitle {
 
 /* Liste Chiffres en couleur */
 
-.custom-numbers {
+.custom-numbers,
+.numbers {
 	list-style: none;
-}
-
-.custom-numbers li {
 	display: flex;
-	counter-increment: my-awesome-counter;
-	align-items: baseline;
-	margin-bottom: 0.5em;
+	flex-direction: column;
+	gap: 10px;
+	margin: 0;
+	padding-left: 24px;
 }
 
-ol.custom-numbers li::before {
+.custom-numbers li,
+.numbers li {
+	counter-increment: my-awesome-counter;
+}
+
+.custom-numbers ol li::before,
+.numbers ol li::before {
 	content: counter(my-awesome-counter) ". ";
 	font-weight: bold;
 	margin-right: 1rem;
