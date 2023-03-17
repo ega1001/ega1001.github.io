@@ -1948,3 +1948,14 @@ h1 {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }
+
+/*Badges colors*/
+badge-warning {
+	color: #212529;
+	background-color: #f27f22 !important;
+}
+a.badge-warning:focus,
+a.badge-warning:hover {
+	color: #212529;
+	background-color: #d39e00 !important;
+}
