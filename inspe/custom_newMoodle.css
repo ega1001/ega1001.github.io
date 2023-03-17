@@ -1951,11 +1951,11 @@ h1 {
 
 /*Badges colors*/
 .badge-warning {
-	color: #212529;
+	color: #fff !important;
 	background-color: #f27f22 !important;
 }
 a.badge-warning:focus,
 a.badge-warning:hover {
-	color: #212529;
+	color: #fff !important;
 	background-color: #d39e00 !important;
 }
