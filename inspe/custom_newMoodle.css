@@ -284,6 +284,14 @@ hr.ProdTitle {
   font-weight: 600 !important;
 }
 
+.LabelTitleDark {
+  margin: 0.4rem 0 0.9rem 0.6rem;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 600 !important;
+  color: #fff !important;
+}
+
 .ProdTitle {
   margin: 0.2rem 0 0.9rem 0.6rem;
   text-align: left;
@@ -301,6 +309,18 @@ div.LabelPart {
   padding: 1rem !important;
   width: 100% !important;
   border: 1px solid #dee2e6;
+}
+
+div.LabelPartDark {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  padding: 1rem !important;
+  width: 100% !important;
+  border: 1px solid #dee2e6;
+  background-color: #343a40 !important;
 }
 
 .section .label .contentwithoutlink,
@@ -371,17 +391,19 @@ hr.ProdTitle {
 }
 
 /*Liste avec tiret "-"*/
-
-.sousliste li {
-  list-style-type: none !important;
-  line-height: 1.9em !important;
-  text-align: left !important;
+.sousliste {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding-left: 24px;
 }
 
 .sousliste li:before {
   content: '- ';
   /* on affiche une chaîne de caractère */
-  padding-right: 0.5em;
+  margin-right: 1rem;
 }
 
 /*Liste avec Icônes Fontawesome*/
@@ -398,18 +420,23 @@ hr.ProdTitle {
 
 /* Liste Chiffres en couleur */
 
-.custom-numbers {
+.custom-numbers,
+.numbers {
   list-style: none;
-}
-
-.custom-numbers li {
   display: flex;
-  counter-increment: my-awesome-counter;
-  align-items: baseline;
-  margin-bottom: 0.5em;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding-left: 24px;
 }
 
-ol.custom-numbers li::before {
+.custom-numbers li,
+.numbers li {
+  counter-increment: my-awesome-counter;
+}
+
+.custom-numbers ol li::before,
+.numbers ol li::before {
   content: counter(my-awesome-counter) '. ';
   font-weight: bold;
   margin-right: 1rem;
@@ -1339,9 +1366,9 @@ h4:first-child {
 
 /*Dossier déplié : Suppression icône origine (bleu clair) Activité "Dossier" */
 
-.fp-icon {
+/*.fp-icon {
   display: none;
-}
+}*/
 
 .fp-filename-icon {
   margin-top: 0px !important;
@@ -1866,4 +1893,95 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
   font-size: xxx-large !important;
   color: #be7093;
   /*! font-size: var(--fa-font-light); */
+}
+
+/*Glossaire : faq-card FAD*/
+
+/* Feuille de style intégrée #18 | https://ametice.univ-amu.fr/mod/glossary/view.php?id=2867080&mode=entry&hook=84681 */
+
+.faq-card {
+  -webkit-background-clip: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5rem;
+  flex: 1 1 auto;
+  min-height: 1px;
+  /*padding-bottom: 1.25rem;*/
+}
+
+.faq-card h5:first-child {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: calc(0.5rem - 1px) calc(-1px + 0.5rem) 0 0;
+}
+
+.faq-card h5,
+h6,
+h4,
+h3,
+h2,
+h1 {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.faq-card p {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.faq-card a::after {
+  content: '\f0c1';
+  font-family: 'Font Awesome 6 Pro';
+  font-weight: 900;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  margin-right: 0.3rem;
+}
+
+.faq-card a {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.faq-card .h5p-placeholder {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.faq-card hr {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/*Badges colors*/
+.badge-warning {
+  color: #fff !important;
+  background-color: #f27f22 !important;
+}
+a.badge-warning:focus,
+a.badge-warning:hover {
+  color: #fff !important;
+  background-color: #d39e00 !important;
 }
