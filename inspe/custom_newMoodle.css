@@ -1976,14 +1976,14 @@ h1 {
 }
 
 /*Badges colors*/
-.badge-warning {
-  color: #fff !important;
-  background-color: #f27f22 !important;
+.badge-moodle {
+	color: #fff !important;
+	background-color: #f27f22 !important;
 }
-a.badge-warning:focus,
-a.badge-warning:hover {
-  color: #fff !important;
-  background-color: #d39e00 !important;
+a.badge-moodle:focus,
+a.badge-moodle:hover {
+	color: #fff !important;
+	background-color: #d39e00 !important;
 }
 
 /*Glossaire : faq-card FAD*/
