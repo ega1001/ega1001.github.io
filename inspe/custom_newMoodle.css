@@ -1755,6 +1755,21 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 }
 
 /*Glossaire : FAQ FAD*/
+.faq-content ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 0;
+	padding-left: 24px;
+}
+.faq-content ul li:before {
+	/*! content: "- "; */
+	margin-right: 1rem;
+	font-family: "Font Awesome 6 Pro";
+	font-weight: 900;
+	content: "\f068";
+}
 .ref-item {
 	display: flex;
 	align-items: center;
