@@ -1797,7 +1797,7 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	justify-content: flex-end;
+	/*justify-content: flex-end;*/
 }
 
 /*Badges colors*/
