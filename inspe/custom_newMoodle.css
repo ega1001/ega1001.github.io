@@ -1841,7 +1841,7 @@ a.badge-moodle:hover {
  margin:5% 2%;
 }
 .table-of-contents__left-border {
- border-left:1px solid var(--ifm-toc-border-color)
+ border-left:1px solid #9CFB04;
 }
 .table-of-contents__link {
  display:block
@@ -1850,7 +1850,7 @@ a.badge-moodle:hover {
 .table-of-contents__link--active code,
 .table-of-contents__link:hover,
 .table-of-contents__link:hover code {
- color:var(--ifm-color-primary);
+ color:#1F683D;
  text-decoration:none
 }
 .tableOfContents_bqdL {
