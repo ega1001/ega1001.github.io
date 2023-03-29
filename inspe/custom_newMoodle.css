@@ -1847,7 +1847,7 @@ a.badge-moodle:hover {
 	margin: 5% 2%;
 }
 .table-of-contents__left-border {
-	border-left: 1px solid #9cfb04;
+	border-left: 1px solid #1f683d;
 }
 .table-of-contents__link {
 	display: block;
@@ -1858,4 +1858,7 @@ a.badge-moodle:hover {
 .table-of-contents__link:hover code {
 	color: #1f683d;
 	text-decoration: none;
+}
+.bookContent h2 {
+	margin-top: 3rem !important;
 }
