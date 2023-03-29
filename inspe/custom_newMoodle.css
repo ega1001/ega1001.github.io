@@ -1853,9 +1853,3 @@ a.badge-moodle:hover {
  color:#1F683D;
  text-decoration:none
 }
-.tableOfContents_bqdL {
- max-height:calc(100vh - var(--ifm-navbar-height) - 2rem);
- overflow-y:auto;
- position:sticky;
- top:calc(var(--ifm-navbar-height) + 1rem)
-}
