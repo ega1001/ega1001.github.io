@@ -1825,3 +1825,37 @@ a.badge-moodle:hover {
 	color: #fff !important;
 	background-color: #d39e00 !important;
 }
+/*Table of Content*/
+}
+.table-of-contents {
+ font-size:.8rem;
+ margin-bottom:0;
+ padding-left:10%;
+}
+.table-of-contents,
+.table-of-contents ul {
+ list-style:none;
+ padding:4%;
+}
+.table-of-contents li {
+ margin:5% 2%;
+}
+.table-of-contents__left-border {
+ border-left:1px solid var(--ifm-toc-border-color)
+}
+.table-of-contents__link {
+ display:block
+}
+.table-of-contents__link--active,
+.table-of-contents__link--active code,
+.table-of-contents__link:hover,
+.table-of-contents__link:hover code {
+ color:var(--ifm-color-primary);
+ text-decoration:none
+}
+.tableOfContents_bqdL {
+ max-height:calc(100vh - var(--ifm-navbar-height) - 2rem);
+ overflow-y:auto;
+ position:sticky;
+ top:calc(var(--ifm-navbar-height) + 1rem)
+}
