@@ -1797,7 +1797,7 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	justify-content: flex-end;
+	/*justify-content: flex-end;*/
 }
 
 /*Badges colors*/
@@ -1809,4 +1809,38 @@ a.badge-moodle:focus,
 a.badge-moodle:hover {
 	color: #fff !important;
 	background-color: #d39e00 !important;
+}
+/*Table of Content*/
+.tableOfContentsFixed {
+	position: fixed;
+	max-width: 25%;
+}
+.bookContent {
+	margin-left: 25%;
+}
+.table-of-contents {
+	font-size: 0.8rem;
+	margin-bottom: 0;
+	padding-left: 10%;
+}
+.table-of-contents,
+.table-of-contents ul {
+	list-style: none;
+	padding: 4%;
+}
+.table-of-contents li {
+	margin: 5% 2%;
+}
+.table-of-contents__left-border {
+	border-left: 1px solid #9cfb04;
+}
+.table-of-contents__link {
+	display: block;
+}
+.table-of-contents__link--active,
+.table-of-contents__link--active code,
+.table-of-contents__link:hover,
+.table-of-contents__link:hover code {
+	color: #1f683d;
+	text-decoration: none;
 }
