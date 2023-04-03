@@ -758,6 +758,7 @@ pre {
 
 code {
 	white-space: pre-wrap;
+	border: 0.1rem solid #0000001a;
 }
 
 .code-card {
@@ -1472,11 +1473,21 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	font-family: "Titillium Web", sans-serif !important;
 }
 
-/*Radius card-header right and left*/
-.card-header:first-child {
-	border-radius: calc(0.5rem - 1px) calc(-1px + 0.5rem) 0 0;
-}
+/*bloc cours fAD PE FAQ*/
 
+.block_fcl_content {
+	color: #000 !important;
+}
+.block-fcl__rubric a {
+	font-family: "Titillium Web", sans-serif;
+}
+.block-fcl__list__link {
+	/* color: rgb(73, 80, 87) !important; */
+	color: #495057 !important;
+}
+.block-fcl__list__link:hover {
+	text-decoration: none !important;
+}
 /*
 *
 * ==========================================
