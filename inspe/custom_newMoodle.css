@@ -1482,8 +1482,8 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	font-family: "Titillium Web", sans-serif;
 }
 .block-fcl__list__link {
-	/* color: rgb(73, 80, 87) !important; */
 	color: #495057 !important;
+	font-size: smaller !important;
 }
 .block-fcl__list__link:hover {
 	text-decoration: none !important;
@@ -1712,7 +1712,6 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 .concept h4,
 .glossarycategoryheader h3 {
 	color: #0c8714 !important;
-	font-size: 2em !important;
 }
 .time {
 	font-size: small !important;
@@ -1728,9 +1727,13 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 	padding: 1.25rem;
 }
 .glossarypost {
-	width: 70% !important;
 	word-break: break-word !important;
 	word-wrap: break-word !important;
+}
+@media (min-width: 992px) {
+	.glossarypost {
+		width: 70% !important;
+	}
 }
 
 /*Questionnaire*/
