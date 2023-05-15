@@ -857,6 +857,7 @@ code {
 	box-shadow: 0 4px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 .bouton-bleu {
 	position: relative;
 	display: -ms-flexbox;
@@ -940,6 +941,7 @@ code {
 .bouton-vert:hover {
 	box-shadow: 0 4px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
+
 /*Bloc de droite*/
 section.block h5 {
 	display: flex !important;
@@ -974,6 +976,7 @@ section.block .card-text {
 	padding: 1rem !important;
 	margin-bottom: 0;
 }
+
 /*section.block h5 {
   display: flex !important;
   padding: 10px !important;
@@ -1043,29 +1046,35 @@ section.block div.card-body {
 	background-color: #6c757d !important;
 	border-color: #6c757d !important;
 }
+
 .btn-secondary:hover {
 	color: #fff !important;
 	background-color: #5c636a !important;
 	border-color: #565e64 !important;
 }
+
 /*Tuiles*/
 
 #multi_section_tiles {
 	/*! max-width: 996.668px; */
 	max-width: 95% !important;
 }
+
 .format-tiles .course-content ul.tiles .tile {
 	flex-basis: 256px !important;
 	max-width: 256px !important;
 	flex-grow: 0 !important;
 	max-height: 171px !important;
 }
+
 .format-tiles ul.tiles#multi_section_tiles {
 	justify-content: center !important;
 }
+
 .tile.spacer {
 	display: none !important;
 }
+
 /*Tuiles design*/
 .format-tiles .course-content ul.tiles .tile.phototile .photo-tile-text h3 {
 	/* background-color: rgba(122,154,1, 1); */
@@ -1084,6 +1093,7 @@ section.block div.card-body {
 	/*color: #333 !important;*/
 	border-radius: 5px 0 0 5px !important;
 }
+
 /* 
 .format-tiles .course-content ul.tiles .tile,
 .format-tiles li.section:not(#section-0) .course-section-header {
@@ -1243,6 +1253,7 @@ h4:first-child {
 	text-align: left;
 	/*margin-left: 5%;*/
 }
+
 .summary {
 	margin-bottom: 0.5rem !important;
 }
@@ -1273,6 +1284,7 @@ h4:first-child {
 .rarrow {
 	display: none !important;
 }
+
 /*Ajout de fleches fontawesome navigation section*/
 /*.course-content .single-section .section-navigation .prevsection::before {
 	font-family: "Font Awesome 6 Pro";
@@ -1306,10 +1318,12 @@ h4:first-child {
 		padding-left: 0px;
 		display: block;
 	}
+
 	.course-content ul.section {
 		margin: 0rem;
 	}
 }
+
 /*Box mise en forme Livre et leçon*/
 
 .book_content {
@@ -1403,6 +1417,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
 	margin-bottom: 1rem;
 }
+
 .format-grid .thegrid .grid-section.card:hover {
 	text-decoration: none !important;
 	color: black !important;
@@ -1449,10 +1464,11 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	border-bottom-left-radius: calc(0.5rem - 1px);
 }
 
-/* Accueil grid : remplacer texte par icone home*/
+/* Home grid: replace text with home icon */
 .stateready .text-right {
 	font-size: 0px !important;
 }
+
 .stateready p.text-right::before {
 	margin-right: 0.5rem;
 	text-rendering: auto;
@@ -1468,33 +1484,35 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	text-decoration: none !important;
 }
 
-/*Index*/
+/* Index */
 .courseindex .courseindex-item.courseindex-section-title a {
 	font-family: "Titillium Web", sans-serif !important;
 }
 
-/*bloc cours fAD PE FAQ*/
+/* fAD PE FAQ course block */
 
 .block_fcl_content {
 	color: #000 !important;
 }
+
 .block-fcl__rubric a {
 	font-family: "Titillium Web", sans-serif;
 }
+
 .block-fcl__list__link {
 	color: #495057 !important;
 	font-size: smaller !important;
 }
+
 .block-fcl__list__link:hover {
 	text-decoration: none !important;
 }
-/*
-*
-* ==========================================
+
+/* ==========================================
 * CUSTOM UTIL CLASSES
 * ==========================================
-*
 */
+
 /* Horizontal line */
 .collapsible-link::before {
 	content: "";
@@ -1528,6 +1546,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 .collapsible-link[aria-expanded="true"]::before {
 	transform: rotate(180deg);
 }
+
 /*===========================================*
 Fixed-navbar - Moodle Academy-like
 *============================================*/
@@ -1535,17 +1554,19 @@ Fixed-navbar - Moodle Academy-like
 	box-shadow: 0 4px 15px -7px rgba(0, 0, 0, 0.25) !important;
 	border: none !important;
 }
-Menu Burger svg en noir .navbar-light .navbar-toggler-icon {
+
+/* Black Burger Menu svg */
+.navbar-light .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/*Taille image de cours dans catégorie de cours*/
+/* Course image size in course category */
 .coursebox .content .courseimage img {
 	max-width: 250px;
 	max-height: 100px;
 }
 
-/*Mise en forme catégorie fadPe*/
+/* Formatting for fadPe category */
 #fadPe .card-deck .card .card-img-top {
 	height: 100px !important;
 	max-width: 350px !important;
@@ -1555,7 +1576,8 @@ Menu Burger svg en noir .navbar-light .navbar-toggler-icon {
 #fadPe .card-deck {
 	justify-content: center !important;
 }
-/*Tables Bootstrap révision*/
+
+/* Bootstrap table revision */
 
 .table-striped tbody tr:nth-of-type(2n + 2) {
 	/* background-color: rgba(0,0,0,.05); */
@@ -1577,14 +1599,14 @@ Menu Burger svg en noir .navbar-light .navbar-toggler-icon {
 	margin-bottom: 0 !important;
 }
 
-/* Bdd tertiary-navigation sticky buttons "Enregistrer et exporter en tant que préréglage" */
+/* Bdd tertiary-navigation sticky buttons "Save and export as preset" */
 
 .tertiary-navigation .navitem {
 	margin-right: 5px !important;
 }
 
-/* Suppression Consignes/descriptions + titres en doublon*/
-/*Questionnaire*/
+/* Remove duplicate instructions/descriptions and titles */
+/* Questionnaire */
 
 .mod_questionnaire_viewpage .intro {
 	display: none !important;
@@ -1593,13 +1615,14 @@ Menu Burger svg en noir .navbar-light .navbar-toggler-icon {
 .mod_questionnaire_viewpage h2 {
 	display: none !important;
 }
-/*Poodll ReadAloud (Lecture à voix haute)*/
+
+/* Poodll ReadAloud (Read Aloud) */
 
 .box.py-3.mod_intro_box.mod_readaloud_center {
 	display: none !important;
 }
 
-/*Amélioration Logo Activité de lecture à voix haute Poodll*/
+/* Improve Poodll Read Aloud Activity Logo */
 
 .readaloud .activityiconcontainer.assessment .activityicon {
 	filter: none !important;
@@ -1609,37 +1632,7 @@ Menu Burger svg en noir .navbar-light .navbar-toggler-icon {
 	filter: none !important;
 }
 
-/*Amélioration de l'affichage du tableau "travaux remis" de l'activité devoir
-thead en gris et bordered - police -80% - suppression des colonnes mail et identifiant
-.gradingtable .generaltable td:nth-child(7) .btn {
-	padding: 0.25rem 0.5rem;
-	font-size: 0.8203125rem;
-	line-height: 1.5;
-	border-radius: 0.2rem;
-}
-.gradingtable .generaltable th {
-	color: #495057;
-	background-color: #e9ecef;
-	border-color: #dee2e6;
-}
-.gradingtable .generaltable.generalbox {
-	font-size: 80%;
-}
-.gradingtable .header.c3,
-.c4 {
-	display: none !important;
-}
-.gradingtable .cell.c3 {
-	display: none !important;
-}
-.gradingtable .header.c0 {
-	font-size: 0 !important;
-}
-.gradingtable .generaltable {
-	border: 1px solid #dee2e6;
-}*/
-
-/*tableau entretiens*/
+/* Interview table */
 .tbody-space::before {
 	content: "\200C";
 	display: block;
@@ -1647,176 +1640,224 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 	background-color: white !important;
 }
 
-/*Comments dans bdd*/
+/*Comments in Moodle DataBase activity*/
 .comment-link {
-	color: #fff !important;
+	color: #fff;
 	background-color: #5a0cb9;
-	border-color: #5a0cb9;
 	border: 1px solid transparent;
+	border-radius: 0.5rem;
 	padding: 0.375rem 0.75rem;
 	font-size: 0.9375rem;
 	line-height: 1.5;
-	border-radius: 0.5rem;
+	margin-top: 0.25rem;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
 		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-	margin-top: 0.25rem !important;
 }
+
 .comment-link:hover {
 	background-color: #490a95;
 	border-color: #430989;
 	text-decoration: none;
 }
 
+/* Styles for the comment container */
 .comment-ctrl {
-	-webkit-background-clip: border-box;
 	position: relative;
-	/*display: flex;*/
-	flex-direction: column;
 	min-width: 0;
-	word-wrap: break-word;
+	min-height: 1px;
+	padding: 1.25rem;
+	margin-top: 0.25rem;
 	background-color: #fff;
-	background-clip: border-box;
 	border: 1px solid rgba(0, 0, 0, 0.125);
 	border-radius: 0.5rem;
-	min-height: 1px;
-	padding: 1.25rem !important;
-	margin-top: 0.25rem !important;
+	word-wrap: break-word;
 }
 
-/*ombre autour des boutons focus*/
+/* Remove box shadow on buttons when focused */
 [role="button"]:focus {
 	box-shadow: none !important;
 }
 
-/*h5p*/
-/*drag-n-drop*/
+/* Styling for H5P Drag-n-Drop */
+/* --------------------------- */
+
+/* Styling for the H5P label */
 .h5p-label {
 	background-color: rgb(12, 135, 20) !important;
 	color: #ffffff !important;
 }
-.h5p-dragquestion
-	.h5p-draggable:not(.ui-state-disabled).h5p-draggable-hover:not(.h5p-correct):not(.h5p-wrong) {
-	border: 0.1em solid rgb(212, 190, 216);
-	background-color: #5a0cb9 !important;
-	color: #ffffff;
-}
+
+/* Styling for the H5P draggable element */
 .h5p-dragquestion .h5p-draggable {
+	/* Add a box shadow */
 	-webkit-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 	box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+	/* Set the background color */
 	background: #fbfbfb !important;
 }
 
-/*Glossary*/
+/* Styling for the H5P draggable element when hovered */
+.h5p-dragquestion
+	.h5p-draggable:not(.ui-state-disabled).h5p-draggable-hover:not(.h5p-correct):not(.h5p-wrong) {
+	/* Add a border */
+	border: 0.1em solid rgb(212, 190, 216);
+	/* Set the background color */
+	background-color: #5a0cb9 !important;
+	/* Set the text color */
+	color: #ffffff;
+}
 
+/* Styling for Glossary */
+/* --------------------- */
+
+/* Styling for concept headings and glossary category headers */
 .concept h4,
 .glossarycategoryheader h3 {
 	color: #0c8714 !important;
 }
+
+/* Styling for the time element */
 .time {
 	font-size: small !important;
 	font-weight: 400 !important;
 	font-style: italic !important;
 }
+
+/* Styling for the entry header */
 .entryheader {
 	padding: 0.75rem 1.25rem;
 	background-color: rgba(0, 0, 0, 0.03);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
+
+/* Styling for the glossary entry */
 .entry {
 	padding: 1.25rem;
 }
+
+/* Styling for the glossary post */
 .glossarypost {
 	word-break: break-word !important;
 	word-wrap: break-word !important;
 }
+
+/* Responsive styling for the glossary post */
 @media (min-width: 992px) {
 	.glossarypost {
 		width: 70% !important;
+		/* Set the width to 70% on larger screens */
 	}
 }
+
+/* Styling for the glossary show entry page content */
 #page-mod-glossary-showentry #page-content {
 	min-width: 100% !important;
+	/* Set the minimum width to 100% */
 }
 
-/*Questionnaire*/
+* Styling for Questionnaire */
+/* ------------------------- */
+
+/* Styling for the text editor in the questionnaire container */
 .qn-container .editor_atto_content {
 	border: 1px solid #8f959e;
-	border-top-color: rgb(143, 149, 158);
-	border-top-style: solid;
-	border-top-width: 1px;
+	border-top: 1px solid rgb(143, 149, 158);
 }
 
+/* Styling for the questionnaire question */
 .qn-question {
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-bottom: 0.25em;
-	padding-top: 0.25em;
+	padding: 0.25em 5px;
 	background-color: #6a737b;
 	border-radius: 5px;
 	color: white !important;
 }
 
+/* Hide the default activity icon in the questionnaire */
 .activitytitle.media.modtype_questionnaire.position-relative.align-self-start img.activityicon {
 	display: none !important;
 }
 
+/* Add a custom icon for the questionnaire */
 .activitytitle.media.modtype_questionnaire.position-relative.align-self-start
 	.activityiconcontainer::before {
+	/* Use Font Awesome 6 Pro for the custom icon */
 	font-family: "Font Awesome 6 Pro";
 	font-weight: 600;
 	content: "\f682";
 	font-size: xxx-large !important;
 	color: #be7093;
+	/* The commented out font-size property may not be necessary */
 	/*! font-size: var(--fa-font-light); */
 }
 
-/*Glossaire : FAQ FAD*/
+/* Glossary: FAQ FAD */
+/*Faq Content*/
 .faq-content ul {
-	list-style: none;
+	/* Use flexbox to arrange list items in a column with 10px spacing between them */
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	margin: 0;
 	padding-left: 24px;
+	list-style: none;
+	/* Remove default bullet points */
 }
+
 .faq-content ul li:before {
-	/*! content: "- "; */
-	margin-right: 1rem;
+	/* Use Font Awesome icon as a bullet point */
 	font-family: "Font Awesome 6 Pro";
 	font-weight: 900;
 	content: "\f068";
+	margin-right: 1rem;
 }
+
+/* References */
+.ref-container {
+	/* Use flexbox to arrange reference items in a row with 6px spacing between them */
+	display: flex;
+	flex-flow: row wrap;
+	row-gap: 6px;
+}
+
+.ref-content {
+	/* Use flexbox to arrange reference content */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap !important;
+}
+
 .ref-item {
+	/* Set the style for reference items */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	min-width: max-content;
 	height: 24px;
-	border-radius: 4px;
-	box-sizing: border-box;
 	padding: 0px 5px;
 	margin-inline-end: 6px;
+	border-radius: 4px;
+	box-sizing: border-box;
 	font-weight: 500;
 	line-height: 24px;
-	background-image: linear-gradient(to right, #a37ed0 0%, #bd9ce8 51%, #6415c1 100%);
 	font-size: 80%;
+	color: white;
+	background-image: linear-gradient(to right, #a37ed0 0%, #bd9ce8 51%, #6415c1 100%);
+	background-size: 200% auto;
 	transition: 0.5s;
 	box-shadow: 0 0 20px #eee;
-	background-size: 200% auto;
-	color: white;
 }
-.ref-container {
-	display: flex;
-	flex-flow: row wrap;
-	row-gap: 6px;
-}
+
 .ref-item:hover {
+	/* Change the background position and color of reference items on hover */
 	background-position: right center;
 	color: #fff;
 	text-decoration: none;
 }
+
 .learn-more {
+	/* Set the style for the learn more button */
 	position: relative;
 	min-width: fit-content;
 	height: 24px;
@@ -1825,50 +1866,62 @@ thead en gris et bordered - police -80% - suppression des colonnes mail et ident
 	line-height: 24px;
 	font-weight: 700;
 }
-.ref-content {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	flex-wrap: wrap !important;
-}
 
-/*Badges colors*/
+/* Badge colors */
 .badge-moodle {
+	/* Set the style for moodle badges */
 	color: #fff !important;
 	background-color: #f27f22 !important;
 }
+
 a.badge-moodle:focus,
 a.badge-moodle:hover {
+	/* Set the style for moodle badge links on hover/focus */
 	color: #fff !important;
 	background-color: #d39e00 !important;
 }
-/*Table of Content*/
+
+/* Table of contents */
 .tableOfContentsFixed {
+	/* Set the style for the fixed table of contents */
 	position: fixed;
 	max-width: 25%;
 }
+
 .bookContent {
+	/* Set the margin for the content of the book */
 	margin-left: 25%;
 }
+
 .table-of-contents {
+	/* Set the style for the table of contents */
 	font-size: 0.8rem;
 	margin-bottom: 0;
 	padding-left: 10%;
+	list-style: none;
+	/* Remove default bullet points */
 }
+
 .table-of-contents,
 .table-of-contents ul {
-	list-style: none;
+	/* Remove default padding and margin from the table of contents and its list items */
 	padding: 4%;
 }
+
 .table-of-contents li {
+	/* Set the margin for the list items in the table of contents */
 	margin: 5% 2%;
 }
+
 .table-of-contents__left-border {
+	/* Add a left border to the table of contents */
 	border-left: 1px solid #1f683d;
 }
+
 .table-of-contents__link {
 	display: block;
 }
+
 .table-of-contents__link--active,
 .table-of-contents__link--active code,
 .table-of-contents__link:hover,
@@ -1876,6 +1929,7 @@ a.badge-moodle:hover {
 	color: #1f683d;
 	text-decoration: none;
 }
+
 .bookContent h2 {
 	margin-top: 3rem !important;
 }
