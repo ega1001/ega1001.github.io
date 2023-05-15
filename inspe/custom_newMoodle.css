@@ -1273,8 +1273,8 @@ h4:first-child {
 .rarrow {
 	display: none !important;
 }
-/*Ajout de fleches fontawesome*/
-.course-content .single-section .section-navigation .prevsection::before {
+/*Ajout de fleches fontawesome navigation section*/
+/*.course-content .single-section .section-navigation .prevsection::before {
 	font-family: "Font Awesome 6 Pro";
 	font-weight: 600;
 	content: "\f104";
@@ -1290,7 +1290,7 @@ h4:first-child {
 	margin-left: 10px;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
-}
+}*/
 
 /*police + petite pour la navigation*/
 .nextsection {
