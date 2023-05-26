@@ -435,8 +435,8 @@ hr.ProdTitle {
 	counter-increment: my-awesome-counter;
 }
 
-.custom-numbers ol li::before,
-.numbers ol li::before {
+.custom-numbers li::before,
+.numbers li::before {
 	content: counter(my-awesome-counter) ". ";
 	font-weight: bold;
 	margin-right: 1rem;
