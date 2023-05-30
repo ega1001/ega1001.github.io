@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
   // Récupération de l'URL du PDF à partir d'une source externe
-  var pdfUrl = 'https://applis.inspe.univ-amu.fr/fad/files/accueil/test_pdf.pdf';
+  var pdfUrl = 'https://ametice.univ-amu.fr/draftfile.php/2979706/user/draft/837462801/test_pdf.pdf';
 
   var pdfDownloadLink = document.getElementById('pdf-download-link');
   var pdfObject = document.getElementById('pdf-object');
