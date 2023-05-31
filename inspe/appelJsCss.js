@@ -24,8 +24,6 @@ loadjscssfile("https://ega1001.github.io/inspe/github.min.css", "css")
 loadjscssfile("https://ega1001.github.io/inspe/backtotop.css", "css") ////dynamically load and add this .css file
 /*loadjscssfile("https://ega1001.github.io/inspe/accordionex.css", "css") ////dynamically load and add this .css file*/
 
-
-loadjscssfile("https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js", "js")
 loadjscssfile("https://ega1001.github.io/inspe/uneditableIcon.js", "js")
 loadjscssfile("https://ega1001.github.io/inspe/resizePdf.js", "js")
 loadjscssfile("https://ega1001.github.io/inspe/deleteClassoptimized.js", "js") //dynamically load and add this .js file
