@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page d'accueil des Masters MEEF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .header-content {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 32px;
+        }
+
+        .formation-cards-container {
+            position: relative;
+            margin-top: -20%;
+            padding: 20px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .formation-card {
+            display: inline-block;
+            margin: 10px;
+            background-color: #f5f5f5;
+            border: none;
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .formation-card:hover {
+            transform: scale(1.05);
+        }
+
+        .formation-card h3 {
+            font-size: 20px;
+        }
+
+        .formation-card p {
+            font-size: 14px;
+        }
+
+        .formation-card p span {
+            font-weight: bold;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            background-color: #f5f5f5;
+            padding: 10px;
+            text-align: center;
+            color: #888;
+            width: 100%;
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://inspe.univ-amu.fr/sites/inspe.univ-amu.fr/themes/amu_inspe/images/background-front.jpg"
+            alt="En-tête" class="header-image">
+        <div class="header-content">
+            <h1>Inspé - Masters MEEF</h1>
+        </div>
+    </header>
+
+    <div class="formation-cards-container">
+        <div class="formation-card">
+            <h3>Formation 1</h3>
+            <p>Description de la formation 1.</p>
+            <p><span>Responsable :</span> Nom du responsable 1</p>
+        </div>
+        <div class="formation-card">
+            <h3>Formation 2</h3>
+            <p>Description de la formation 2.</p>
+            <p><span>Responsable :</span> Nom du responsable 2</p>
+        </div>
+        <div class="formation-card">
+            <h3>Formation 3</h3>
+            <p>Description de la formation 3.</p>
+            <p><span>Responsable :</span> Nom du responsable 3</p>
+        </div>
+        <div class="formation-card">
+            <h3>Formation 4</h3>
+            <p>Description de la formation 4.</p>
+            <p><span>Responsable :</span> Nom du responsable 4</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Inspé - Masters MEEF</p>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
