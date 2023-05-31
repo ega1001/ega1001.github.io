@@ -1945,43 +1945,41 @@ a.badge-moodle:hover {
   margin-top: 3rem !important;
 }
 /*Insert pdf*/
-.document-header {
-  text-align: center;
+.pdf-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.document-title {
+.pdf-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
 .download-link {
-  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000;
 }
 
-.download-link a {
-  display: inline-flex;
-  align-items: center;
-}
-
-.download-link i {
-  margin-right: 5px;
-}
-
-.journal-name,
 .author-name {
-  margin-bottom: 5px;
+  font-style: italic;
 }
 
-.pdf-container {
-  position: relative;
+.pdf-title {
+  text-align: center;
+}
+
+.pdf-content {
   width: 100%;
-  padding-top: 56.25%; /* Aspect ratio: 16:9 */
-  overflow: hidden;
+  height: ;
+  padding-bottom: 100%; /* Ratio de format A4 (1:1.414) */
+  position: relative;
+  margin-bottom: 20px;
 }
 
-.pdf-container iframe {
+.pdf-content object {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
