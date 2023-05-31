@@ -1250,11 +1250,11 @@ a[data-toggle='collapse'].collapsed i.fas:before {
   margin-bottom: 2%;
 }
 
-.summary h3:first-child,
+/*.summary h3:first-child,
 h4:first-child {
   text-align: left;
   /*margin-left: 5%;*/
-}
+}*/
 
 .summary {
   margin-bottom: 0.5rem !important;
