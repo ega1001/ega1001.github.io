@@ -1956,8 +1956,11 @@ a.badge-moodle:hover {
 }
 /*Correctif bdd 100%*/
 @media (min-width:768px) {
-body.mediumwidth #page.drawers .footer-popover {
+
+
+ body.mediumwidth #page.drawers .main-inner {
   max-width:100% !important;
  }
+
 }
 
