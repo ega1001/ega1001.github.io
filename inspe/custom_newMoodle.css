@@ -1952,5 +1952,6 @@ a.badge-moodle:hover {
 
 /*-------correctif Boost Union - dropdown button -- note simplifiée -----.tertiary-navigation .btn > div {max-width: 200px;}-------------------*/
 .tertiary-navigation .btn > div {
-  max-width: 100% !important;
+  white-space: normal !important;
 }
+
