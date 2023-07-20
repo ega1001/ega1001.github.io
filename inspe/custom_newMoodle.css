@@ -1954,4 +1954,10 @@ a.badge-moodle:hover {
 .tertiary-navigation .btn > div {
   white-space: normal !important;
 }
+/*Correctif bdd 100%*/
+@media (min-width:768px) {
+body.mediumwidth #page.drawers .footer-popover {
+  max-width:100% !important;
+ }
+}
 
