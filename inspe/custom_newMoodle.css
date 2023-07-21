@@ -1583,10 +1583,9 @@ Fixed-navbar - Moodle Academy-like
 
 /* Formatting for fadPe category */
 #fadPe .card-deck .card .card-img-top {
-	/*height: 100px !important;
+	height: 100px !important;
 	max-width: 350px !important;
-	padding-top: 0% !important;*/
-	background-size: contain !important;
+	padding-top: 0% !important;
 }
 
 #fadPe .card-deck {
