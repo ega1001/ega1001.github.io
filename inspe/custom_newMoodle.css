@@ -1574,6 +1574,17 @@ Fixed-navbar - Moodle Academy-like
 .navbar-light .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+/*============================================*
+Images for categories
+*=============================================*/
+/*==Filter codes category==*/
+.fc-categorycards .card-img-overlay {
+  min-height: 93px !important;
+  border-radius: 0px !important;
+  text-transform: uppercase !important;
+  font-size: large !important;
+  text-shadow: none !important;
+}
 
 /* Course image size in course category */
 .coursebox .content .courseimage img {
@@ -1592,7 +1603,7 @@ Fixed-navbar - Moodle Academy-like
 	justify-content: center !important;
 }
 
-/* Bootstrap table revision */
+/* ======Bootstrap table revision====== */
 
 .table-striped tbody tr:nth-of-type(2n + 2) {
 	/* background-color: rgba(0,0,0,.05); */
