@@ -1582,7 +1582,7 @@ Images for categories
   min-height: 93px !important;
   border-radius: 0px !important;
   text-transform: uppercase !important;
-  font-size: large !important;
+  /*font-size: large !important;*/
   text-shadow: none !important;
 }
 
