@@ -1533,7 +1533,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	content: "";
 	width: 14px;
 	height: 2px;
-	background: #333;
+	background: #fff;
 	position: absolute;
 	top: calc(50% - 1px);
 	right: 1rem;
@@ -1546,7 +1546,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	content: "";
 	width: 2px;
 	height: 14px;
-	background: #333;
+	background: #fff;
 	position: absolute;
 	top: calc(50% - 7px);
 	right: calc(1rem + 6px);
