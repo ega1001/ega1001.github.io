@@ -1586,6 +1586,10 @@ Images for categories
   text-shadow: none !important;
 }
 
+.fc-categorycards {
+  justify-content: center;
+}
+
 /* Course image size in course category */
 .coursebox .content .courseimage img {
 	max-width: 250px;
