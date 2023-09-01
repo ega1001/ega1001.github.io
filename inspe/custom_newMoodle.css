@@ -214,7 +214,7 @@ a:hover.ens {
 	background-color: #6c757d;
 	padding: 1rem ;
 	margin-bottom: 0.5rem ;
-	flex-grow: 1 ;
+	flex-grow: 1 !important;
 	/*border-top-right-radius: .25rem;*/
 	border-bottom-right-radius: 0.25rem;
 	flex: 0 1 80%;
