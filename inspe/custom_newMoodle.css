@@ -2171,4 +2171,14 @@ a.badge-moodle:hover {
  }
 
 }
+/*-----------------------------------
+Navigation tabs background-color with bg-secondary (dark grey)
+-------------------------------------*/
+.card-header.bg-secondary .nav-tabs .nav-link {
+  background-color: #d2d2d282;
+  border-right: 1px solid #ddd;
+}
+.card-header.bg-secondary .nav-tabs .nav-link.active {
+  background-color: white !important;
+}
 
