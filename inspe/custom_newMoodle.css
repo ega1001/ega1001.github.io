@@ -1720,13 +1720,16 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 * CUSTOM UTIL CLASSES
 * ==========================================
 */
-
+/* --------------------------------------
+Green rotating cross
+-------------------------------------------
+*/
 /* Horizontal line */
 .collapsible-link::before {
 	content: "";
 	width: 14px;
 	height: 2px;
-	background: #fff;
+	background: #0C8714;
 	position: absolute;
 	top: calc(50% - 1px);
 	right: 1rem;
@@ -1739,7 +1742,65 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	content: "";
 	width: 2px;
 	height: 14px;
+	background: #0C8714;
+	position: absolute;
+	top: calc(50% - 7px);
+	right: calc(1rem + 6px);
+	display: block;
+	transition: all 0.3s;
+}
+/* --------------------------------------
+Light rotating cross
+-------------------------------------------
+*/
+/* Horizontal line */
+.collapsible-link-light::before {
+	content: "";
+	width: 14px;
+	height: 2px;
 	background: #fff;
+	position: absolute;
+	top: calc(50% - 1px);
+	right: 1rem;
+	display: block;
+	transition: all 0.3s;
+}
+
+/* Vertical line */
+.collapsible-link-light::after {
+	content: "";
+	width: 2px;
+	height: 14px;
+	background: #fff;
+	position: absolute;
+	top: calc(50% - 7px);
+	right: calc(1rem + 6px);
+	display: block;
+	transition: all 0.3s;
+}
+/* --------------------------------------
+Dark rotating cross
+-------------------------------------------
+*/
+/* Horizontal line */
+.collapsible-link-dark::before {
+	content: "";
+	width: 14px;
+	height: 2px;
+	background: #000;
+	position: absolute;
+	top: calc(50% - 1px);
+	right: 1rem;
+	display: block;
+	transition: all 0.3s;
+}
+
+/* Vertical line */
+.collapsible-link-dark::after {
+	content: "";
+	width: 2px;
+	height: 14px;
+	background: #000;
 	position: absolute;
 	top: calc(50% - 7px);
 	right: calc(1rem + 6px);
