@@ -2249,4 +2249,9 @@ Ombre autour des avatars vides
 .userinitials {
  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
 }
-
+/*--------------------------------------
+Form Input Width - id custom-form
+--------------------------------------*/
+#custom-form .basefieldinput {
+  width: 100% !important;
+}
