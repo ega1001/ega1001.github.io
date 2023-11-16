@@ -960,16 +960,10 @@ code {
 /*Bloc de droite*/
 section.block h5 {
 	display: flex !important;
-	padding: 0.5rem 0.6rem 0rem 0.6rem !important;
-	padding-top: 0.5rem;
-	padding-right: 0.6rem;
-	padding-bottom: 0rem;
-	padding-left: 0.6rem;
-	border-radius: 5px 5px 0 0 !important;
-	font-family: "Titillium Web", sans-serif !important;
-	font-weight: 400 !important;
-	font-size: 1.09rem !important;
-	margin-bottom: 0.5rem !important;
+	/*padding: 0.5rem 0.6rem 0rem 0.6rem !important;*/
+	padding: .75rem 1.25rem;  
+	/*margin-bottom: 0.5rem !important;*/
+	margin-bottom: 0;
 	-webkit-font-smoothing: antialiased !important;
 	-moz-osx-font-smoothing: grayscale !important;
 	text-rendering: optimizeLegibility;
