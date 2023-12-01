@@ -1137,85 +1137,85 @@ section.block div.card-body {
 }
 
 .competences::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f085";
 }
 
 .ects::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f19d";
 }
 
 .modules::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f0e8";
 }
 
 /*.ue::before {
-    font-family: "Font Awesome 6 Pro";
+    font-family: "Font Awesome 6 Free";
     font-weight: 600;
     content: "\f126";
 }*/
 
 .objectifs::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f140";
 }
 
 .chatFad::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f086";
 }
 
 .forumFad::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f0c0";
 }
 
 .tutorFad::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f4c4";
 }
 
 .tiret::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f068";
 }
 
 .lienExt::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f0c1";
 }
 
 .menu-icon::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f0c9";
 }
 
 .download::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 900;
 	content: "\f019";
 }
 
 .important::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 900;
 	content: "\f071";
 }
 
 .back::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f0a8";
 }
@@ -1233,7 +1233,7 @@ a[data-toggle="collapse"].collapsed i.fas:before {
 /*ajout de l'icône consigne automatiquement Moodle v4*/
 /*
 .activity-header #intro .no-overflow::before {
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6 Free";
   font-weight: 600;
   content: "\f51c";
   font-size: 2.8rem;
@@ -1468,7 +1468,7 @@ details.style7 .content { background: #DDD; }
 
 /*
 .sectionname::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f61f";
 	margin-right: 1%;
@@ -1489,7 +1489,7 @@ details.style7 .content { background: #DDD; }
 
 /*Ajout de fleches fontawesome navigation section*/
 /*.course-content .single-section .section-navigation .prevsection::before {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f104";
 	margin-right: 10px;
@@ -1498,7 +1498,7 @@ details.style7 .content { background: #DDD; }
 }
 
 .course-content .single-section .section-navigation .nextsection::after {
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f105";
 	margin-left: 10px;
@@ -1676,7 +1676,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f015";
 	font-size: 16px !important;
@@ -2060,8 +2060,8 @@ Images for categories
 /* Add a custom icon for the questionnaire */
 .activitytitle.media.modtype_questionnaire.position-relative.align-self-start
 	.activityiconcontainer::before {
-	/* Use Font Awesome 6 Pro for the custom icon */
-	font-family: "Font Awesome 6 Pro";
+	/* Use Font Awesome 6 Free for the custom icon */
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f682";
 	font-size: xxx-large !important;
@@ -2085,7 +2085,7 @@ Images for categories
 
 .faq-content ul li:before {
 	/* Use Font Awesome icon as a bullet point */
-	font-family: "Font Awesome 6 Pro";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 900;
 	content: "\f068";
 	margin-right: 1rem;
