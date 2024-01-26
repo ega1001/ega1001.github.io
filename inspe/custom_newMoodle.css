@@ -1715,20 +1715,24 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 * ==========================================
 */
 /* --------------------------------------
-Green rotating cross
+Card rotating cross
 -------------------------------------------
 */
-/* Horizontal line */
+
+.card {
+	.bg-light {
+		/* Horizontal line */
 .collapsible-link::before {
 	content: "";
 	width: 14px;
 	height: 2px;
-	background: #0C8714;
+	background: var(--dark);
 	position: absolute;
 	top: calc(50% - 1px);
 	right: 1rem;
 	display: block;
 	transition: all 0.3s;
+	/* color: white !important; */
 }
 
 /* Vertical line */
@@ -1736,12 +1740,39 @@ Green rotating cross
 	content: "";
 	width: 2px;
 	height: 14px;
-	background: #0C8714;
+	background: var(--dark);
 	position: absolute;
 	top: calc(50% - 7px);
 	right: calc(1rem + 6px);
 	display: block;
 	transition: all 0.3s;
+}
+}
+	/* Horizontal line */
+	.collapsible-link::before {
+		content: "";
+	width: 14px;
+	height: 2px;
+		background:#fff;
+		position: absolute;
+	top: calc(50% - 1px);
+	right: 1rem;
+	display: block;
+	transition: all 0.3s;
+	}
+/* Vertical line */
+.collapsible-link::after {
+	content: "";
+	width: 2px;
+	height: 14px;
+	background:#fff;
+	position: absolute;
+	top: calc(50% - 7px);
+	right: calc(1rem + 6px);
+	display: block;
+	transition: all 0.3s;
+	}
+	
 }
 /* --------------------------------------
 Light rotating cross
