@@ -25,7 +25,7 @@ loadjscssfile("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@
 loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css", "css")
 loadjscssfile("https://ega1001.github.io/inspe/github.min.css", "css")
 //loadjscssfile("https://ega1001.github.io/inspe/test-newNav.css", "css")//
-//loadjscssfile("https://ega1001.github.io/inspe/backtotop.css", "css") ////dynamically load and add this .css file
+loadjscssfile("https://ega1001.github.io/inspe/backtotop.css", "css") ////dynamically load and add this .css file
 loadjscssfile("https://ega1001.github.io/inspe/accordionex.css", "css") ////dynamically load and add this .css file
 
 
