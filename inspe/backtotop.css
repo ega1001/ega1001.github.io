@@ -44,6 +44,13 @@
 	}
 }
 
+@media (min-width:576px) {
+ body.theme_boost-union-footerbuttondesktop.jsenabled.hasstickyfooter #back-to-top {
+    bottom:calc(5rem + 60px) !important;
+  }
+}
+
+
 /* Grey and white hover button - see classes for look and feel */
 
 #back-to-top:hover {
