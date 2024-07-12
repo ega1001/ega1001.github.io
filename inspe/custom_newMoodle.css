@@ -958,7 +958,7 @@ code {
 }
 
 /*Bloc de droite*/
-section.block h5 {
+#block-region-side-pre .h5 {
 	display: flex !important;
 	/*padding: 0.5rem 0.6rem 0rem 0.6rem !important;*/
 	padding: .75rem 1.25rem;  
