@@ -1667,11 +1667,16 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 }
 
 /* Home grid: replace text with home icon */
-.stateready .text-right {
+.stateready p.text-right {
 	font-size: 0px !important;
 }
 
-.stateready p.text-right::before {
+.stateready p.text-right a, 
+.stateready p.text-right a:hover::before{
+	text-decoration: none !important;
+}
+
+.stateready p.text-right a::before {
 	margin-right: 0.5rem;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
@@ -1680,10 +1685,6 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	font-weight: 600;
 	content: "\f015";
 	font-size: 16px !important;
-}
-
-.stateready .text-right:hover::before {
-	text-decoration: none !important;
 }
 
 /* Index */
