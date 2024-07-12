@@ -1719,8 +1719,7 @@ Card rotating cross
 -------------------------------------------
 */
 
-.card {
-	.bg-light {
+.card {	
 		/* Horizontal line */
 .collapsible-link::before {
 	content: "";
@@ -1747,7 +1746,7 @@ Card rotating cross
 	display: block;
 	transition: all 0.3s;
 }
-}
+.bg-dark {
 	/* Horizontal line */
 	.collapsible-link::before {
 		content: "";
@@ -1772,7 +1771,7 @@ Card rotating cross
 	display: block;
 	transition: all 0.3s;
 	}
-	
+}	
 }
 /* --------------------------------------
 Light rotating cross
