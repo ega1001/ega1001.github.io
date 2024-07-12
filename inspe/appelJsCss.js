@@ -13,25 +13,25 @@ function loadjscssfile(filename, filetype) {
     document.head.appendChild(element);
   }
 }
+//dynamically load and add this .css file
 //loadjscssfile("https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.css", "css")
-//loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css", "css")//dynamically load and add this .css file
-loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodle.css", "css") ////dynamically load and add this .css file
-loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodleGrey.css", "css") ////dynamically load and add this .css file
-loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/fontawesome.css", "css") ///
-loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/brands.css", "css") ///
-loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/regular.css", "css") ///
-loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/solid.css", "css") ///
-//loadjscssfile("https://www.univ-amu.fr/themes/custom/amu_zurb/fontawesome/css/all.min.css?s4vlzw", "css") ///
+//loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css", "css")
+loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodle.css", "css") 
+loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodleGrey.css", "css") 
+loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/fontawesome.css", "css") 
+loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/brands.css", "css") 
+loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/regular.css", "css")
+loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/solid.css", "css") 
+//loadjscssfile("https://www.univ-amu.fr/themes/custom/amu_zurb/fontawesome/css/all.min.css?s4vlzw", "css")
 loadjscssfile("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap", "css")
 loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css", "css")
 loadjscssfile("https://ega1001.github.io/inspe/github.min.css", "css")
-loadjscssfile("https://ega1001.github.io/inspe/backtotop.css", "css") ////dynamically load and add this .css file
-/*loadjscssfile("https://ega1001.github.io/inspe/accordionex.css", "css") ////dynamically load and add this .css file*/
+loadjscssfile("https://ega1001.github.io/inspe/backtotop.css", "css")
+/*loadjscssfile("https://ega1001.github.io/inspe/accordionex.css", "css") 
 
-
+//dynamically load and add this .js file
 loadjscssfile("https://ega1001.github.io/inspe/uneditableIcon.js", "js")
-
-loadjscssfile("https://ega1001.github.io/inspe/deleteClassoptimized.js", "js") //dynamically load and add this .js file
-loadjscssfile("https://ega1001.github.io/inspe/accordionDetailssummary.js", "js") //dynamically load and add this .js file
-//loadjscssfile("https://ega1001.github.io/inspe/BackToTop/BackToTop.js", "js") //dynamically load and add this .js file
-//loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js", "js") //dynamically load "javascript.php" as a JavaScript file
+loadjscssfile("https://ega1001.github.io/inspe/deleteClassoptimized.js", "js")
+loadjscssfile("https://ega1001.github.io/inspe/accordionDetailssummary.js", "js")
+//loadjscssfile("https://ega1001.github.io/inspe/BackToTop/BackToTop.js", "js")
+//loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js", "js")
