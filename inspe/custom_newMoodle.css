@@ -1031,19 +1031,6 @@ section.block div.card-body {
 	display: none !important;
 }
 
-/**Modif titre sections**/
-
-.single-section .course-section .course-section-header.d-flex {
-	justify-content: center !important;
-	border-top-right-radius: 0.25rem !important;
-	border-bottom-right-radius: 0.25rem !important;
-	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-}
-
-.course-section-header .sectionname a {
-	color: #495057 !important;
-}
-
 /* Design Filter codes*/
 .blockCourse .card-deck .card {
 	min-width: 250px !important;
