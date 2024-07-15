@@ -1027,8 +1027,16 @@ section.block div.card-body {
 
 /** Suppression titre de section 0 (nouvelle version grid format : 15/09/2022**/
 
-#section-0 .course-section-header .sectionname {
+.grid #section-0 .course-section-header .sectionname {
 	display: none !important;
+}
+
+/**Delete border and goto arrow section 0 version Moodle 4.4.1 : 15/07/2024
+.grid #section-0 .section-item {
+	border: none !important;
+}
+.grid .section_goto.bulk-hidden.ml-auto {
+	display: none;
 }
 
 /* Design Filter codes*/
