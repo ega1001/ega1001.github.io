@@ -1031,7 +1031,7 @@ section.block div.card-body {
 	display: none !important;
 }
 
-/**Delete border and goto arrow section 0 version Moodle 4.4.1 : 15/07/2024
+/**Delete border and goto arrow section 0 version Moodle 4.4.1 : 15/07/2024**/
 .grid #section-0 .section-item {
 	border: none !important;
 }
