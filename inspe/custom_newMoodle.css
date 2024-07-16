@@ -1853,9 +1853,9 @@ Images for categories
 *=============================================*/
 /*==Filter codes category==*/
 .fc-categorycards .card-img-overlay {
-  min-height: 93px !important;
+  min-height: 95% !important;
   border-radius: 0px !important;
-  text-transform: uppercase !important;
+  /*text-transform: uppercase !important;*/
   /*font-size: large !important;*/
   text-shadow: none !important;
 }
