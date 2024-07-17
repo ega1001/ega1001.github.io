@@ -1288,53 +1288,47 @@ a[data-toggle="collapse"].collapsed i.fas:before {
 	font-weight: 200 !important;
 	margin-bottom: 2%;
 }
-/*.sectionname::before {
-	font-family: "Font Awesome 6 Free";
-	font-weight: 600;
-	content: "\f61f";
-	margin-right: 1%;
-	display: inline-block;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	font-size: xx-large;
-}*/
-/*navigation entre section*/
-/*Suppression des fleches moches
-.larrow {
+/*Ajout fleche fontawesome pour la navigation entre sections, format section personnalisable*/
+#page-course-view-section-topics {
+  .larrow {
 	display: none !important;
 }
 
 .rarrow {
 	display: none !important;
-}*/
-
-/*Ajout de fleches fontawesome navigation section*/
-/*.course-content .single-section .section-navigation .prevsection::before {
+}
+  .course-content .single-section .section-navigation {
+    
+    .nextsection::after {
 	font-family: "Font Awesome 6 Free";
-	font-weight: 600;
-	content: "\f104";
+	font-weight: 400;
+	content: "\f35a";
 	margin-right: 10px;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+      margin-left: 0.25rem !important;
 }
-
-.course-content .single-section .section-navigation .nextsection::after {
+    .prevsection::before {
 	font-family: "Font Awesome 6 Free";
-	font-weight: 600;
-	content: "\f105";
-	margin-left: 10px;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-}*/
-
-/*police + petite pour la navigation
-.nextsection {
-	font-size: 11px !important;
+	font-weight: 400;
+	content: "\f359";
+	margin-right: 10px;
+	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+      margin-right: 0.25rem !important;
 }
-
-.prevsection {
-	font-size: 11px !important;
-}*/
+  }
+}
 
 @media (min-width: 576px) {
 	.section .label .mod-indent-outer {
