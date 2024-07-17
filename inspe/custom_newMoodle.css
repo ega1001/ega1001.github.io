@@ -702,6 +702,17 @@ hr.tiret-dark {
 	background-color: #f8f9fa !important;
 }
 
+.comp-btn {
+  border-left: 2px solid #6c757d !important;
+  color: #7f858d !important;
+  border-color: #dee7f5 !important;
+  border-left-color: #6c757d !important;
+}
+
+.comp-btn:hover {
+  background-color: #dae0e5 !important;
+}
+
 /*Texte*/
 
 .text-ombre {
