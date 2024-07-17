@@ -1288,7 +1288,7 @@ a[data-toggle="collapse"].collapsed i.fas:before {
 	font-weight: 200 !important;
 	margin-bottom: 2%;
 }
-.sectionname::before {
+/*.sectionname::before {
 	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	content: "\f61f";
@@ -1299,14 +1299,14 @@ a[data-toggle="collapse"].collapsed i.fas:before {
 	font-size: xx-large;
 }*/
 /*navigation entre section*/
-/*Suppression des fleches moches*/
+/*Suppression des fleches moches
 .larrow {
 	display: none !important;
 }
 
 .rarrow {
 	display: none !important;
-}
+}*/
 
 /*Ajout de fleches fontawesome navigation section*/
 /*.course-content .single-section .section-navigation .prevsection::before {
@@ -1327,14 +1327,14 @@ a[data-toggle="collapse"].collapsed i.fas:before {
 	-webkit-font-smoothing: antialiased;
 }*/
 
-/*police + petite pour la navigation*/
+/*police + petite pour la navigation
 .nextsection {
 	font-size: 11px !important;
 }
 
 .prevsection {
 	font-size: 11px !important;
-}
+}*/
 
 @media (min-width: 576px) {
 	.section .label .mod-indent-outer {
