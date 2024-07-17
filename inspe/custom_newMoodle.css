@@ -1288,8 +1288,8 @@ a[data-toggle="collapse"].collapsed i.fas:before {
 	font-weight: 200 !important;
 	margin-bottom: 2%;
 }
-/*Ajout fleche fontawesome pour la navigation entre sections, format section personnalisable*/
-#page-course-view-section-topics {
+/*Ajout fleche fontawesome pour la navigation entre sections, format section personnalisable et sections réduites*/
+#page-course-view-section-topics, , #page-course-view-section-topcoll  {
   .larrow {
 	display: none !important;
 }
