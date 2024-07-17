@@ -19,7 +19,7 @@ function loadjscssfile(filename, filetype) {
 
 // Dynamically load and add CSS files
 loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodle.css", "css");
-loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodleGrey.css", "css");
+//loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodleGrey.css", "css");
 loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/fontawesome.css", "css");
 loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/brands.css", "css");
 loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/regular.css", "css");
@@ -34,6 +34,6 @@ loadjscssfile("https://ega1001.github.io/inspe/backtotop.css", "css");
 // Dynamically load and add JS files
 loadjscssfile("https://ega1001.github.io/inspe/uneditableIcon.js", "js");
 loadjscssfile("https://ega1001.github.io/inspe/deleteClassoptimized.js", "js");
-loadjscssfile("https://ega1001.github.io/inspe/accordionDetailssummary.js", "js");
+//loadjscssfile("https://ega1001.github.io/inspe/accordionDetailssummary.js", "js");
 // loadjscssfile("https://ega1001.github.io/inspe/BackToTop/BackToTop.js", "js");
 // loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js", "js");
