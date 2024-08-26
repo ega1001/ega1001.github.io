@@ -2115,3 +2115,21 @@ Form Input Width - id custom-form
 #custom-form .basefieldinput {
   width: 100% !important;
 }
+
+/*---------------------------------------
+hover link course category
+--------------------------------------*/
+#page-course-index-category {
+	a:hover{
+	filter: brightness(60%);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+	}
+	a{
+	filter: brightness(100%);
+	-moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+	}
+}
