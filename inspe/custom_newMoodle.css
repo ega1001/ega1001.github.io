@@ -2117,16 +2117,16 @@ Form Input Width - id custom-form
 }
 
 /*---------------------------------------
-hover link course category
+hover card-img-top link (filter code) course category
 --------------------------------------*/
-#page-course-index-category {
-	a:hover{
+#page-course-index-category  {
+	a:hover .card-img-top {
 	filter: brightness(60%);
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     transition: all 1s;
 	}
-	a{
+	a .card-img-top{
 	filter: brightness(100%);
 	-moz-transition: all 1s;
     -webkit-transition: all 1s;
