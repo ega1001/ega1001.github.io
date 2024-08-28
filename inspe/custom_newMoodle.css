@@ -892,6 +892,7 @@ code {
 .bouton-titre-home:hover {
 	box-shadow: 0 4px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	cursor: pointer;
 }
 
 .bouton-titre-bleu {
@@ -907,10 +908,6 @@ code {
 	border-color: #eab819;
 	color: #eab819;
 }
-
-/*.bouton-titre:hover {
-    box-shadow: 0 4px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
-}*/
 
 .bouton-jaune {
 	position: relative;
@@ -940,6 +937,7 @@ code {
 .bouton-jaune:hover {
 	box-shadow: 0 4px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	cursor: pointer;
 }
 
 .bouton-bleu {
@@ -969,6 +967,8 @@ code {
 
 .bouton-bleu:hover {
 	box-shadow: 0 4px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+	cursor: pointer;
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .bouton-rose {
@@ -997,6 +997,8 @@ code {
 
 .bouton-rose:hover {
 	box-shadow: 0 4px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+	cursor: pointer;
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .bouton-vert {
@@ -1025,6 +1027,8 @@ code {
 
 .bouton-vert:hover {
 	box-shadow: 0 4px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+	cursor: pointer;
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 /*Bloc de droite*/
