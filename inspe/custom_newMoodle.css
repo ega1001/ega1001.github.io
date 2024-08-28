@@ -1544,6 +1544,11 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	font-family: "Titillium Web", sans-serif !important;
 }
 
+.index-subtitle {
+    font-weight: 700;
+    color: var(--secondary);
+}
+
 /* fAD PE FAQ course block */
 
 .block_fcl_content {
