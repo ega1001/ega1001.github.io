@@ -1549,6 +1549,10 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
     color: var(--secondary);
 }
 
+.index-subtitle:hover {
+    color: #ffffff;
+}
+
 /* fAD PE FAQ course block */
 
 .block_fcl_content {
