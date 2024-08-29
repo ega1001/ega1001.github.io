@@ -1930,6 +1930,39 @@ Images for categories
 
 /* --------- glossary and video-js mm24 style ------------ */
 
+.glossarycategoryheader h3 {
+  padding: .5em;
+}
+
+.glossarycategoryheader {
+  background-color: color-mix(in srgb,var(--primary),#0000 95%);  
+  border-radius: 5px;
+  margin-bottom: 1em !important;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.glossarypost label {
+  margin-right: .5rem;
+}
+
+.concept h4 {
+  font-size: 2rem !important;
+}
+
+.concept h4::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: var(--secondary);
+  border-radius: 25%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
 .card-contrib{
 	.speaker {
   a {
@@ -1981,39 +2014,6 @@ Images for categories
   border-radius: 5px;
 }
 
-.glossarycategoryheader h3 {
-  padding: .5em;
-}
-
-.glossarycategoryheader {
-  background-color: color-mix(in srgb,var(--primary),#0000 95%);  
-  border-radius: 5px;
-  margin-bottom: 1em !important;
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.glossarypost label {
-  margin-right: .5rem;
-}
-
-.concept h4 {
-  font-size: 2rem !important;
-}
-
-.concept h4::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  background: var(--secondary);
-  border-radius: 25%;
-  margin-top: 15px;
-  margin-bottom: 5px;
-}
-
 .text-long {
     width: 100%;
     height: 200px;
@@ -2027,11 +2027,10 @@ Images for categories
 }
 	
 .video-js {
-
   color: var(--primary) !important;
   background-color: transparent !important;
   font-size: .5em !important;
-
+	
   .vjs-time-tooltip,
   .vjs-volume-tooltip {
     display: none !important;
