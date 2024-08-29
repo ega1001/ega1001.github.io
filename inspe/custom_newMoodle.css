@@ -1880,12 +1880,13 @@ Images for categories
 }
 
 /* Styling for Glossary */
-/* --------------------- */
+/* --------- General ------------ */
 
 /* Styling for concept headings and glossary category headers */
 .concept h4,
 .glossarycategoryheader h3 {
-	color: #0c8714 !important;
+	color: var(--dark) !important;
+	padding: .5em;
 }
 
 /* Styling for the time element */
@@ -1925,6 +1926,101 @@ Images for categories
 #page-mod-glossary-showentry #page-content {
 	min-width: 100% !important;
 	/* Set the minimum width to 100% */
+}
+
+/* --------- mm24 style ------------ */
+
+#page-wrapper .speaker {
+  a {
+    color: var(--secondary) !important;
+  }
+
+  &:hover {
+    a {
+      color: var(--secondary) !important;
+    }
+  }
+}
+
+.confirmation-message {
+  .row.no-gutters {
+    flex-direction: column !important;
+
+    .col-md-2 {
+      max-width: 70% !important;
+    }
+  }
+}
+
+.block_glossary_random {
+
+  .col-lg-5.col-sm-12,
+  .col-lg-8.col-sm-12 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+.cite.text-long {
+  height: auto !important;
+  overflow-y: hidden !important;
+  background-color: var(--light) !important;
+}
+
+
+.glossaryexplain {
+  display: none;
+}
+
+.table-primary,
+.table-primary>th,
+.table-primary>td {
+  border-radius: 5px;
+}
+
+.glossarycategoryheader h3 {
+  padding: .5em;
+}
+
+.glossarycategoryheader {
+  background-color: color-mix(in srgb,var(--primary),#0000 85%);  
+  border-radius: 5px;
+  margin-bottom: 1em !important;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.glossarypost label {
+  margin-right: .5rem;
+}
+
+.concept h4 {
+  font-size: 2rem !important;
+}
+
+.concept h4::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: var(--secondary);
+  border-radius: 25%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#page-wrapper .card-contrib .text-long {
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    scrollbar-color: var(--secondary) var(--light);
+    scrollbar-width: thin;
+    border: 1px solid #f5f5f5;
+    border-radius: 0.25rem!important;
+    padding: 1rem;
+    box-shadow: inset -5px -5px 9px rgba(255,255,255,.45),inset 5px 5px 9px rgba(94,104,121,.3)
 }
 
 * Styling for Questionnaire */
