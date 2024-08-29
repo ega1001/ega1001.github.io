@@ -1928,9 +1928,10 @@ Images for categories
 	/* Set the minimum width to 100% */
 }
 
-/* --------- mm24 style ------------ */
+/* --------- glossary and video-js mm24 style ------------ */
 
-#page-wrapper .speaker {
+.card-contrib{
+	.speaker {
   a {
     color: var(--secondary) !important;
   }
@@ -1941,7 +1942,9 @@ Images for categories
     }
   }
 }
-
+	.row.no-gutters {
+  gap: 5px;
+}
 .confirmation-message {
   .row.no-gutters {
     flex-direction: column !important;
@@ -2011,7 +2014,7 @@ Images for categories
   margin-bottom: 5px;
 }
 
-#page-wrapper .card-contrib .text-long {
+.text-long {
     width: 100%;
     height: 200px;
     overflow-y: scroll;
@@ -2021,6 +2024,33 @@ Images for categories
     border-radius: 0.25rem!important;
     padding: 1rem;
     box-shadow: inset -5px -5px 9px rgba(255,255,255,.45),inset 5px 5px 9px rgba(94,104,121,.3)
+}
+	
+.video-js {
+
+  color: var(--primary) !important;
+  background-color: transparent !important;
+  font-size: .5em !important;
+
+  .vjs-time-tooltip,
+  .vjs-volume-tooltip {
+    display: none !important;
+  }
+}
+
+.video-js .vjs-control-bar {
+
+  background-color: color-mix(in srgb,var(--secondary),#0000 90%); !important;
+  border-radius: 5px !important;
+}
+
+.vjs-menu-button-popup .vjs-menu .vjs-menu-content {
+  display: none !important;
+}
+
+.editor_atto_wrap audio {
+  max-width: 150px !important;
+}
 }
 
 * Styling for Questionnaire */
