@@ -2177,6 +2177,10 @@ a.badge-moodle:hover {
 	background-color: #d39e00 !important;
 }
 
+.badge.bg-secondary {
+	background-color: var(--secondary) !important;
+}
+
 /* Table of contents */
 .tableOfContentsFixed {
 	/* Set the style for the fixed table of contents */
