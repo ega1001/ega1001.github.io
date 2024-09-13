@@ -2256,7 +2256,7 @@ Navigation tabs background-color with bg-secondary (dark grey)
 /*------------------------------------
 Back to grey for bg-secondary
 ------------------------------------*/
-bg-secondary {
+.bg-secondary {
 	background-color: var(--gray) !important;
 }
 
