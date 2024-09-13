@@ -2253,6 +2253,12 @@ Navigation tabs background-color with bg-secondary (dark grey)
 .card-header.bg-secondary .nav-tabs .nav-link.active {
   background-color: white !important;
 }
+/*------------------------------------
+Back to grey for bg-secondary
+------------------------------------*/
+bg-secondary {
+	background-color: var(--gray) !important;
+}
 
 /*-------------------------------------
 Ombre autour des avatars vides
