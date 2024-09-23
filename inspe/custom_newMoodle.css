@@ -1492,7 +1492,8 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	font-family: "Titillium Web", sans-serif !important;
 	-webkit-font-smoothing: antialiased !important;
 	-moz-osx-font-smoothing: grayscale !important;
-	font-size: smaller !important;
+	/*font-size: smaller !important;*/
+	
 	text-align: center !important;
 	background-color: transparent !important;
 	color: #343a40 !important;
@@ -1506,6 +1507,10 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	margin-left: 0 !important;
 	background-color: #fbfbfb !important;
 	white-space: inherit !important;
+	*/23/09/2024 upgrade : class h4 text-truncate*/
+	h3.h4.text-truncate {
+    font-size: 1em;
+}
 }
 
 .format-grid .thegrid .grid-image img {
