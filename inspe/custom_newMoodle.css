@@ -1507,8 +1507,8 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	margin-left: 0 !important;
 	background-color: #fbfbfb !important;
 	white-space: inherit !important;
-	*/23/09/2024 upgrade : class h4 text-truncate*/
-	h3.h4.text-truncate {
+	
+	.h4.text-truncate {
     font-size: 1em;
 }
 }
