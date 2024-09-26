@@ -2298,4 +2298,8 @@ hover card-img-top link (filter code) course category
     -webkit-transition: all 1s;
     transition: all 1s;
 	}
+	.tertiary-navigation{
+    padding:2em;
+    background-color: #f8f9fa;
+}
 }
