@@ -1726,8 +1726,8 @@ Images for categories
 .fc-categorycards .card-img-overlay {
   min-height: 95% !important;
   border-radius: 0px !important;
-  /*text-transform: uppercase !important;*/
-  /*font-size: large !important;*/
+  font-weight: 400;
+font-family: 'Titillium Web', sans-serif;
   text-shadow: none !important;
 }
 
