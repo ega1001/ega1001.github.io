@@ -2286,13 +2286,13 @@ Form Input Width - id custom-form
 hover card-img-top link (filter code) course category
 --------------------------------------*/
 #page-course-index-category  {
-	a:hover .card-img-top {
+	a:hover .card-img-top, a:hover .card-img {
 	filter: brightness(60%);
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     transition: all 1s;
 	}
-	a .card-img-top{
+	a .card-img-top, a .card-img{
 	filter: brightness(100%);
 	-moz-transition: all 1s;
     -webkit-transition: all 1s;
