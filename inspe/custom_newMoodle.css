@@ -761,40 +761,38 @@ hr.tiret-dark {
 
 /*Bouton copie vers presse-papier*/
 
-.btn-clipboard {
-	position: relative !important;
-	display: inline-block !important;
-	padding: 6px 12px !important;
-	font-size: 13px !important;
-	font-weight: 700 !important;
-	line-height: 20px !important;
-	color: #333 !important;
-	white-space: nowrap !important;
-	vertical-align: middle !important;
-	cursor: pointer !important;
-	background-color: #eee !important;
-	background-image: linear-gradient(#fcfcfc, #eee) !important;
-	border: 1px solid #d5d5d5 !important;
-	border-radius: 3px !important;
-	-webkit-user-select: none !important;
-	-moz-user-select: none !important;
-	-ms-user-select: none !important;
-	user-select: none !important;
-	/*-webkit-appearance: none !important;*/
+.btn-clipboard {	
+	float: right !important;
+	padding: .25rem .5rem;
+    	font-size: .8203125rem;
+    	line-height: 1.5;
+	color: #343a40;
+    	border-color: #343a40;
+	display: inline-block;
+    	font-weight: 400;
+    	color: #1d2125;
+    	text-align: center;
+    	vertical-align: middle;
+    	user-select: none;
+    	background-color: transparent;
+    	border: 1px solid transparent;
+    	padding: .375rem .75rem;
+    	font-size: .9375rem;
+    	line-height: 1.5;
+    	border-radius: .5rem;
+    	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	    margin: 0.25rem !important;	
 }
 
 .btn-clipboard:hover {
-	color: #212529 !important;
-	text-decoration: none !important;
-	text-decoration: none !important;
-	background-color: #ddd !important;
-	background-image: linear-gradient(#eee, #ddd) !important;
-	border-color: #ccc !important;
+	color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
 }
 
 .btn-clipboard:focus {
-	-webkit-box-shadow: 0 0 0 0rem rgb(15 111 197 / 0%) !important;
-	box-shadow: 0 0 0 0rem rgb(15 111 197 / 0%) !important;
+	outline: .2rem solid #000;
+    box-shadow: inset 0 0 0 2px #343a40;
 }
 
 /* code html*/
