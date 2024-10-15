@@ -2303,3 +2303,15 @@ hover card-img-top link (filter code) course category
     background-color: #f8f9fa;
 }
 }
+
+/*----------------------------------------------
+Inspé button - html block
+-----------------------------------------------*/
+.logo_inspe:hover {
+	filter: brightness(70%);
+	transition: all 1s;
+}
+
+.logo_inspe {
+    transition: 1s all;
+}
