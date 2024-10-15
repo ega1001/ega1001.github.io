@@ -775,7 +775,7 @@ hr.tiret-dark {
     	vertical-align: middle;
     	user-select: none;
     	background-color: transparent;
-    	border: 1px solid transparent;
+    	border: 1px solid #d0d0d0;
     	padding: .375rem .75rem;
     	font-size: .9375rem;
     	line-height: 1.5;
