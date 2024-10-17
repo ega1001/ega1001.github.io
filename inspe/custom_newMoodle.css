@@ -787,12 +787,12 @@ hr.tiret-dark {
 .btn-clipboard:hover {
 	color: #333;
     background-color: #ddd;
-    border-color: #ccc;
+    border-color: #ddd;
 	transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .btn-clipboard:focus {
-	outline: .2rem solid #ccc;
+	outline: .2rem solid #fbfbfb;
     box-shadow: inset 0 0 0 2px #343a40;
 }
 
