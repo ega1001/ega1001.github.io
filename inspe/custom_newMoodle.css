@@ -2313,3 +2313,14 @@ Inspé button - html block
 .logo_inspe {
     transition: 1s all;
 }
+/* highlight mm24 style*/
+.line-left {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: var(--secondary);
+    border-radius: 25%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
