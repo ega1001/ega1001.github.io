@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = (event) => {
 				const searchInput = document.getElementById("searchInput");
 				const competenceFilter = document.getElementById("competenceFilter");
 
