@@ -2043,7 +2043,7 @@ font-family: 'Titillium Web', sans-serif;
 
 .video-js .vjs-control-bar {
 
-  background-color: color-mix(in srgb,var(--secondary),#0000 90%); !important;
+  background-color: color-mix(in srgb,var(--secondary),#0000 90%) !important;
   border-radius: 5px !important;
 }
 
@@ -2053,7 +2053,6 @@ font-family: 'Titillium Web', sans-serif;
 
 .editor_atto_wrap audio {
   max-width: 150px !important;
-}
 }
 
 * Styling for Questionnaire */
