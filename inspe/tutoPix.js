@@ -76,6 +76,5 @@ window.onload = (event) => {
 				}
 
 				searchInput.addEventListener("input", filterTutorials);
-				competenceFilter.addEventListener("change", filterTutorials);
-				filterTutorials();
+				competenceFilter.addEventListener("change", filterTutorials);				
 			};
