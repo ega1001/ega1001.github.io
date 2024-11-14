@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = (event) => {
 				const searchInput = document.getElementById("searchInput");
 				const competenceFilter = document.getElementById("competenceFilter");
 
@@ -72,4 +72,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 				searchInput.addEventListener("input", filterTutorials);
 				competenceFilter.addEventListener("change", filterTutorials);
-			});
+			};
