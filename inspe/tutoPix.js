@@ -1,4 +1,4 @@
-window.onload = (event) => {
+document.addEventListener("DOMContentLoaded", function () {
 				const searchInput = document.getElementById("searchInput");
 				const competenceFilter = document.getElementById("competenceFilter");
 
@@ -14,7 +14,7 @@ window.onload = (event) => {
 
 					// Parcourir chaque section de compétence
 					document.querySelectorAll(".comp").forEach((comp) => {
-						const isCompetenceMatch = !selectedCompetence || comp.id === selectedCompetence;
+						const isCompetenceMatch = selectedCompetence === "" || comp.id === selectedCompetence;
 						let hasVisibleContent = false;
 
 						console.log(
@@ -24,57 +24,52 @@ window.onload = (event) => {
 							isCompetenceMatch
 						);
 
-						// Parcourir chaque sous-domaine de la section de compétence
-						comp.querySelectorAll(".subdomain").forEach((subdomain) => {
-							let hasVisibleLink = false;
+						// Si la compétence correspond, parcourir chaque article pour détecter les tutoriels
+						if (isCompetenceMatch) {
+							const articles = comp.querySelectorAll("article.mb-2");
+							console.log("Articles trouvés dans", comp.id, ":", articles.length);
 
-							// Récupérer tous les tutoriels directement associés au sous-domaine courant
-							const tutorialLinks = subdomain.parentElement.querySelectorAll(".tutorial-link");
+							articles.forEach((article) => {
+								let hasVisibleLink = false;
 
-							tutorialLinks.forEach((tutorial) => {
-								const titleText = tutorial.textContent.toLowerCase();
-								const isTitleMatch = titleText.includes(searchTerm);
+								// Récupérer tous les tutoriels dans chaque article
+								const tutorialLinks = article.querySelectorAll(".tutorial-link");
 
-								if (isCompetenceMatch && isTitleMatch) {
-									tutorial.classList.remove("d-none"); // Afficher le tutoriel en supprimant la classe 'd-none'
-									hasVisibleLink = true;
-									hasVisibleContent = true;
-								} else {
-									tutorial.classList.remove("d-flex");
-									tutorial.classList.add("d-none"); // Masquer le tutoriel en ajoutant la classe 'd-none'
-								}
+								tutorialLinks.forEach((tutorial) => {
+									const titleText = tutorial.textContent.toLowerCase();
+									const isTitleMatch = titleText.includes(searchTerm);
 
-								console.log(
-									"Tutoriel :",
-									tutorial.id,
-									"Titre :",
-									titleText,
-									"Match :",
-									isTitleMatch
-								);
+									// Afficher ou masquer le tutoriel en fonction du mot-clé
+									if (isTitleMatch || searchTerm === "") {
+										tutorial.classList.remove("cache"); // Afficher le tutoriel en supprimant la classe 'hidden'
+										hasVisibleLink = true;
+										hasVisibleContent = true;
+									} else {
+										tutorial.classList.add("cache"); // Masquer le tutoriel en ajoutant la classe 'hidden'
+									}
+
+									console.log("Tutoriel :", tutorial.id, "- Match mot-clé ?", isTitleMatch);
+								});
+
+								// Afficher ou masquer l'article selon qu'il a des tutoriels visibles
+								article.style.display = hasVisibleLink ? "" : "none";
+								console.log("Article :", article, "Contient un lien visible :", hasVisibleLink);
 							});
 
-							// Afficher ou masquer le sous-domaine selon qu'il a des liens visibles
-							subdomain.style.display = hasVisibleLink ? "" : "none";
+							// Afficher ou masquer la section de compétence si elle contient du contenu visible
+							comp.style.display = hasVisibleContent ? "" : "none";
 							console.log(
-								"Sous-domaine :",
-								subdomain.textContent,
-								"Contient un lien visible :",
-								hasVisibleLink
+								"Section compétence :",
+								comp.id,
+								"Contient du contenu visible :",
+								hasVisibleContent
 							);
-						});
-
-						// Afficher ou masquer la section de compétence si elle contient du contenu visible
-						comp.style.display = hasVisibleContent ? "" : "none";
-						console.log(
-							"Section compétence :",
-							comp.id,
-							"Contient du contenu visible :",
-							hasVisibleContent
-						);
+						} else {
+							comp.style.display = "none"; // Masquer la section si elle ne correspond pas à la compétence sélectionnée
+						}
 					});
 				}
 
 				searchInput.addEventListener("input", filterTutorials);
-				competenceFilter.addEventListener("change", filterTutorials);				
-			};
+				competenceFilter.addEventListener("change", filterTutorials);
+			});
