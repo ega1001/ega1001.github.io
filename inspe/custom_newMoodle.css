@@ -842,7 +842,7 @@ code {
  section.copy-code {
         overflow: auto;
         display: grid;
-        max-width: 75%;
+        max-width: 90%;
         max-height: 500px;
         margin: 20px auto;
         pre[class*="language-"] {
