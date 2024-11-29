@@ -26,14 +26,14 @@ loadjscssfile("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@
 loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css", "css");
 loadjscssfile("https://ega1001.github.io/inspe/github.min.css", "css");
 loadjscssfile("https://ega1001.github.io/inspe/backtotop.css", "css");
-loadjscssfile("https://ega1001.github.io/inspe/prism.css", "css");
+loadjscssfile("https://ega1001.github.io/inspe/prismDark.css", "css");
 // loadjscssfile("https://ega1001.github.io/inspe/accordionex.css", "css");
 
 // Dynamically load and add JS files
 loadjscssfile("https://ega1001.github.io/inspe/uneditableIcon.js", "js");
 loadjscssfile("https://ega1001.github.io/inspe/deleteClassoptimized.js", "js");
 loadjscssfile("https://ega1001.github.io/inspe/tutoPix.js", "js");
-loadjscssfile("https://ega1001.github.io/inspe/prism.js", "js");
+loadjscssfile("https://ega1001.github.io/inspe/prismDark.js", "js");
 //loadjscssfile("https://ega1001.github.io/inspe/accordionDetailssummary.js", "js");
 // loadjscssfile("https://ega1001.github.io/inspe/BackToTop/BackToTop.js", "js");
 // loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js", "js");
