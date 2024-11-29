@@ -1,4 +1,5 @@
-const copyButtonLabel = "Copier Html";
+window.onload = (event) => {
+      const copyButtonLabel = "Copier Html";
       // use a class selector if available
       let blocks = document.querySelectorAll("pre");
       blocks.forEach((block) => {
@@ -22,3 +23,4 @@ const copyButtonLabel = "Copier Html";
           button.innerText = copyButtonLabel;
         }, 1000);
       }
+}
