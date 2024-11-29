@@ -20,14 +20,11 @@ function loadjscssfile(filename, filetype) {
 // Dynamically load and add CSS files
 loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodle.css", "css");
 //loadjscssfile("https://ega1001.github.io/inspe/custom_newMoodleGrey.css", "css");
-loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/fontawesome.css", "css");
-loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/brands.css", "css");
-loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/regular.css", "css");
-loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/solid.css", "css");
+loadjscssfile("https://ega1001.github.io/inspe/fontawesome/css/all.css", "css");
 // loadjscssfile("https://www.univ-amu.fr/themes/custom/amu_zurb/fontawesome/css/all.min.css?s4vlzw", "css");
 loadjscssfile("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap", "css");
-loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css", "css");
-//loadjscssfile("https://ega1001.github.io/inspe/github.min.css", "css");
+loadjscssfile("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css", "css");
+loadjscssfile("https://ega1001.github.io/inspe/github.min.css", "css");
 loadjscssfile("https://ega1001.github.io/inspe/backtotop.css", "css");
 loadjscssfile("https://ega1001.github.io/inspe/prism.css", "css");
 // loadjscssfile("https://ega1001.github.io/inspe/accordionex.css", "css");
