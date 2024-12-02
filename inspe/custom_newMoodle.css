@@ -1574,6 +1574,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 }
 
 /* Home grid: replace text with home icon */
+.format-grid{
 .stateready p.text-right {
 	font-size: 0px !important;
 }
@@ -1592,6 +1593,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 	font-weight: 600;
 	content: "\f015";
 	font-size: 16px !important;
+}
 }
 
 /* Index */
