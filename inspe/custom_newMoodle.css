@@ -2108,6 +2108,33 @@ font-family: 'Titillium Web', sans-serif;
   max-width: 150px !important;
 }
 
+.bg-secondary, .bg-dark{
+.video-js {
+  color: var(--light) !important;
+  background-color: transparent !important;
+  font-size: .5em !important;
+	
+  .vjs-time-tooltip,
+  .vjs-volume-tooltip {
+    display: none !important;
+  }
+}
+
+.video-js .vjs-control-bar {
+
+  background-color: color-mix(in srgb,var(--secondary),#0000 50%) !important;
+  border-radius: 5px !important;
+}
+
+.vjs-menu-button-popup .vjs-menu .vjs-menu-content {
+  display: none !important;
+}
+
+.editor_atto_wrap audio {
+  max-width: 150px !important;
+}
+}
+
 * Styling for Questionnaire */
 /* ------------------------- */
 
