@@ -2084,7 +2084,7 @@ font-family: 'Titillium Web', sans-serif;
 }
 	
 .video-js {
-  color: var(--primary) !important;
+  color: var(--light) !important;
   background-color: transparent !important;
   font-size: .5em !important;
 	
@@ -2096,7 +2096,7 @@ font-family: 'Titillium Web', sans-serif;
 
 .video-js .vjs-control-bar {
 
-  background-color: color-mix(in srgb,var(--secondary),#0000 90%) !important;
+  background-color: color-mix(in srgb,var(--secondary),#0000 60%) !important;
   border-radius: 5px !important;
 }
 
