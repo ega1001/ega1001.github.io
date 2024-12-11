@@ -841,7 +841,7 @@ code {
  section.copy-code {
         overflow: auto;
         display: grid;
-        max-width: 95%;
+        max-width: 100%;
         max-height: 250px;
         margin: 20px auto;
         pre[class*="language-"] {
@@ -850,7 +850,6 @@ code {
           /* make space  */
           margin: 5px 0;
           padding: 1.75rem 0 1.75rem 1rem;
-          border-radius: 10px;
           text-shadow: none !important;
         }
 
