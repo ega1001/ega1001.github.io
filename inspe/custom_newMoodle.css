@@ -2082,7 +2082,7 @@ font-family: 'Titillium Web', sans-serif;
     box-shadow: inset -5px -5px 9px rgba(255,255,255,.45),inset 5px 5px 9px rgba(94,104,121,.3)
 }
 	
-.video-js {
+/*.video-js {
   color: var(--light) !important;
   background-color: transparent !important;
   font-size: .5em !important;
@@ -2132,7 +2132,7 @@ font-family: 'Titillium Web', sans-serif;
 .editor_atto_wrap audio {
   max-width: 150px !important;
 }
-}
+}*/
 
 * Styling for Questionnaire */
 /* ------------------------- */
