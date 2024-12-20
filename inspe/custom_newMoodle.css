@@ -424,6 +424,10 @@ div.LabelPartDark {
 	padding-left: 24px;
 }
 
+ol.custom-numbers li::before {
+  color: var(--secondary);
+}
+
 .custom-numbers li,
 .numbers li {
 	counter-increment: my-awesome-counter;
