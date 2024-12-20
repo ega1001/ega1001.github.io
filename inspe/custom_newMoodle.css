@@ -273,7 +273,7 @@ hr.LabelTitle {
     width: 75px;
     height: 3px;
     background: var(--secondary);
-    border-radius: 25%;
+    border-radius: 50%;
     margin-top: 15px;
 }
 
