@@ -268,10 +268,17 @@ a:hover.ens {
 /*titre des etiquettes modules et surlignage*/
 
 hr.LabelTitle {
-	width: 75px;
+    content: "";
+    display: block;
+    width: 75px;
+    height: 3px;
+    background: var(--secondary);
+    border-radius: 25%;
+    margin-top: 15px;
 }
 
 hr.ProdTitle {
+	border: 1px solid #6c757d;
 	width: 75px;
 }
 
@@ -279,14 +286,14 @@ hr.ProdTitle {
 	margin: 0.4rem 0 0.9rem 0.6rem;
 	text-align: left;
 	font-size: 1.5em;
-	font-weight: 600 !important;
+	font-family: "Titillium Web", sans-serif !important;
 }
 
 .LabelTitleLight {
 	margin: 0.4rem 0 0.9rem 0.6rem;
 	text-align: left;
 	font-size: 1.5em;
-	font-weight: 600 !important;
+	font-family: "Titillium Web", sans-serif !important;
 	color: #fff !important;
 }
 
@@ -335,17 +342,6 @@ div.LabelPartDark {
 	text-align: left !important;
 	text-indent: 0.5rem;
 	line-height: 1.5rem;
-}
-
-/*titre des etiquettes modules et surlignage*/
-
-hr.LabelTitle {
-	border: 1px solid #6c757d;
-	background-color: #6c757d;
-}
-
-hr.ProdTitle {
-	border: 1px solid #6c757d;
 }
 
 /*Listes*/
