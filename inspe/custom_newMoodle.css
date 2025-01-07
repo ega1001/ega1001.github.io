@@ -2352,6 +2352,14 @@ Ombre autour des avatars vides
 .userinitials {
  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
 }
+
+/*--------------------------------------
+Rounded userpicture in courses
+-------------------------------------*/
+.userpicture {
+  border-radius: 50% !important;
+}
+
 /*--------------------------------------
 Form Input Width - id custom-form
 --------------------------------------*/
