@@ -351,6 +351,7 @@ div.LabelPartDark {
 .border-left-2 {
 	border-left: 2px solid #dee2e6 !important;
 	padding-left: 1rem !important;
+	list-style: none !important;
 }
 
 .border-left-2 li {
@@ -360,6 +361,7 @@ div.LabelPartDark {
 .border-left-3 {
 	border-left: 3px solid #dee2e6 !important;
 	padding-left: 1rem !important;
+	list-style: none !important;
 }
 
 .border-left-3 li {
@@ -369,6 +371,7 @@ div.LabelPartDark {
 .border-left-4 {
 	border-left: 4px solid #dee2e6 !important;
 	padding-left: 1rem !important;
+	list-style: none !important;
 }
 
 .border-left-4 li {
@@ -378,6 +381,7 @@ div.LabelPartDark {
 .border-left-5 {
 	border-left: 5px solid #dee2e6 !important;
 	padding-left: 1rem !important;
+	list-style: none !important;
 }
 
 .border-left-5 li {
