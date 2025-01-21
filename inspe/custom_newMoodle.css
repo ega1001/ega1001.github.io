@@ -1760,11 +1760,11 @@ Dark rotating cross
 	transition: all 0.3s;
 }
 
-.collapsible-link[aria-expanded="true"]::after {
+.collapsible-link[aria-expanded="true"]::after, .collapsible-link-dark[aria-expanded="true"]::after, .collapsible-link-light[aria-expanded="true"]::after {
 	transform: rotate(90deg) translateX(-1px);
 }
 
-.collapsible-link[aria-expanded="true"]::before {
+.collapsible-link[aria-expanded="true"]::before, .collapsible-link-dark[aria-expanded="true"]::before, .collapsible-link-light[aria-expanded="true"]::before {
 	transform: rotate(180deg);
 }
 
