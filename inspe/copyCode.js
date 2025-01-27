@@ -2,7 +2,7 @@ window.onload = () => {
   const copyButtonLabel = "Copier HTML";
 
   // Sélectionner tous les éléments <pre>
-  const blocks = document.querySelectorAll("pre");
+  const blocks = document.querySelectorAll(".copy-code pre");
 
   blocks.forEach((block) => {
     // Vérifier si le navigateur prend en charge l'API du presse-papiers
