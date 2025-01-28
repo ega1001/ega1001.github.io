@@ -1,114 +1,87 @@
 /*Police Titillium*/
 
+/* =============================================
+   Typography
+============================================= */
+/* Text variants */
 .titi {
-	font-family: "Titillium Web", sans-serif !important;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    font-family: "Titillium Web", sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/*titres */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-	
-	font-weight: 400 !important;
-	/*color: #1d1d1d !important;*/
-	font-family: "Titillium Web", sans-serif !important;
+/* Headings - Override Bootstrap's default font stack */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 400 !important;
+    font-family: "Titillium Web", sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/*line-height*/
+/* Line height utilities */
+.lh-1 { line-height: 1; }
+.lh-sm { line-height: 1.25; }
+.lh-base { line-height: 1.5; }
+.lh-lg { line-height: 2; }
 
-.lh-1 {
-	line-height: 1 !important;
+/* =============================================
+   Layout & Responsive Dimensions
+   ============================================= */
+
+/* Width utilities */
+.w-35 { width: 35% !important; }
+.w-65 { width: 65% !important; }
+.w-90 { width: 90% !important; }
+
+/* Height utilities */
+.h-35 { height: 35% !important; }
+.h-65 { height: 65% !important; }
+.h-90 { height: 90% !important; }
+
+/* Responsive variations */
+@media (min-width: 768px) {
+    .w-md-35 { width: 35% !important; }
+    .w-md-65 { width: 65% !important; }
+    .w-md-90 { width: 90% !important; }
+    .h-md-35 { height: 35% !important; }
+    .h-md-65 { height: 65% !important; }
+    .h-md-90 { height: 90% !important; }
 }
 
-.lh-sm {
-	line-height: 1.25 !important;
+@media (min-width: 992px) {
+    .w-lg-35 { width: 35% !important; }
+    .w-lg-65 { width: 65% !important; }
+    .w-lg-90 { width: 90% !important; }
+    .h-lg-35 { height: 35% !important; }
+    .h-lg-65 { height: 65% !important; }
+    .h-lg-90 { height: 90% !important; }
 }
 
-.lh-base {
-	line-height: 1.5 !important;
-}
-
-.lh-lg {
-	line-height: 2 !important;
-}
-
-/*Largeur et hauteur*/
-
-.w-35 {
-	width: 35% !important;
-}
-
-.w-65 {
-	width: 65% !important;
-}
-
-.w-90 {
-	width: 90% !important;
-}
-
-.h-35 {
-	height: 35% !important;
-}
-
-.h-65 {
-	height: 65% !important;
-}
-
-.h-90 {
-	height: 90% !important;
-}
-
-/*Bloc Html Lien vers Autres UE : Mes UE FAD*/
-/*
-.uelink {
-	background: #fbfbfb;text-align: center;
-} */
-
+/* =============================================
+   Blocks and Containers
+============================================= */
+/* UE Link Block */
 .lienUE {
-	background: #fff;
-	border-radius: 2px;
-	display: inline-block;
-	margin: 0.2rem;
-	position: relative;
-	width: 100%;
-	height: auto;
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 0.2rem;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 
-/*Bandeau et Titres : master-cours-UE-Enseignement*/
-
+/* Course Title Container : master-cours-UE-Enseignement*/
 .titreConteneur {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	height: 100%;
-	width: 100%;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-ms-flex-line-pack: start;
-	align-content: flex-start;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: flex-start;
-	-webkit-box-align: stretch;
-	-ms-flex-align: stretch;
-	align-items: stretch;
-	padding: 0 !important;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0 !important;
 }
 
 .titreMaster {
@@ -120,13 +93,10 @@ h6,
 	color: #fff ;
 	font-weight: 300;
 	text-transform: capitalize;
-	/*white-space: nowrap;*/
 	-ms-flex: 0 1 100% ;
 	flex: 0 1 100%;
 	font-size: 1.25rem ;
-	/*overflow: hidden;*/
 	-ms-flex-positive: 1;
-	flex-grow: 1;
 	font-family: "Titillium Web", sans-serif;
 }
 
@@ -350,48 +320,23 @@ div.LabelPart.tiles {
 	line-height: 1.5rem;
 }
 
-/*Listes*/
+/* =============================================
+   Lists
+============================================= */
+/* Vertical Bar Lists */
 
-/*Liste avec barre verticale*/
-
-.border-left-2 {
-	border-left: 2px solid #dee2e6 !important;
-	padding-left: 1rem !important;
-	list-style: none !important;
+[class^="border-left-"] {
+    padding-left: 1rem !important;
+    list-style: none !important;
+    border-left: 2px solid #dee2e6 !important;
 }
 
-.border-left-2 li {
-	margin-bottom: 0.5em !important;
-}
+.border-left-3 { border-left-width: 3px !important; }
+.border-left-4 { border-left-width: 4px !important; }
+.border-left-5 { border-left-width: 5px !important; }
 
-.border-left-3 {
-	border-left: 3px solid #dee2e6 !important;
-	padding-left: 1rem !important;
-	list-style: none !important;
-}
-
-.border-left-3 li {
-	margin-bottom: 0.5em !important;
-}
-
-.border-left-4 {
-	border-left: 4px solid #dee2e6 !important;
-	padding-left: 1rem !important;
-	list-style: none !important;
-}
-
-.border-left-4 li {
-	margin-bottom: 0.5em !important;
-}
-
-.border-left-5 {
-	border-left: 5px solid #dee2e6 !important;
-	padding-left: 1rem !important;
-	list-style: none !important;
-}
-
-.border-left-5 li {
-	margin-bottom: 0.5em !important;
+[class^="border-left-"] li {
+    margin-bottom: 0.5em !important;
 }
 
 /*Liste avec tiret "-"*/
@@ -855,45 +800,26 @@ code {
           transition: all 0.2s ease-in-out;
         }
       }
-
-/*Opacité */
-
-.opacity-0 {
-	opacity: 0 !important;
-}
-
-.opacity-1 {
-	opacity: 0.2 !important;
-}
-
-.opacity-2 {
-	opacity: 0.4 !important;
-}
-
-.opacity-3 {
-	opacity: 0.6 !important;
-}
-
-.opacity-4 {
-	opacity: 0.8 !important;
-}
-
-.opacity-5 {
-	opacity: 1 !important;
-}
-
-/*Opacité Survol */
+/* =============================================
+   Utilities
+============================================= */
+/* Opacity */
+.opacity-0, .opacity-0h5 { opacity: 0 !important; }
+.opacity-1 { opacity: 0.2 !important; }
+.opacity-2 { opacity: 0.4 !important; }
+.opacity-3 { opacity: 0.6 !important; }
+.opacity-4 { opacity: 0.8 !important; }
+.opacity-5 { opacity: 1 !important; }
 
 .opacity-0h5 {
-	opacity: 0 !important;
-	transition: opacity 0.25s ease-in-out !important;
-	-moz-transition: opacity 0.25s ease-in-out !important;
-	-webkit-transition: opacity 0.25s ease-in-out !important;
+    transition: opacity 0.25s ease-in-out !important;
+    -moz-transition: opacity 0.25s ease-in-out !important;
+    -webkit-transition: opacity 0.25s ease-in-out !important;
 }
 
 .opacity-0h5:hover {
-	opacity: 1 !important;
-}
+    opacity: 1 !important;}
+
 
 /*NEO*/
 
