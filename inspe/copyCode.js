@@ -1,44 +1,39 @@
 window.onload = () => {
-  const copyButtonLabel = "Copier HTML";
+  if (!navigator.clipboard) return;
 
-  // Sélectionner tous les éléments <pre>
-  const blocks = document.querySelectorAll(".copy-code pre");
+  const LABELS = {
+    default: "Copier HTML",
+    success: "HTML Copié!",
+    error: "Erreur!"
+  };
 
-  blocks.forEach((block) => {
-    // Vérifier si le navigateur prend en charge l'API du presse-papiers
-    if (navigator.clipboard) {
-      const button = document.createElement("button");
-      button.innerText = copyButtonLabel;
+  // Délégation d'événements
+  document.addEventListener('click', async ({ target }) => {
+    const button = target.closest('button');
+    if (!button || !button.closest('.copy-code pre')) return;
 
-      // Ajouter le bouton à l'intérieur du bloc <pre>
-      block.appendChild(button);
+    const code = button.parentElement.querySelector('code');
+    if (!code) return;
 
-      // Ajouter un gestionnaire d'événements au clic du bouton
-      button.addEventListener("click", async () => {
-        const code = block.querySelector("code");
-        
-        if (code) {
-          const text = code.innerText;
-
-          try {
-            await navigator.clipboard.writeText(text);
-
-            // Donner un retour visuel à l'utilisateur
-            button.innerText = "HTML Copié!";
-            setTimeout(() => {
-              button.innerText = copyButtonLabel;
-            }, 1000);
-          } catch (error) {
-            console.error("Erreur lors de la copie : ", error);
-            button.innerText = "Erreur!";
-            setTimeout(() => {
-              button.innerText = copyButtonLabel;
-            }, 1000);
-          }
-        } else {
-          console.warn("Aucun élément <code> trouvé dans le bloc <pre>.");
-        }
-      });
+    const originalText = button.textContent;
+    
+    try {
+      await navigator.clipboard.writeText(code.textContent);
+      button.textContent = LABELS.success;
+    } catch (error) {
+      console.error("Erreur de copie :", error);
+      button.textContent = LABELS.error;
+    } finally {
+      setTimeout(() => button.textContent = originalText, 1000);
     }
+  });
+
+  // Injection des boutons
+  document.querySelectorAll('.copy-code pre').forEach(pre => {
+    if (pre.querySelector('button')) return; // Évite les doublons
+    
+    const button = document.createElement('button');
+    button.textContent = LABELS.default;
+    pre.prepend(button);
   });
 };
