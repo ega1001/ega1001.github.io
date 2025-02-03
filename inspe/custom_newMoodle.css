@@ -1893,13 +1893,13 @@ font-family: 'Titillium Web', sans-serif;
         min-height: 1px;
 }
 
-/* Responsive styling for the glossary post */
+/* Responsive styling for the glossary post 
 @media (min-width: 992px) {
 	.glossarypost {
 		width: 70% !important;
 		/* Set the width to 70% on larger screens */
 	}
-}
+}*/
 
 /* Styling for the glossary show entry page content */
 #page-mod-glossary-showentry #page-content {
