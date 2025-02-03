@@ -1914,7 +1914,7 @@ font-family: 'Titillium Web', sans-serif;
 }
 
 .glossarycategoryheader {
-  background-color: color-mix(in srgb,var(--primary),#0000 95%);  
+  background-color: color-mix(in srgb,var(--secondary),#0000 5%);  
   border-radius: 5px;
   margin-bottom: 1em !important;
   display: block;
