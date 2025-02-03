@@ -1881,8 +1881,6 @@ font-family: 'Titillium Web', sans-serif;
 	word-break: break-word !important;
 	word-wrap: break-word !important;
 	position: relative;
-	display: flex;
-        flex-direction: column;
         min-width: 0;
         word-wrap: break-word;
         background-color: #fff;
