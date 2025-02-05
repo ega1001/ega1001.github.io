@@ -687,59 +687,6 @@ hr.tiret-dark {
 	background-color: #f8f9fa !important;
 }*/
 
-/*Copy to clipboard button*/
-
-.bd-clipboard {
-    position: relative;
-    display: none;
-    float: right
-}
-
-.bd-clipboard+.highlight {
-    margin-top: 0
-}
-
-@media (min-width: 768px) {
-    .bd-clipboard {
-        display:block
-    }
-}
-
-.btn-clipboard {
-	position: absolute;
-        top: .65rem;
-        right: .65rem;
-        z-index: 10;
-        display: block;
-        padding: .25rem .5rem;
-        font-size: 65%;
-        color: #343a40;
-	background-color: #fff;
-        border: 1px solid;
-        border-radius: .25rem;
-	transition: all 0.15s ease-in-out;
-}
-
-.btn-clipboard:hover,.btn-clipboard:focus {
-	color: #fff;
-        background-color: #343a40;
-	transition: all 0.15s ease-in-out;
-}
-
-.highlight {
-    padding: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-color: #f8f9fa;
-    -ms-overflow-style: -ms-autohiding-scrollbar
-}
-
-@media (min-width: 576px) {
-    .highlight {
-        padding:1.5rem
-    }
-}
-
 /* code html*/
 
 /*.snippet {
