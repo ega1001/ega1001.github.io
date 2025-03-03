@@ -379,17 +379,16 @@ div.LabelPart.tiles {
 	padding-left: 24px;
 }
 
-ol.custom-numbers li::before {
+ol.custom-numbers li.list-group-item::before {
   color: var(--secondary);
 }
 
-.custom-numbers li,
-.numbers li {
+ol.custom-numbers .list-group-item, .numbers li.list-group-item {
 	counter-increment: my-awesome-counter;
 }
 
-.custom-numbers li::before,
-.numbers li::before {
+.custom-numbers li.list-group-item::before,
+.numbers li.list-group-item::before {
 	content: counter(my-awesome-counter) ". ";
 	font-weight: bold;
 	margin-right: 1rem;
