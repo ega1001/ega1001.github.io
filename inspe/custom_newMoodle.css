@@ -684,6 +684,16 @@ hr.tiret-dark {
 	font-size: 0.875rem !important;
 	line-height: 1.5 !important;
 	background-color: #f8f9fa !important;
+	border-left: 2px solid #6c757d !important;
+	color: #7f858d !important;
+	border-color: #dee7f5 !important;
+	border-left-color: #6c757d !important;
+	transition: all 0.2s ease-in-out;
+}
+
+.comp-btn:hover {
+  background-color: #dae0e5 !important;
+	transition: all 0.2s ease-in-out;
 }
 
 /* code html*/
