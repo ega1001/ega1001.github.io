@@ -2290,3 +2290,11 @@ Inspé button - html block
     margin-top: 15px;
     margin-bottom: 5px;
 }
+
+/*---------------------------------------------
+Course Pix+Edu
+----------------------------------------------*/
+
+.course-115318 #section-0 h3 {
+    display: none !important;
+}
