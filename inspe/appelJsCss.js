@@ -30,4 +30,4 @@ loadjscssfile("https://ega1001.github.io/inspe/uneditableIcon.js", "js");
 loadjscssfile("https://ega1001.github.io/inspe/deleteClassoptimized.js", "js");
 loadjscssfile("https://ega1001.github.io/inspe/tutoPix.js", "js");
 //loadjscssfile("https://ega1001.github.io/inspe/prism/prismTomorrowNight.js", "js");
-loadjscssfile("https://ega1001.github.io/inspe/copyCode.js", "js");
+//loadjscssfile("https://ega1001.github.io/inspe/copyCode.js", "js");
