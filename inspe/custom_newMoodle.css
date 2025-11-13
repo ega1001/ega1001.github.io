@@ -688,61 +688,6 @@ hr.tiret-dark {
 	transition: all 0.2s ease-in-out;
 }
 
-/* code html*/
-
-/*.snippet {
-	background: #3c3c3c !important;
-	border-radius: 4px !important;
-	border: 1px solid #ddd !important;
-}
-
-pre {
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
-	font: 12px Consolas, liberation mono, Menlo, Courier, monospace !important;
-	font-family: Consolas, "liberation mono", Menlo, Courier, monospace;
-}
-
-code {
-	white-space: pre-wrap;
-}
-
-.code-card {
-	padding: 1rem;
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-	background-color: #fff !important;
-}*/
-
-/*New Copy code 2024*/
- section.copy-code {
-  overflow: auto;
-  display: grid;
-  max-width: 100%;
-  margin: 20px auto;
-}
-section.copy-code pre[class*="language-"] {
-  position: relative;
-  overflow: auto;
-  margin: 5px 0;
-  padding: 1.75rem 0 1.75rem 1rem;
-  text-shadow: none !important;
-}
-section.copy-code pre[class*="language-"] button {
-  position: absolute;
-  top: 5px; right: 5px;
-  font-size: 0.9rem;
-  background-color: #b4b4b4;
-  border: ridge 1px #7b7b7c;
-  border-radius: 5px;
-  text-shadow: #c4c4c4 0 0 2px;
-  transition: all 0.2s ease-in-out;
-}
-section.copy-code pre[class*="language-"] button:hover {
-  cursor: pointer;
-  background-color: #d3d3d3;
-  transition: all 0.2s ease-in-out;
-}
 
 /* =============================================
    Utilities
