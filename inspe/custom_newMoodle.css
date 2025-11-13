@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	white-space: nowrap;
 	line-height: 1;
 	color: #fff;
-	font-weight: 600t;
+	font-weight: 600;
 }
 
 .ens,
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 a .ens,
 a:visited .ens,
 a:active .ens {
-	color: #ffffff !;
+	color: #ffffff !important;
 	text-decoration: none ;
 	transition: 0.1s ease-in-out ;
 }
@@ -165,14 +165,6 @@ a:active .ens {
 	line-height: 1 ;
 	color: #fff ;
 	font-weight: 300 ;
-}
-
-a .ens,
-a:visited .ens,
-a:active .ens {
-	color: #ffffff;
-	text-decoration: none;
-	transition: 0.1s ease-in-out;
 }
 
 a:hover.ens {
