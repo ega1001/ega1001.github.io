@@ -1,4 +1,22 @@
-/*Police Titillium*/
+/* =============================================
+   INSPE Theme Tokens
+   ============================================= */
+
+:root {
+    --inspe-font: "Titillium Web", sans-serif;
+    --inspe-dark: #343a40;
+    --inspe-secondary: #6c757d;
+    --inspe-yellow: #eab819;
+    --inspe-orange: #fb4f14;
+    --inspe-violet: #5a0cb9;
+    --inspe-violet-text: #9c23d4;
+    --inspe-teal: #008080;
+    --inspe-blue: #0066cc;
+    --inspe-soft-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
+        0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
+        0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046), 0 0px 10px rgba(0, 0, 0, 0.053),
+        0 0px 20px rgba(0, 0, 0, 0.07);
+}
 
 :root {
     --inspe-font: "Titillium Web", sans-serif;
@@ -41,6 +59,93 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .lh-lg { line-height: 2; }
 
 /* =============================================
+   Bootstrap Overrides
+============================================= */
+
+/* Breadcrumb styling */
+.breadcrumb ul i,
+.breadcrumb li.lastli span {
+    color: var(--inspe-secondary);
+    text-decoration: none;
+    font-weight: 600 !important;
+}
+
+.breadcrumb ul i:hover,
+.breadcrumb li.lastli span:hover {
+    color: #7f8081 !important;
+    font-weight: 600 !important;
+}
+
+/* List group cleanup */
+.list-group-item:last-child {
+    border-bottom-width: 1px !important;
+}
+/* Secondary button palette */
+.btn-secondary {
+    color: #fff !important;
+    background-color: var(--inspe-secondary) !important;
+    border-color: var(--inspe-secondary) !important;
+}
+
+.btn-secondary:hover {
+    color: #fff !important;
+    background-color: #5c636a !important;
+    border-color: #565e64 !important;
+}
+
+/* Table striping */
+.table-striped tbody tr:nth-of-type(2n + 2) {
+    /* background-color: rgba(0,0,0,.05); */
+    background-color: #f1f4f7 !important;
+}
+
+.table-striped tbody tr:nth-of-type(2n + 1) {
+    /* background-color: rgba(0,0,0,.03); */
+    background-color: #fbfbfb !important;
+}
+
+.table-hover tbody tr:hover {
+    /* background-color: rgba(0,0,0,.075); */
+    background-color: #e9ecef !important;
+}
+
+.table {
+    /* margin-bottom: 1rem; */
+    margin-bottom: 0 !important;
+}
+
+/* Secondary badge color alignment */
+.badge.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+/* Fixed header shadow */
+.navbar.fixed-top.navbar-light.bg-white.navbar-expand {
+    box-shadow: 0 4px 15px -7px rgba(0, 0, 0, 0.25) !important;
+    border: none !important;
+}
+
+/* Light navbar burger icon */
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Secondary nav tab cards */
+.card-header.bg-secondary .nav-tabs .nav-link {
+    background-color: #d2d2d282;
+    border-right: 1px solid #ddd;
+}
+
+.card-header.bg-secondary .nav-tabs .nav-link.active {
+    background-color: white !important;
+}
+
+/* Secondary background alignment */
+.bg-secondary {
+    background-color: var(--gray) !important;
+}
+
+/* =============================================
    Layout & Responsive Dimensions
    ============================================= */
 
@@ -76,7 +181,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /* =============================================
    Blocks and Containers
 ============================================= */
-/* UE Link Block */
+
+/* UE link tiles */
 .lienUE {
     background: #fff;
     border-radius: 2px;
@@ -87,7 +193,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     position: relative;
 }
 
-/* Course Title Container : master-cours-UE-Enseignement*/
+/* Master/UE/Teaching banner wrapper */
 .titreConteneur {
     display: flex;
     height: 100%;
@@ -100,101 +206,101 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     padding: 0 !important;
 }
 
-
+/* Master banner heading */
 .titreMaster {
-        background-color: var(--inspe-dark);
-        padding: 0.5rem;
-        margin-bottom: 0.25rem;
-        border-top-left-radius: 0.25rem;
-        border-top-right-radius: 0.25rem;
-        color: #fff;
-        font-weight: 300;
-        text-transform: capitalize;
-        -ms-flex: 0 1 100%;
-        flex: 0 1 100%;
-        font-size: 1.25rem;
-        -ms-flex-positive: 1;
-        font-family: var(--inspe-font);
+    background-color: var(--inspe-dark);
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    font-size: 1.25rem;
+    -ms-flex-positive: 1;
+    font-family: var(--inspe-font);
 }
 
-/* réduction du bandeau */
-
-.titreEns {
-	font-size: 1.25rem;
-}
-
+/* Teaching label sizing */
 .ens {
-        font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
+/* UE banner segment */
 .ueEns {
-        text-align: right;
-        padding: 1rem;
-        margin-bottom: 0.5rem;
-        margin-right: 0.25rem;
-        /*border-top-left-radius: .25rem;*/
-        border-bottom-left-radius: 0.25rem;
-        flex: 0 1%;
-        max-width: 40%;
+    text-align: right;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.25rem;
+    /*border-top-left-radius: .25rem;*/
+    border-bottom-left-radius: 0.25rem;
+    flex: 0 1%;
+    max-width: 40%;
 }
 
 .ue,
 .ens {
-        white-space: nowrap;
-        line-height: 1;
-        color: #fff;
-        font-weight: 600;
+    white-space: nowrap;
+    line-height: 1;
+    color: #fff;
+    font-weight: 600;
 }
 
 .ens,
 .ueEns {
-        background-color: var(--inspe-secondary);
+    background-color: var(--inspe-secondary);
 }
 
 .titreEns a:hover {
-        color: var(--inspe-secondary);
-        transition: 0.3s ease-in-out;
+    color: var(--inspe-secondary);
+    transition: 0.3s ease-in-out;
 }
 
 a .ens,
 a:visited .ens,
 a:active .ens {
-	color: #ffffff !important;
-	text-decoration: none ;
-	transition: 0.1s ease-in-out ;
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
 }
 
+/* UE and ENS title text */
 .titreUe {
-	text-align: left;
-	line-height: 1;
-	color: #fff ;
-	font-weight: 300 ;
+    text-align: left;
+    line-height: 1;
+    color: #fff;
+    font-weight: 300;
 }
 
 .titreEns {
-	text-align: left ;
-	line-height: 1 ;
-	color: #fff ;
-	font-weight: 300 ;
+    text-align: left;
+    line-height: 1;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.25rem;
 }
 
 a:hover.ens {
-        color: var(--inspe-dark);
+    color: var(--inspe-dark);
 }
+
+/* ENS banner body */
 
 .maintitle {
-        background-color: var(--inspe-secondary);
-        padding: 1rem ;
-	margin-bottom: 0.5rem ;
-	flex-grow: 1 !important;
-	/*border-top-right-radius: .25rem;*/
-	border-bottom-right-radius: 0.25rem;
-	flex: 0 1 80%;
-	flex-grow: 0;
-	max-width: 100%;
+    background-color: var(--inspe-secondary);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    flex-grow: 1 !important;
+    /*border-top-right-radius: .25rem;*/
+    border-bottom-right-radius: 0.25rem;
+    flex: 0 1 80%;
+    flex-grow: 0;
+    max-width: 100%;
 }
 
-/*Pavé animé*/
+/* Animated card */
 
 .card-1 {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -205,7 +311,7 @@ a:hover.ens {
 	box-shadow: 0 4px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 
-/*Ombre image_holder : hover*/
+/* Tile image hover shadow */
 
 .course-content ul.gridicons li .image_holder {
         box-shadow: var(--inspe-soft-shadow) !important;
@@ -219,7 +325,7 @@ a:hover.ens {
 		0 0px 20px rgba(0, 0, 0, 0.14) !important;
 }
 
-/*Consignes et Infos*/
+/* Guidelines and info wrapper */
 
 .consinfo {
 	margin-bottom: 0.3rem !important;
@@ -235,7 +341,7 @@ a:hover.ens {
 	border-top-right-radius: 0.5rem !important;*/
 }
 
-/*titre des etiquettes modules et surlignage*/
+/* Module label headings and underline */
 
 hr.LabelTitle {
     content: "";
@@ -274,7 +380,7 @@ hr.ProdTitle {
 	/*letter-spacing: 1px;*/
 }
 
-/* Labels new design*/
+/* Label card styling */
 div.LabelPart {
 	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 	-webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -312,7 +418,7 @@ div.LabelPart.tiles {
 	height: inherit;
 }
 
-/*Paragraphe etiquette*/
+/* Label paragraph copy */
 
 .LabelText {
 	text-align: left !important;
@@ -339,7 +445,7 @@ div.LabelPart.tiles {
     margin-bottom: 0.5em !important;
 }
 
-/*Liste avec tiret "-"*/
+/* Dash list */
 .sousliste {
 	list-style: none !important;
 	display: flex;
@@ -351,11 +457,11 @@ div.LabelPart.tiles {
 
 .sousliste li:before {
 	content: "- ";
-	/* on affiche une chaîne de caractère */
+        /* render a literal dash */
 	margin-right: 1rem;
 }
 
-/*Liste avec Icônes Fontawesome*/
+/* Font Awesome icon list */
 
 .fa-ul {
 	list-style-type: none !important;
@@ -367,7 +473,7 @@ div.LabelPart.tiles {
 	margin-bottom: 0.5em !important;
 }
 
-/* Liste Chiffres en couleur */
+/* Colored numbered list */
 
 .custom-numbers,
 .numbers {
@@ -404,7 +510,7 @@ ol.custom-numbers .list-group-item, .numbers li.list-group-item {
   background: var(--inspe-secondary);
 }
 
-/*Couleurs UE*/
+/* UE color utilities */
 
 .text-ue2,
 .text-jaune {
@@ -561,7 +667,7 @@ hr.tiret-dark {
         border-radius: 0.2rem;
 }
 
-/*Etiquette Module et présentation*/
+/* Module banner presentation */
 
 .partie {
 	font-weight: 300 !important;
@@ -578,9 +684,9 @@ hr.tiret-dark {
   	color: #ffffff !important;
 }
 
-/* Maj Moodle 3.11*/
+/* Moodle 3.11 adjustments */
 
-/*Barre de chargement*/
+/* Loading indicator */
 
 .pace .pace-progress {
   background-color: var(--inspe-secondary) !important;
@@ -592,24 +698,9 @@ hr.tiret-dark {
   height: 3px;
 }
 
-/*Fil d'ariane*/
+/* Drop shadows */
 
-.breadcrumb ul i,
-.breadcrumb li.lastli span {
-  color: var(--inspe-secondary);
-  text-decoration: none;
-  font-weight: 600 !important;
-}
-
-.breadcrumb ul i:hover,
-.breadcrumb li.lastli span:hover {
-  color: #7f8081 !important;
-  font-weight: 600 !important;
-}
-
-/*Ombre portée*/
-
-/*Boite*/
+/* Container shadow */
 
 .ombre {
         box-shadow: var(--inspe-soft-shadow) !important;
@@ -617,13 +708,13 @@ hr.tiret-dark {
         -moz-box-shadow: var(--inspe-soft-shadow) !important;
 }
 
-/*Texte*/
+/* Text shadow */
 
 .text-ombre {
 	text-shadow: 1px 1px 1px #444;
 }
 
-/*bouton download*/
+/* Download button */
 
 .btn-download {
 	color: #212529 !important;
@@ -648,7 +739,7 @@ hr.tiret-dark {
 	background-color: transparent !important;
 }
 
-/*Boutons Compétences et attendus*/
+/* Competency and expectation buttons */
 
 .comp-btn {
 	position: relative !important;
@@ -695,9 +786,9 @@ hr.tiret-dark {
     opacity: 1 !important;}
 
 
-/*NEO*/
+/* NEO-specific styles */
 
-/*Bloc droit UE*/
+/* UE right column */
 .bouton-titre {
 	position: relative;
 	min-width: 90%;
@@ -904,7 +995,7 @@ section.block div.card-body {
 	padding: 0px !important;
 }
 
-/*Icone activités -  Ressources couleur boost => #343a40;* et icône carré*/
+/* Activity icons: Boost palette (#343a40) with squared corners */
 
 .activityiconcontainer {
 	/*! background-color: #a4a7aa !important; */
@@ -913,7 +1004,7 @@ section.block div.card-body {
 	filter: saturate(0%);
 }
 
-/*scrollbar en trop sur la page de la section en vue image (corrigé ?)
+/* Extra scrollbar on section image view (resolved?)
 #region-main {
   overflow-x: visible !important ;
 }*/
@@ -924,14 +1015,14 @@ section.block div.card-body {
 	scrollbar-color: #e3e7ea transparent !important;
 }
 
-/**Nom de section à gauche
+/** Section title aligned left
 .single-section h3.sectionname {
   text-align: left !important;
   clear: both;
   margin-left: 8.5% !important;
 }**/
 
-/** Suppression titre de section 0 (nouvelle version grid format : 15/09/2022**/
+/** Hide section 0 title (grid format update: 2022-09-15)**/
 
 .grid #section-0 .course-section-header .sectionname {
 	display: none !important;
@@ -948,19 +1039,6 @@ section.block div.card-body {
 /* Design Filter codes*/
 .blockCourse .card-deck .card {
 	min-width: 250px !important;
-}
-
-/*Correctif BoostAmu*/
-.btn-secondary {
-        color: #fff !important;
-        background-color: var(--inspe-secondary) !important;
-        border-color: var(--inspe-secondary) !important;
-}
-
-.btn-secondary:hover {
-	color: #fff !important;
-	background-color: #5c636a !important;
-	border-color: #565e64 !important;
 }
 
 /*Tuiles*/
@@ -1022,12 +1100,12 @@ section.block div.card-body {
         color: var(--inspe-dark) !important;
 }
 
-/*Largeur Editeur Atto*/
+/* Atto editor width */
 #id_introeditoreditable {
 	width: 100% !important;
 }
 
-/*Icones font-awesome*/
+/* Font Awesome icon helpers */
 
 .icons::before {
 	display: inline-block;
@@ -1131,7 +1209,7 @@ a[data-toggle="collapse"].collapsed i.fas:before {
 	/* angle-up */
 }
 
-/*ajout de l'icône consigne automatiquement Moodle v4*/
+/* Automatically add instruction icon (Moodle v4) */
 /*
 .activity-header #intro .no-overflow::before {
   font-family: "Font Awesome 6 Free";
@@ -1147,7 +1225,7 @@ a[data-toggle="collapse"].collapsed i.fas:before {
 	display: none !important;
 }
 
-/* alignement titre / bandeau / image + typo liens sections */
+/* Align section titles, banners, and navigation text */
 .course-content .single-section .section-navigation .mdl-left {
 	font-weight: 200 !important;
 	margin-bottom: 2%;
@@ -1157,7 +1235,7 @@ a[data-toggle="collapse"].collapsed i.fas:before {
 	font-weight: 200 !important;
 	margin-bottom: 2%;
 }
-/*Ajout fleche fontawesome pour la navigation entre sections, format section personnalisable et sections réduites*/
+/* Add Font Awesome arrows for section navigation (customizable and collapsed formats) */
 #page-course-view-section-topics, #page-course-view-section-topcoll  {
   .larrow {
 	display: none !important;
@@ -1252,7 +1330,7 @@ a[data-toggle="collapse"].collapsed i.fas:before {
 	background-color: #f8f9fa !important;
 }
 
-/*Dossier déplié : Suppression icône origine (bleu clair) Activité "Dossier" */
+/* Folder activity: remove original light-blue icon */
 
 /*.fp-icon {
   display: none;
@@ -1262,7 +1340,7 @@ a[data-toggle="collapse"].collapsed i.fas:before {
 	margin-top: 0px !important;
 }
 
-/*suppression du fond mauve des liens en "focus*/
+/* Remove purple focus background on links */
 
 .aalink.focus,
 a.focus.autolink,
@@ -1281,9 +1359,9 @@ a:not([class]):focus,
 	color: #a2aab3 !important;
 }
 
-/** ================================================================================
-Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/11/22
-=================================================================================**/
+/** =============================================================================
+ Grid format card layout updates (2022-09-15, revised 2022-11-30)
+================================================================================*/
 .format-grid .thegrid {
 	justify-content: center !important;
 }
@@ -1338,13 +1416,8 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 }
 
 .format-grid .thegrid .grid-image img {
-	border-bottom-right-radius: calc(0.5rem - 1px);
-	border-bottom-left-radius: calc(0.5rem - 1px);
-}
-
-.format-grid .thegrid .grid-image img {
-	border-bottom-right-radius: calc(0.5rem - 1px);
-	border-bottom-left-radius: calc(0.5rem - 1px);
+        border-bottom-right-radius: calc(0.5rem - 1px);
+        border-bottom-left-radius: calc(0.5rem - 1px);
 }
 
 /* Home grid: replace text with home icon */
@@ -1412,59 +1485,55 @@ Card rotating cross
 -------------------------------------------
 */
 
-.card {	
-		/* Horizontal line */
+/* Horizontal line */
 .collapsible-link::before {
-	content: "";
-	width: 14px;
-	height: 2px;
-	background: var(--dark);
-	position: absolute;
-	top: calc(50% - 1px);
-	right: 1rem;
-	display: block;
-	transition: all 0.3s;
-	/* color: white !important; */
+        content: "";
+        width: 14px;
+        height: 2px;
+        background: var(--dark);
+        position: absolute;
+        top: calc(50% - 1px);
+        right: 1rem;
+        display: block;
+        transition: all 0.3s;
+        /* color: white !important; */
 }
 
 /* Vertical line */
 .collapsible-link::after {
-	content: "";
-	width: 2px;
-	height: 14px;
-	background: var(--dark);
-	position: absolute;
-	top: calc(50% - 7px);
-	right: calc(1rem + 6px);
-	display: block;
-	transition: all 0.3s;
+        content: "";
+        width: 2px;
+        height: 14px;
+        background: var(--dark);
+        position: absolute;
+        top: calc(50% - 7px);
+        right: calc(1rem + 6px);
+        display: block;
+        transition: all 0.3s;
 }
-.bg-dark {
-	/* Horizontal line */
-	.collapsible-link::before {
-		content: "";
-	width: 14px;
-	height: 2px;
-		background:#fff;
-		position: absolute;
-	top: calc(50% - 1px);
-	right: 1rem;
-	display: block;
-	transition: all 0.3s;
-	}
-/* Vertical line */
-.collapsible-link::after {
-	content: "";
-	width: 2px;
-	height: 14px;
-	background:#fff;
-	position: absolute;
-	top: calc(50% - 7px);
-	right: calc(1rem + 6px);
-	display: block;
-	transition: all 0.3s;
-	}
-}	
+
+.bg-dark .collapsible-link::before {
+        content: "";
+        width: 14px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        top: calc(50% - 1px);
+        right: 1rem;
+        display: block;
+        transition: all 0.3s;
+}
+
+.bg-dark .collapsible-link::after {
+        content: "";
+        width: 2px;
+        height: 14px;
+        background: #fff;
+        position: absolute;
+        top: calc(50% - 7px);
+        right: calc(1rem + 6px);
+        display: block;
+        transition: all 0.3s;
 }
 /* --------------------------------------
 Light rotating cross
@@ -1533,18 +1602,6 @@ Dark rotating cross
 	transform: rotate(180deg);
 }
 
-/*===========================================*
-Fixed-navbar - Moodle Academy-like
-*============================================*/
-.navbar.fixed-top.navbar-light.bg-white.navbar-expand {
-	box-shadow: 0 4px 15px -7px rgba(0, 0, 0, 0.25) !important;
-	border: none !important;
-}
-
-/* Black Burger Menu svg */
-.navbar-light .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
 /*============================================*
 Images for categories
 *=============================================*/
@@ -1576,28 +1633,6 @@ font-family: 'Titillium Web', sans-serif;
 
 #fadPe .card-deck {
 	justify-content: center !important;
-}
-
-/* ======Bootstrap table revision====== */
-
-.table-striped tbody tr:nth-of-type(2n + 2) {
-	/* background-color: rgba(0,0,0,.05); */
-	background-color: #f1f4f7 !important;
-}
-
-.table-striped tbody tr:nth-of-type(2n + 1) {
-	/* background-color: rgba(0,0,0,.03); */
-	background-color: #fbfbfb !important;
-}
-
-.table-hover tbody tr:hover {
-	/* background-color: rgba(0,0,0,.075); */
-	background-color: #e9ecef !important;
-}
-
-.table {
-	/* margin-bottom: 1rem; */
-	margin-bottom: 0 !important;
 }
 
 /* Bdd tertiary-navigation sticky buttons "Save and export as preset" */
@@ -1714,12 +1749,14 @@ font-family: 'Titillium Web', sans-serif;
 /* --------- General ------------ */
 
 /* Styling for concept headings and glossary category headers */
-.concept h4 {	
-	padding: .2em;
+.concept h4 {
+        padding: .2em;
+        font-size: 2rem !important;
 }
 
 .glossarycategoryheader h3 {
-	color: var(--light) !important;	
+        color: var(--light) !important;
+        padding: .5em;
 }
 
 /* Styling for the time element */
@@ -1774,10 +1811,6 @@ font-family: 'Titillium Web', sans-serif;
 
 /* --------- glossary and video-js mm24 style ------------ */
 
-.glossarycategoryheader h3 {
-  padding: .5em;
-}
-
 .glossarycategoryheader {
   background-color: color-mix(in srgb,var(--secondary),#0000 5%);  
   border-radius: 5px;
@@ -1792,10 +1825,6 @@ font-family: 'Titillium Web', sans-serif;
   margin-right: .5rem;
 }
 
-.concept h4 {
-  font-size: 2rem !important;
-}
-
 .concept h4::after {
   content: "";
   display: block;
@@ -1807,38 +1836,30 @@ font-family: 'Titillium Web', sans-serif;
   margin-bottom: 5px;
 }
 
-.card-contrib{
-	.speaker {
-  a {
+.card-contrib .speaker a {
     color: var(--secondary) !important;
-  }
+}
 
-  &:hover {
-    a {
-      color: var(--secondary) !important;
-    }
-  }
+.card-contrib .speaker:hover a {
+    color: var(--secondary) !important;
 }
-	.row.no-gutters {
-  gap: 5px;
+
+.card-contrib .row.no-gutters {
+    gap: 5px;
 }
-.confirmation-message {
-  .row.no-gutters {
+
+.confirmation-message .row.no-gutters {
     flex-direction: column !important;
-
-    .col-md-2 {
-      max-width: 70% !important;
-    }
-  }
 }
-}
-.block_glossary_random {
 
-  .col-lg-5.col-sm-12,
-  .col-lg-8.col-sm-12 {
+.confirmation-message .row.no-gutters .col-md-2 {
+    max-width: 70% !important;
+}
+
+.block_glossary_random .col-lg-5.col-sm-12,
+.block_glossary_random .col-lg-8.col-sm-12 {
     flex: 0 0 100% !important;
     max-width: 100% !important;
-  }
 }
 
 .cite.text-long {
@@ -1922,7 +1943,7 @@ font-family: 'Titillium Web', sans-serif;
 }
 }*/
 
-* Styling for Questionnaire */
+/* Styling for Questionnaire */
 /* ------------------------- */
 
 /* Styling for the text editor in the questionnaire container */
@@ -2047,10 +2068,6 @@ a.badge-moodle:hover {
 	background-color: #d39e00 !important;
 }
 
-.badge.bg-secondary {
-	background-color: var(--secondary) !important;
-}
-
 /* Table of contents */
 .tableOfContentsFixed {
 	/* Set the style for the fixed table of contents */
@@ -2104,11 +2121,11 @@ a.badge-moodle:hover {
 	margin-top: 3rem !important;
 }
 
-/*-------correctif Boost Union - dropdown button -- note simplifiée -----.tertiary-navigation .btn > div {max-width: 200px;}-------------------*/
+/* Boost Union dropdown button fix (allow multi-line labels) */
 .tertiary-navigation .btn > div {
   white-space: normal !important;
 }
-/*Correctif bdd 100%*/
+/* Database width correction */
 @media (min-width:768px) {
 
 
@@ -2117,26 +2134,9 @@ a.badge-moodle:hover {
  }
 
 }
-/*-----------------------------------
-Navigation tabs background-color with bg-secondary (dark grey)
--------------------------------------*/
-.card-header.bg-secondary .nav-tabs .nav-link {
-  background-color: #d2d2d282;
-  border-right: 1px solid #ddd;
-}
-.card-header.bg-secondary .nav-tabs .nav-link.active {
-  background-color: white !important;
-}
-/*------------------------------------
-Back to grey for bg-secondary
-------------------------------------*/
-.bg-secondary {
-	background-color: var(--gray) !important;
-}
-
-/*-------------------------------------
-Ombre autour des avatars vides
--------------------------------------*/
+  /*-------------------------------------
+  Shadow around empty avatars
+  -------------------------------------*/
 .userinitials {
  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
 }
@@ -2177,9 +2177,9 @@ hover card-img-top link (filter code) course category
 }
 }
 
-/*----------------------------------------------
-Inspé button - html block
------------------------------------------------*/
+  /*----------------------------------------------
+  INSPE button - HTML block
+  -----------------------------------------------*/
 .logo_inspe:hover {
 	filter: brightness(70%);
 	transition: all 1s;
@@ -2188,7 +2188,7 @@ Inspé button - html block
 .logo_inspe {
     transition: 1s all;
 }
-/* highlight mm24 style*/
+/* Highlight accent (mm24 style) */
 .line-left {
     content: "";
     display: block;
