@@ -1,11 +1,27 @@
 /*Police Titillium*/
 
+:root {
+    --inspe-font: "Titillium Web", sans-serif;
+    --inspe-dark: #343a40;
+    --inspe-secondary: #6c757d;
+    --inspe-yellow: #eab819;
+    --inspe-orange: #fb4f14;
+    --inspe-violet: #5a0cb9;
+    --inspe-violet-text: #9c23d4;
+    --inspe-teal: #008080;
+    --inspe-blue: #0066cc;
+    --inspe-soft-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
+        0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
+        0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046), 0 0px 10px rgba(0, 0, 0, 0.053),
+        0 0px 20px rgba(0, 0, 0, 0.07);
+}
+
 /* =============================================
    Typography
 ============================================= */
 /* Text variants */
 .titi {
-    font-family: "Titillium Web", sans-serif !important;
+    font-family: var(--inspe-font) !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -13,7 +29,7 @@
 /* Headings - Override Bootstrap's default font stack */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 400 !important;
-    font-family: "Titillium Web", sans-serif !important;
+    font-family: var(--inspe-font) !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -84,20 +100,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     padding: 0 !important;
 }
 
+
 .titreMaster {
-	background-color: #343a40;
-	padding: 0.5rem;
-	margin-bottom: 0.25rem;
-	border-top-left-radius: 0.25rem;
-	border-top-right-radius: 0.25rem;
-	color: #fff ;
-	font-weight: 300;
-	text-transform: capitalize;
-	-ms-flex: 0 1 100% ;
-	flex: 0 1 100%;
-	font-size: 1.25rem ;
-	-ms-flex-positive: 1;
-	font-family: "Titillium Web", sans-serif;
+        background-color: var(--inspe-dark);
+        padding: 0.5rem;
+        margin-bottom: 0.25rem;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        color: #fff;
+        font-weight: 300;
+        text-transform: capitalize;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
+        font-size: 1.25rem;
+        -ms-flex-positive: 1;
+        font-family: var(--inspe-font);
 }
 
 /* réduction du bandeau */
@@ -107,42 +124,36 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .ens {
-	font-size: 1.25rem;
+        font-size: 1.25rem;
 }
 
 .ueEns {
-	text-align: right;
-	padding: 1rem;
-	margin-bottom: 0.5rem;
-	margin-right: 0.25rem;
-	/*border-top-left-radius: .25rem;*/
-	border-bottom-left-radius: 0.25rem;
-	flex: 0 1%;
-	max-width: 40%;
+        text-align: right;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+        margin-right: 0.25rem;
+        /*border-top-left-radius: .25rem;*/
+        border-bottom-left-radius: 0.25rem;
+        flex: 0 1%;
+        max-width: 40%;
 }
 
-.ue {
-	white-space: nowrap;
-	line-height: 1;
-	color: #fff;
-	font-weight: 600;
-}
-
+.ue,
 .ens {
-	white-space: nowrap;
-	line-height: 1;
-	color: #fff;
-	font-weight: 600;
+        white-space: nowrap;
+        line-height: 1;
+        color: #fff;
+        font-weight: 600;
 }
 
 .ens,
 .ueEns {
-	background-color: #6c757d;
+        background-color: var(--inspe-secondary);
 }
 
 .titreEns a:hover {
-	color: #6c757d ;
-	transition: 0.3s ease-in-out ;
+        color: var(--inspe-secondary);
+        transition: 0.3s ease-in-out;
 }
 
 a .ens,
@@ -168,12 +179,12 @@ a:active .ens {
 }
 
 a:hover.ens {
-	color: #343a40;
+        color: var(--inspe-dark);
 }
 
 .maintitle {
-	background-color: #6c757d;
-	padding: 1rem ;
+        background-color: var(--inspe-secondary);
+        padding: 1rem ;
 	margin-bottom: 0.5rem ;
 	flex-grow: 1 !important;
 	/*border-top-right-radius: .25rem;*/
@@ -197,11 +208,8 @@ a:hover.ens {
 /*Ombre image_holder : hover*/
 
 .course-content ul.gridicons li .image_holder {
-	box-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
-		0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
-		0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046), 0 0px 10px rgba(0, 0, 0, 0.053),
-		0 0px 20px rgba(0, 0, 0, 0.07) !important;
-	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+        box-shadow: var(--inspe-soft-shadow) !important;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
 }
 
 .course-content ul.gridicons li .image_holder:hover {
@@ -221,7 +229,7 @@ a:hover.ens {
 	text-align: left !important;
 	width: 100% !important;
 	background-color: transparent !important;
-	color: #343a40 !important;
+        color: var(--inspe-dark) !important;
 	/*-webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 	border-top-left-radius: 0.5rem !important;
 	border-top-right-radius: 0.5rem !important;*/
@@ -240,23 +248,23 @@ hr.LabelTitle {
 }
 
 hr.ProdTitle {
-	border: 1px solid #6c757d;
-	width: 75px;
+        border: 1px solid var(--inspe-secondary);
+        width: 75px;
 }
 
 .LabelTitle {
-	margin: 0.4rem 0 0.9rem 0.6rem;
-	text-align: left;
-	font-size: 1.6em;
-	font-family: "Titillium Web", sans-serif !important;
+        margin: 0.4rem 0 0.9rem 0.6rem;
+        text-align: left;
+        font-size: 1.6em;
+        font-family: var(--inspe-font) !important;
 }
 
 .LabelTitleLight {
-	margin: 0.4rem 0 0.9rem 0.6rem;
-	text-align: left;
-	font-size: 1.5em;
-	font-family: "Titillium Web", sans-serif !important;
-	color: #fff !important;
+        margin: 0.4rem 0 0.9rem 0.6rem;
+        text-align: left;
+        font-size: 1.5em;
+        font-family: var(--inspe-font) !important;
+        color: #fff !important;
 }
 
 .ProdTitle {
@@ -279,15 +287,15 @@ div.LabelPart {
 }
 
 div.LabelPartDark {
-	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-	-webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-	-moz-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-	background-color: #fbfbfb;
-	border-radius: 5px;
-	padding: 1rem !important;
-	width: 100% !important;
-	border: 1px solid #dee2e6;
-	background-color: #343a40 !important;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        -moz-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        background-color: #fbfbfb;
+        border-radius: 5px;
+        padding: 1rem !important;
+        width: 100% !important;
+        border: 1px solid #dee2e6;
+        background-color: var(--inspe-dark) !important;
 }
 div.LabelPart.tiles {
     border-left-color: var(--secondary);
@@ -393,81 +401,67 @@ ol.custom-numbers .list-group-item, .numbers li.list-group-item {
 /* List with bullets */
 
 .list-bullets li::before {
-  background: #6c757d;
+  background: var(--inspe-secondary);
 }
 
 /*Couleurs UE*/
 
-.text-ue2 {
-	color: #eab819 !important;
-}
-
-.bg-ue2 {
-	background-color: #eab819 !important;
-}
-
-hr.tiret-ue2 {
-	border: 1px solid #eab819 !important;
-	width: 75px;
-	margin: 1.5rem 0 1rem 0rem;
-}
-
-.border-ue2 {
-	border: 1px solid #eab819 !important;
-}
-
+.text-ue2,
 .text-jaune {
-	color: #eab819 !important;
+        color: var(--inspe-yellow) !important;
 }
 
+.bg-ue2,
 .bg-jaune {
-	background-color: #eab819 !important;
+        background-color: var(--inspe-yellow) !important;
 }
 
+hr.tiret-ue2,
 hr.tiret-jaune {
-	border: 1px solid #eab819 !important;
-	width: 75px;
-	margin: 1.5rem 0 1rem 0rem;
+        border: 1px solid var(--inspe-yellow) !important;
+        width: 75px;
+        margin: 1.5rem 0 1rem 0rem;
 }
 
+.border-ue2,
 .border-jaune {
-	border: 1px solid #eab819 !important;
+        border: 1px solid var(--inspe-yellow) !important;
 }
 
 .text-violet {
-	color: #9c23d4 !important;
+        color: var(--inspe-violet-text) !important;
 }
 
 .bg-violet {
-	background-color: #5a0cb9 !important;
+        background-color: var(--inspe-violet) !important;
 }
 
 hr.tiret-violet {
-	border: 1px solid #9c23d4 !important;
-	width: 75px;
-	margin: 1.5rem 0 1rem 0rem;
+        border: 1px solid var(--inspe-violet-text) !important;
+        width: 75px;
+        margin: 1.5rem 0 1rem 0rem;
 }
 
 .border-violet {
-	border: 1px solid #9c23d4 !important;
+        border: 1px solid var(--inspe-violet-text) !important;
 }
 
 .text-bleu {
-	color: #0066cc !important;
+        color: var(--inspe-blue) !important;
 }
 
 .bg-bleu {
-	background-color: #0066cc !important;
+        background-color: var(--inspe-blue) !important;
 }
 
 hr.tiret-bleu {
-	border: 1px solid #0066cc !important;
-	width: 75px;
-	margin: 1.5rem 0 1rem 0rem;
+        border: 1px solid var(--inspe-blue) !important;
+        width: 75px;
+        margin: 1.5rem 0 1rem 0rem;
 }
 
 .border-bleu {
-	border: 1px solid #0066cc !important;
+        border: 1px solid var(--inspe-blue) !important;
 }
 
 .text-rouge {
@@ -507,64 +501,64 @@ hr.tiret-vert {
 }
 
 .text-orange {
-	color: #fb4f14 !important;
+        color: var(--inspe-orange) !important;
 }
 
 .bg-orange {
-	background-color: #fb4f14 !important;
+        background-color: var(--inspe-orange) !important;
 }
 
 hr.tiret-orange {
-	border: 1px solid #fb4f14 !important;
-	width: 75px;
-	margin: 1.5rem 0 1rem 0rem;
+        border: 1px solid var(--inspe-orange) !important;
+        width: 75px;
+        margin: 1.5rem 0 1rem 0rem;
 }
 
 .border-orange {
-	border: 1px solid #fb4f14 !important;
+        border: 1px solid var(--inspe-orange) !important;
 }
 
 .text-gris {
-	color: #6c757d !important;
+        color: var(--inspe-secondary) !important;
 }
 
 .bg-gris {
-	background-color: #6c757d !important;
+        background-color: var(--inspe-secondary) !important;
 }
 
 hr.tiret-gris {
-	border: 1px solid #6c757d !important;
-	width: 75px;
-	margin: 1.5rem 0 1rem 0rem;
+        border: 1px solid var(--inspe-secondary) !important;
+        width: 75px;
+        margin: 1.5rem 0 1rem 0rem;
 }
 
 .border-gris {
-	border: 1px solid #6c757d !important;
+        border: 1px solid var(--inspe-secondary) !important;
 }
 
 .text-teal {
-	color: #008080 !important;
+        color: var(--inspe-teal) !important;
 }
 
 .bg-teal {
-	background-color: #008080 !important;
+        background-color: var(--inspe-teal) !important;
 }
 
 hr.tiret-teal {
-	border: 1px solid #008080 !important;
-	width: 75px;
-	margin: 1.5rem 0 1rem 0rem;
+        border: 1px solid var(--inspe-teal) !important;
+        width: 75px;
+        margin: 1.5rem 0 1rem 0rem;
 }
 
 .border-teal {
-	border: 1px solid #008080 !important;
+        border: 1px solid var(--inspe-teal) !important;
 }
 
 hr.tiret-dark {
-	border: 1px solid #343a40 !important;
-	width: 105px;
-	margin: 1.5rem 0 1rem 0rem;
-	border-radius: 0.2rem;
+        border: 1px solid var(--inspe-dark) !important;
+        width: 105px;
+        margin: 1.5rem 0 1rem 0rem;
+        border-radius: 0.2rem;
 }
 
 /*Etiquette Module et présentation*/
@@ -575,12 +569,12 @@ hr.tiret-dark {
 	border-top-left-radius: 0.25rem !important;
 	border-top-right-radius: 0.25rem !important;
 	font-size: 1.75rem !important;
-	font-family: "Titillium Web", sans-serif !important;
+        font-family: var(--inspe-font) !important;
 	display: flex !important;
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
-	background-color: #6c757d !important;
+        background-color: var(--inspe-secondary) !important;
   	color: #ffffff !important;
 }
 
@@ -589,7 +583,7 @@ hr.tiret-dark {
 /*Barre de chargement*/
 
 .pace .pace-progress {
-  background-color: #6c757d !important;
+  background-color: var(--inspe-secondary) !important;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -602,7 +596,7 @@ hr.tiret-dark {
 
 .breadcrumb ul i,
 .breadcrumb li.lastli span {
-  color: #6c757d;
+  color: var(--inspe-secondary);
   text-decoration: none;
   font-weight: 600 !important;
 }
@@ -618,18 +612,9 @@ hr.tiret-dark {
 /*Boite*/
 
 .ombre {
-	box-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
-		0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
-		0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046), 0 0px 10px rgba(0, 0, 0, 0.053),
-		0 0px 20px rgba(0, 0, 0, 0.07) !important;
-	-webkit-box-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
-		0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
-		0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046), 0 0px 10px rgba(0, 0, 0, 0.053),
-		0 0px 20px rgba(0, 0, 0, 0.07) !important;
-	-moz-box-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
-		0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
-		0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046), 0 0px 10px rgba(0, 0, 0, 0.053),
-		0 0px 20px rgba(0, 0, 0, 0.07) !important;
+        box-shadow: var(--inspe-soft-shadow) !important;
+        -webkit-box-shadow: var(--inspe-soft-shadow) !important;
+        -moz-box-shadow: var(--inspe-soft-shadow) !important;
 }
 
 /*Texte*/
@@ -675,12 +660,12 @@ hr.tiret-dark {
 	margin-right: 0.5rem !important;
 	font-size: 0.875rem !important;
 	line-height: 1.5 !important;
-	background-color: #f8f9fa !important;
-	border-left: 2px solid #6c757d !important;
-	color: #7f858d !important;
-	border-color: #dee7f5 !important;
-	border-left-color: #6c757d !important;
-	transition: all 0.2s ease-in-out;
+        background-color: #f8f9fa !important;
+        border-left: 2px solid var(--inspe-secondary) !important;
+        color: #7f858d !important;
+        border-color: #dee7f5 !important;
+        border-left-color: var(--inspe-secondary) !important;
+        transition: all 0.2s ease-in-out;
 }
 
 .comp-btn:hover {
@@ -743,17 +728,17 @@ hr.tiret-dark {
 }
 
 .bouton-titre-bleu {
-	border-style: solid;
-	border-width: 0 0 1px 3px;
-	border-color: #0066cc;
-	color: #0066cc;
+        border-style: solid;
+        border-width: 0 0 1px 3px;
+        border-color: var(--inspe-blue);
+        color: var(--inspe-blue);
 }
 
 .bouton-titre-jaune {
-	border-style: solid;
-	border-width: 0 0 1px 3px;
-	border-color: #eab819;
-	color: #eab819;
+        border-style: solid;
+        border-width: 0 0 1px 3px;
+        border-color: var(--inspe-yellow);
+        color: var(--inspe-yellow);
 }
 
 .bouton-jaune {
@@ -767,7 +752,7 @@ hr.tiret-dark {
 	background-color: #fff;
 	background-clip: border-box;
 	border-radius: 0.25rem;
-	border-left: 3px solid #eab819 !important;
+        border-left: 3px solid var(--inspe-yellow) !important;
 	/*-ms-flex: 1 0 0%;
     flex: 1 0 0%;*/
 	/*margin-right: 15px;*/
@@ -788,17 +773,17 @@ hr.tiret-dark {
 }
 
 .bouton-bleu {
-	position: relative;
-	display: -ms-flexbox;
-	display: flex;
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
 	/*-ms-flex-direction: column;
   ! flex-direction: column;
   min-width: 30%;*/
 	word-wrap: break-word;
-	background-color: #fff;
-	background-clip: border-box;
-	border-radius: 0.25rem;
-	border-left: 3px solid #0066cc !important;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 0.25rem;
+        border-left: 3px solid var(--inspe-blue) !important;
 	/*-ms-flex: 1 0 0%;
     flex: 1 0 0%;*/
 	/*margin-right: 15px;*/
@@ -880,15 +865,15 @@ hr.tiret-dark {
 
 /*Bloc de droite*/
 #block-region-side-pre .h5 {
-	display: flex !important;
-	/*padding: 0.5rem 0.6rem 0rem 0.6rem !important;*/
-	padding: .75rem 1.25rem;  
-	/*margin-bottom: 0.5rem !important;*/
-	margin-bottom: 0;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility;
-	color: #343a40 !important;
+        display: flex !important;
+        /*padding: 0.5rem 0.6rem 0rem 0.6rem !important;*/
+        padding: .75rem 1.25rem;
+        /*margin-bottom: 0.5rem !important;*/
+        margin-bottom: 0;
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        text-rendering: optimizeLegibility;
+        color: var(--inspe-dark) !important;
 }
 
 #block-region-side-pre .card {
@@ -967,9 +952,9 @@ section.block div.card-body {
 
 /*Correctif BoostAmu*/
 .btn-secondary {
-	color: #fff !important;
-	background-color: #6c757d !important;
-	border-color: #6c757d !important;
+        color: #fff !important;
+        background-color: var(--inspe-secondary) !important;
+        border-color: var(--inspe-secondary) !important;
 }
 
 .btn-secondary:hover {
@@ -1028,13 +1013,13 @@ section.block div.card-body {
 */
 .format-tiles .course-content ul.tiles .tile.phototile .photo-tile-text h3,
 .format-tiles .course-content .subtile.hasphoto .activityname h4 {
-	/* color: #fff; */
-	color: #343a40 !important;
+        /* color: #fff; */
+        color: var(--inspe-dark) !important;
 }
 
 .format-tiles ul.tiles .tile h3 {
-	/* color: #333; */
-	color: #343a40 !important;
+        /* color: #333; */
+        color: var(--inspe-dark) !important;
 }
 
 /*Largeur Editeur Atto*/
@@ -1253,18 +1238,9 @@ a[data-toggle="collapse"].collapsed i.fas:before {
 }
 
 .box.py-3.contents {
-	box-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
-		0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
-		0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046), 0 0px 10px rgba(0, 0, 0, 0.053),
-		0 0px 20px rgba(0, 0, 0, 0.07) !important;
-	-webkit-box-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
-		0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
-		0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046), 0 0px 10px rgba(0, 0, 0, 0.053),
-		0 0px 20px rgba(0, 0, 0, 0.07) !important;
-	-moz-box-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
-		0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
-		0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046), 0 0px 10px rgba(0, 0, 0, 0.053),
-		0 0px 20px rgba(0, 0, 0, 0.07) !important;
+        box-shadow: var(--inspe-soft-shadow) !important;
+        -webkit-box-shadow: var(--inspe-soft-shadow) !important;
+        -moz-box-shadow: var(--inspe-soft-shadow) !important;
 	width: 98% !important;
 	/*! text-indent: 0.5rem; */
 	line-height: 1.5rem;
@@ -1337,14 +1313,14 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 }
 
 .format-grid .thegrid .card-header {
-	font-family: "Titillium Web", sans-serif !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	/*font-size: smaller !important;*/
-	
-	text-align: center !important;
-	background-color: transparent !important;
-	color: #343a40 !important;
+        font-family: var(--inspe-font) !important;
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        /*font-size: smaller !important;*/
+
+        text-align: center !important;
+        background-color: transparent !important;
+        color: var(--inspe-dark) !important;
 	padding: 0.3rem 0.5rem !important;
 	height: 50px !important;
 	align-items: center !important;
@@ -1396,7 +1372,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 
 /* Index */
 .courseindex .courseindex-item.courseindex-section-title a {
-	font-family: "Titillium Web", sans-serif !important;
+        font-family: var(--inspe-font) !important;
 }
 
 .index-subtitle {
@@ -1415,7 +1391,7 @@ Modification affichage card (nouvelle version grid format : 15/09/2022- corr30/1
 }
 
 .block-fcl__rubric a {
-	font-family: "Titillium Web", sans-serif;
+        font-family: var(--inspe-font);
 }
 
 .block-fcl__list__link {
