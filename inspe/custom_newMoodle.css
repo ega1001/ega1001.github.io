@@ -9,6 +9,7 @@
     --inspe-violet: #5a0cb9;
     --inspe-violet-text: #9c23d4;
     --inspe-teal: #008080;
+    --inspe-blue: #0066cc;
     --inspe-soft-shadow: 0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
         0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
         0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046), 0 0px 10px rgba(0, 0, 0, 0.053),
@@ -446,21 +447,21 @@ hr.tiret-violet {
 }
 
 .text-bleu {
-	color: #0066cc !important;
+        color: var(--inspe-blue) !important;
 }
 
 .bg-bleu {
-	background-color: #0066cc !important;
+        background-color: var(--inspe-blue) !important;
 }
 
 hr.tiret-bleu {
-	border: 1px solid #0066cc !important;
-	width: 75px;
-	margin: 1.5rem 0 1rem 0rem;
+        border: 1px solid var(--inspe-blue) !important;
+        width: 75px;
+        margin: 1.5rem 0 1rem 0rem;
 }
 
 .border-bleu {
-	border: 1px solid #0066cc !important;
+        border: 1px solid var(--inspe-blue) !important;
 }
 
 .text-rouge {
@@ -727,10 +728,10 @@ hr.tiret-dark {
 }
 
 .bouton-titre-bleu {
-	border-style: solid;
-	border-width: 0 0 1px 3px;
-	border-color: #0066cc;
-	color: #0066cc;
+        border-style: solid;
+        border-width: 0 0 1px 3px;
+        border-color: var(--inspe-blue);
+        color: var(--inspe-blue);
 }
 
 .bouton-titre-jaune {
@@ -772,17 +773,17 @@ hr.tiret-dark {
 }
 
 .bouton-bleu {
-	position: relative;
-	display: -ms-flexbox;
-	display: flex;
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
 	/*-ms-flex-direction: column;
   ! flex-direction: column;
   min-width: 30%;*/
 	word-wrap: break-word;
-	background-color: #fff;
-	background-clip: border-box;
-	border-radius: 0.25rem;
-	border-left: 3px solid #0066cc !important;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 0.25rem;
+        border-left: 3px solid var(--inspe-blue) !important;
 	/*-ms-flex: 1 0 0%;
     flex: 1 0 0%;*/
 	/*margin-right: 15px;*/
