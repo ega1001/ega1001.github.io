@@ -1641,17 +1641,6 @@ font-family: 'Titillium Web', sans-serif;
 	margin-right: 5px !important;
 }
 
-/* Remove duplicate instructions/descriptions and titles */
-/* Questionnaire */
-
-.mod_questionnaire_viewpage .intro {
-	display: none !important;
-}
-
-.mod_questionnaire_viewpage h2 {
-	display: none !important;
-}
-
 /* Poodll ReadAloud (Read Aloud) */
 
 .box.py-3.mod_intro_box.mod_readaloud_center {
