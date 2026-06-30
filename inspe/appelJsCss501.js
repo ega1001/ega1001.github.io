@@ -27,7 +27,7 @@ loadjscssfile("https://ega1001.github.io/inspe/backtotop.css", "css");
 
 // Dynamically load and add JS files
 loadjscssfile("https://ega1001.github.io/inspe/uneditableIcon.js", "js");
-loadjscssfile("https://ega1001.github.io/inspe/deleteClassoptimized.js", "js");
+//loadjscssfile("https://ega1001.github.io/inspe/deleteClassoptimized.js", "js");
 loadjscssfile("https://ega1001.github.io/inspe/tutoPix.js", "js");
 //loadjscssfile("https://ega1001.github.io/inspe/prism/prismTomorrowNight.js", "js");
 //loadjscssfile("https://ega1001.github.io/inspe/copyCode.js", "js");
