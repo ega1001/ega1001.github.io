@@ -84,18 +84,6 @@ h6,
 .list-group-item:last-child {
   border-bottom-width: 1px !important;
 }
-/* Secondary button palette */
-.btn-secondary {
-  color: #fff !important;
-  background-color: var(--inspe-secondary) !important;
-  border-color: var(--inspe-secondary) !important;
-}
-
-.btn-secondary:hover {
-  color: #fff !important;
-  background-color: #5c636a !important;
-  border-color: #565e64 !important;
-}
 
 /* Table striping */
 .table-striped tbody tr:nth-of-type(2n + 2) {
