@@ -3,7 +3,7 @@
    ============================================= */
 
 :root {
-  --inspe-font: "Titillium Web", sans-serif;
+  --inspe-font: "Raleway", sans-serif;
   --inspe-dark: #343a40;
   --inspe-secondary: #6c757d;
   --inspe-yellow: #eab819;
@@ -17,49 +17,6 @@
     0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
     0 0px 3.9px rgba(0, 0, 0, 0.04), 0 0px 6px rgba(0, 0, 0, 0.046),
     0 0px 10px rgba(0, 0, 0, 0.053), 0 0px 20px rgba(0, 0, 0, 0.07);
-}
-
-/* =============================================
-   Typography
-============================================= */
-/* Text variants */
-.titi {
-  font-family: var(--inspe-font) !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Headings - Override Bootstrap's default font stack */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-weight: 400 !important;
-  font-family: var(--inspe-font) !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Line height utilities */
-.lh-1 {
-  line-height: 1;
-}
-.lh-sm {
-  line-height: 1.25;
-}
-.lh-base {
-  line-height: 1.5;
-}
-.lh-lg {
-  line-height: 2;
 }
 
 /* =============================================
