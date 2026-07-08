@@ -42,27 +42,6 @@
   border-bottom-width: 1px !important;
 }
 
-/* Table striping */
-.table-striped tbody tr:nth-of-type(2n + 2) {
-  /* background-color: rgba(0,0,0,.05); */
-  background-color: #f1f4f7 !important;
-}
-
-.table-striped tbody tr:nth-of-type(2n + 1) {
-  /* background-color: rgba(0,0,0,.03); */
-  background-color: #fbfbfb !important;
-}
-
-.table-hover tbody tr:hover {
-  /* background-color: rgba(0,0,0,.075); */
-  background-color: #e9ecef !important;
-}
-
-.table {
-  /* margin-bottom: 1rem; */
-  margin-bottom: 0 !important;
-}
-
 /* Secondary badge color alignment */
 .badge.bg-secondary {
   background-color: var(--secondary) !important;
