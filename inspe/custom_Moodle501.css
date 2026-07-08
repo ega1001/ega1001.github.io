@@ -23,20 +23,6 @@
    Bootstrap Overrides
 ============================================= */
 
-/* Breadcrumb styling */
-.breadcrumb ul i,
-.breadcrumb li.lastli span {
-  color: var(--inspe-secondary);
-  text-decoration: none;
-  font-weight: 600 !important;
-}
-
-.breadcrumb ul i:hover,
-.breadcrumb li.lastli span:hover {
-  color: #7f8081 !important;
-  font-weight: 600 !important;
-}
-
 /* Secondary badge color alignment */
 .badge.bg-secondary {
   background-color: var(--secondary) !important;
