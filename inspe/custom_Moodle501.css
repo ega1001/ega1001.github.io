@@ -1268,25 +1268,6 @@ a[data-toggle="collapse"].collapsed i.fas:before {
   margin-top: 0px !important;
 }
 
-/* Remove purple focus background on links */
-
-.aalink.focus,
-a.focus.autolink,
-.aalink:focus,
-a.autolink:focus,
-#page-footer a:not([class]).focus,
-#page-footer a:not([class]):focus,
-.arrow_link.focus,
-.arrow_link:focus,
-a:not([class]).focus,
-a:not([class]):focus,
-.activityinstance > a.focus,
-.activityinstance > a:focus {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  color: #a2aab3 !important;
-}
-
 /* Index */
 .courseindex .courseindex-item.courseindex-section-title a {
   font-family: var(--inspe-font) !important;
