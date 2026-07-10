@@ -1315,7 +1315,7 @@ Card rotating cross
   content: "";
   width: 14px;
   height: 2px;
-  background: var(--dark);
+  background: var(--bs-dark);
   position: absolute;
   top: calc(50% - 1px);
   right: 1rem;
@@ -1329,7 +1329,7 @@ Card rotating cross
   content: "";
   width: 2px;
   height: 14px;
-  background: var(--dark);
+  background: var(--bs-dark);
   position: absolute;
   top: calc(50% - 7px);
   right: calc(1rem + 6px);
