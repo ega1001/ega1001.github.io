@@ -1160,63 +1160,6 @@ a[data-toggle="collapse"].collapsed i.fas:before {
   }
 }
 
-/*book design*/
-
-.book_content {
-  box-shadow:
-    0 0px 0.5px rgba(0, 0, 0, 0),
-    0 0px 0.6px rgba(0, 0, 0, 0.02),
-    0 0px 0.7px rgba(0, 0, 0, 0.03),
-    0 0px 0.8px rgba(0, 0, 0, 0.04),
-    0 0px 0.9px rgba(0, 0, 0, 0.05),
-    0 0px 1px rgba(0, 0, 0, 0.06),
-    0 0px 2px rgba(0, 0, 0, 0.07),
-    0 0px 3px rgba(0, 0, 0, 0.08) !important;
-  -webkit-box-shadow:
-    0 0px 0.5px rgba(0, 0, 0, 0),
-    0 0px 0.6px rgba(0, 0, 0, 0.02),
-    0 0px 0.7px rgba(0, 0, 0, 0.03),
-    0 0px 0.8px rgba(0, 0, 0, 0.04),
-    0 0px 0.9px rgba(0, 0, 0, 0.05),
-    0 0px 1px rgba(0, 0, 0, 0.06),
-    0 0px 2px rgba(0, 0, 0, 0.07),
-    0 0px 3px rgba(0, 0, 0, 0.08) !important;
-  -moz-box-shadow:
-    0 0px 0.5px rgba(0, 0, 0, 0),
-    0 0px 0.6px rgba(0, 0, 0, 0.02),
-    0 0px 0.7px rgba(0, 0, 0, 0.03),
-    0 0px 0.8px rgba(0, 0, 0, 0.04),
-    0 0px 0.9px rgba(0, 0, 0, 0.05),
-    0 0px 1px rgba(0, 0, 0, 0.06),
-    0 0px 2px rgba(0, 0, 0, 0.07),
-    0 0px 3px rgba(0, 0, 0, 0.08) !important;
-  width: 98% !important;
-  /*text-indent: 0.5rem;*/
-  /* line-height: 1.5rem; */
-  margin-left: auto !important;
-  margin-right: auto !important;
-  /* margin-bottom: 1.5rem !important; */
-  /* margin-top: 1.5rem !important; */
-  /* padding: 1rem !important; */
-  background-color: #f8f9fa !important;
-  /* z-index: -1; */
-}
-
-.box.py-3.contents {
-  box-shadow: var(--inspe-soft-shadow) !important;
-  -webkit-box-shadow: var(--inspe-soft-shadow) !important;
-  -moz-box-shadow: var(--inspe-soft-shadow) !important;
-  width: 98% !important;
-  /*! text-indent: 0.5rem; */
-  line-height: 1.5rem;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-bottom: 1.5rem !important;
-  margin-top: 1.5rem !important;
-  padding: 1rem !important;
-  background-color: #f8f9fa !important;
-}
-
 /* Folder activity: remove original light-blue icon */
 
 /*.fp-icon {
