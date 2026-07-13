@@ -268,7 +268,7 @@ hr.LabelTitle {
   display: block;
   width: 75px;
   height: 3px;
-  background: var(--secondary);
+  background: var(--bs-secondary);
   border-radius: 50%;
   margin-top: 15px;
 }
