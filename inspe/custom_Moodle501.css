@@ -1,6 +1,7 @@
-/* =============================================
-   INSPE Theme Tokens
-   ============================================= */
+/* ======================================================
+   01. Compatibilité graphique INSPE
+   Les anciennes classes héritent de la charte AMeTICE 5.1
+   ====================================================== */
 
 :root {
   --inspe-font: "Raleway", sans-serif;
@@ -12,6 +13,10 @@
   --inspe-violet-text: #9c23d4;
   --inspe-teal: #008080;
   --inspe-blue: #0066cc;
+  --inspe-red: #cf2f44;
+  --inspe-green: #00693c;
+  --inspe-light: #f8f9fa;
+  --inspe-border: #dee2e6;
   --inspe-soft-shadow:
     0 0px 0.4px rgba(0, 0, 0, 0.017), 0 0px 0.9px rgba(0, 0, 0, 0.024),
     0 0px 1.6px rgba(0, 0, 0, 0.03), 0 0px 2.5px rgba(0, 0, 0, 0.035),
@@ -19,21 +24,10 @@
     0 0px 10px rgba(0, 0, 0, 0.053), 0 0px 20px rgba(0, 0, 0, 0.07);
 }
 
-
-/* =============================================
-   Layout & Responsive Dimensions
-   ============================================= */
-
-/* Width utilities */
-.w-35 {
-  width: 35% !important;
-}
-.w-65 {
-  width: 65% !important;
-}
-.w-90 {
-  width: 90% !important;
-}
+/* ======================================================
+   02. Utilitaires historiques de dimensions
+   Compatibilité avec les contenus existants
+   ====================================================== */
 
 /* Height utilities */
 .h-35 {
@@ -48,15 +42,6 @@
 
 /* Responsive variations */
 @media (min-width: 768px) {
-  .w-md-35 {
-    width: 35% !important;
-  }
-  .w-md-65 {
-    width: 65% !important;
-  }
-  .w-md-90 {
-    width: 90% !important;
-  }
   .h-md-35 {
     height: 35% !important;
   }
@@ -69,15 +54,6 @@
 }
 
 @media (min-width: 992px) {
-  .w-lg-35 {
-    width: 35% !important;
-  }
-  .w-lg-65 {
-    width: 65% !important;
-  }
-  .w-lg-90 {
-    width: 90% !important;
-  }
   .h-lg-35 {
     height: 35% !important;
   }
@@ -89,9 +65,9 @@
   }
 }
 
-/* =============================================
-   Blocks and Containers
-============================================= */
+/* ======================================================
+   03. Bandeaux historiques Master / UE / enseignement
+   ====================================================== */
 
 /* UE link tiles */
 .lienUE {
@@ -107,243 +83,230 @@
 /* Master/UE/Teaching banner wrapper */
 .titreConteneur {
   display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: flex-start;
   align-items: stretch;
+  gap: 0.25rem;
+  width: 100%;
   padding: 0 !important;
 }
 
 /* Master banner heading */
 .titreMaster {
+  flex: 1 0 100%;
+  margin: 0;
+  padding: 0.625rem 0.75rem;
+
+  color: var(--bs-white, #fff);
   background-color: var(--inspe-dark);
-  padding: 0.5rem;
-  margin-bottom: 0.25rem;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  color: #fff;
-  font-weight: 300;
-  text-transform: capitalize;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
+
+  border-radius: var(--bs-border-radius, 0.25rem) var(--bs-border-radius, 0.25rem) 0 0;
+
   font-size: 1.25rem;
-  -ms-flex-positive: 1;
-  font-family: var(--inspe-font);
+  font-weight: 500;
+  line-height: 1.25;
 }
 
-/* Teaching label sizing */
-.ens {
-  font-size: 1.25rem;
-}
-
-/* UE banner segment */
 .ueEns {
-  text-align: right;
-  padding: 1rem;
-  margin-bottom: 0.5rem;
-  margin-right: 0.25rem;
-  /*border-top-left-radius: .25rem;*/
-  border-bottom-left-radius: 0.25rem;
-  flex: 0 1%;
+  flex: 0 0 auto;
   max-width: 40%;
+  margin: 0;
+  padding: 1rem;
+
+  color: var(--bs-white, #fff);
+  background-color: var(--inspe-secondary);
+
+  border-radius: 0 0 0 var(--bs-border-radius, 0.25rem);
+
+  text-align: right;
 }
 
+/* Colonne principale */
+.maintitle {
+  flex: 1 1 60%;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+  padding: 1rem;
+
+  color: var(--bs-white, #fff);
+  background-color: var(--inspe-secondary);
+
+  border-radius: 0 0 var(--bs-border-radius, 0.25rem) 0;
+}
+
+/* Textes */
 .ue,
 .ens {
-  white-space: nowrap;
-  line-height: 1;
-  color: #fff;
+  color: var(--bs-white, #fff);
   font-weight: 600;
+  line-height: 1.2;
 }
 
-.ens,
-.ueEns {
-  background-color: var(--inspe-secondary);
+.ens {
+  font-size: 1.25rem;
 }
 
-.titreEns a:hover {
-  color: var(--inspe-secondary);
-  transition: 0.3s ease-in-out;
-}
-
-a .ens,
-a:visited .ens,
-a:active .ens {
-  color: #ffffff !important;
-  text-decoration: none;
-  transition: 0.1s ease-in-out;
-}
-
-/* UE and ENS title text */
-.titreUe {
-  text-align: left;
-  line-height: 1;
-  color: #fff;
-  font-weight: 300;
+.titreUe,
+.titreEns {
+  margin: 0;
+  color: var(--bs-white, #fff);
+  font-weight: 500;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
 }
 
 .titreEns {
-  text-align: left;
-  line-height: 1;
-  color: #fff;
-  font-weight: 300;
   font-size: 1.25rem;
 }
 
-a:hover.ens {
-  color: var(--inspe-dark);
+/* Liens du bandeau */
+.titreConteneur a,
+.titreConteneur a:visited {
+  /* color: inherit; */
+  text-decoration: none;
 }
 
-/* ENS banner body */
+.titreConteneur a:hover,
+.titreConteneur a:focus-visible {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
 
-.maintitle {
-  background-color: var(--inspe-secondary);
-  padding: 1rem;
-  margin-bottom: 0.5rem;
-  flex-grow: 1 !important;
-  /*border-top-right-radius: .25rem;*/
-  border-bottom-right-radius: 0.25rem;
-  flex: 0 1 80%;
-  flex-grow: 0;
-  max-width: 100%;
+/* Adaptation mobile */
+@media (max-width: 575.98px) {
+  .ueEns,
+  .maintitle {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .ueEns {
+    text-align: left;
+    border-radius: 0;
+  }
+
+  .maintitle {
+    border-radius: 0 0 var(--bs-border-radius, 0.25rem) var(--bs-border-radius, 0.25rem);
+  }
+
+  .ue,
+  .ens {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
 }
 
 /* Animated card */
-
 .card-1 {
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: var(--card-shadow);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .card-1:hover {
-  box-shadow:
-    0 4px 28px rgba(0, 0, 0, 0.25),
-    0 5px 5px rgba(0, 0, 0, 0.22);
+  box-shadow: var(--card-shadow-hover);
 }
 
-/* Tile image hover shadow */
-
-.course-content ul.gridicons li .image_holder {
-  box-shadow: var(--inspe-soft-shadow) !important;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-}
-
-.course-content ul.gridicons li .image_holder:hover {
-  box-shadow:
-    0 0px 0.4px rgba(0, 0, 0, 0.034),
-    0 0px 0.9px rgba(0, 0, 0, 0.049),
-    0 0px 1.6px rgba(0, 0, 0, 0.06),
-    0 0px 2.5px rgba(0, 0, 0, 0.07),
-    0 0px 3.9px rgba(0, 0, 0, 0.08),
-    0 0px 6px rgba(0, 0, 0, 0.091),
-    0 0px 10px rgba(0, 0, 0, 0.106),
-    0 0px 20px rgba(0, 0, 0, 0.14) !important;
-}
-
-/* Guidelines and info wrapper */
+/* ======================================================
+   Consignes et blocs d’information
+   ====================================================== */
 
 .consinfo {
-  margin-bottom: 0.3rem !important;
   margin-top: 0.5rem !important;
-  /*position: relative;*/
+  margin-bottom: 0.3rem !important;
   padding: 0.75rem 1rem;
-  text-align: left !important;
   width: 100% !important;
+
+  color: var(--bs-body-color, #22262a) !important;
   background-color: transparent !important;
-  color: var(--inspe-dark) !important;
-  /*-webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-	border-top-left-radius: 0.5rem !important;
-	border-top-right-radius: 0.5rem !important;*/
+
+  text-align: left !important;
 }
 
-/* Module label headings and underline */
+/* ======================================================
+   Titres des étiquettes de module
+   ====================================================== */
 
+/* Soulignement décoratif type coup de crayon */
 hr.LabelTitle {
-  content: "";
-  display: block;
   width: 75px;
   height: 3px;
-  background: var(--bs-secondary);
-  border-radius: 50%;
   margin-top: 15px;
+  opacity: 0.8 !important;
+  background-color: var(--bs-secondary, #d2dbe3);
+  border: 0;
+  border-radius: 50% 25% 45% 30%;
+}
+
+.format-tiles hr.LabelTitle {
+  width: 75px;
+  height: 3px;
+  margin-top: 15px;
+  opacity: 0.8 !important;
+  background-color: var(--format-tiles-colour);
+  border: 0;
+  border-radius: 50% 25% 45% 30%;
 }
 
 hr.ProdTitle {
-  border: 1px solid var(--inspe-secondary);
   width: 75px;
+  opacity: 0.5 !important;
+  border: 1px solid var(--inspe-secondary);
+}
+
+.LabelTitle,
+.LabelTitleLight {
+  margin: 0.4rem 0 0.9rem 0.6rem;
+  font-family: var(--inspe-font) !important;
+  text-align: left;
 }
 
 .LabelTitle {
-  margin: 0.4rem 0 0.9rem 0.6rem;
-  text-align: left;
   font-size: 1.6em;
-  font-family: var(--inspe-font) !important;
 }
 
 .LabelTitleLight {
-  margin: 0.4rem 0 0.9rem 0.6rem;
-  text-align: left;
+  color: var(--bs-white, #fff) !important;
   font-size: 1.5em;
-  font-family: var(--inspe-font) !important;
-  color: #fff !important;
 }
 
 .ProdTitle {
   margin: 0.2rem 0 0.9rem 0.6rem;
-  text-align: left;
   font-size: 1.875rem;
-  /*letter-spacing: 1px;*/
+  text-align: left;
 }
 
-/* Label card styling */
-div.LabelPart {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  background-color: #fbfbfb;
-  border-radius: 5px;
-  padding: 1rem !important;
+/* ======================================================
+   Cartes d’étiquette
+   ====================================================== */
+
+div.LabelPart,
+div.LabelPartDark {
   width: 100% !important;
-  border: 1px solid #dee2e6;
+  padding: 1rem !important;
+
+  background-color: #fbfbfb;
+  border: var(--bs-border-width, 1px) solid var(--bs-border-color, #e6ebef);
+  border-radius: var(--bs-border-radius, 0.25rem);
+  box-shadow: var(--bs-box-shadow-sm, 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075));
 }
 
 div.LabelPartDark {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  background-color: #fbfbfb;
-  border-radius: 5px;
-  padding: 1rem !important;
-  width: 100% !important;
-  border: 1px solid #dee2e6;
   background-color: var(--inspe-dark) !important;
 }
+
 div.LabelPart.tiles {
-  border-left-color: var(--secondary);
-  border-left-style: solid;
-  padding-left: 0.4em;
-  border-left-width: 0.35rem;
+  border-left: 0.35rem solid var(--inspe-secondary);
 }
 
-.section .label .contentwithoutlink,
-.section .label .activityinstance {
-  /*! padding-right:32px; */
-  padding: 0px !important;
-  display: block;
-  height: inherit;
-}
-
-/* Label paragraph copy */
+/* ======================================================
+   Texte des étiquettes
+   ====================================================== */
 
 .LabelText {
+  line-height: 1.5rem;
   text-align: left !important;
   text-indent: 0.5rem;
-  line-height: 1.5rem;
 }
 
 /* =============================================
@@ -351,93 +314,94 @@ div.LabelPart.tiles {
 ============================================= */
 /* Vertical Bar Lists */
 
-[class^="border-left-"] {
-  padding-left: 1rem !important;
+/* Compatibilité avec les anciens contenus INSPE */
+.border-left-3,
+.border-left-4,
+.border-left-5 {
+  padding-inline-start: 1rem !important;
   list-style: none !important;
-  border-left: 2px solid #dee2e6 !important;
+  border-inline-start-style: solid !important;
+  border-inline-start-color: var(--bs-border-color, #e6ebef) !important;
 }
 
 .border-left-3 {
-  border-left-width: 3px !important;
-}
-.border-left-4 {
-  border-left-width: 4px !important;
-}
-.border-left-5 {
-  border-left-width: 5px !important;
+  border-inline-start-width: 3px !important;
 }
 
-[class^="border-left-"] li {
+.border-left-4 {
+  border-inline-start-width: 4px !important;
+}
+
+.border-left-5 {
+  border-inline-start-width: 5px !important;
+}
+
+.border-left-3 li,
+.border-left-4 li,
+.border-left-5 li {
   margin-bottom: 0.5em !important;
 }
 
-/* Dash list */
+/* ======================================================
+   Liste avec tirets
+   ====================================================== */
+
 .sousliste {
-  list-style: none !important;
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin: 0;
-  padding-left: 24px;
+  padding-inline-start: 24px;
+  list-style: none !important;
 }
 
-.sousliste li:before {
+.sousliste li::before {
   content: "- ";
-  /* render a literal dash */
-  margin-right: 1rem;
+  margin-inline-end: 1rem;
 }
 
-/* Font Awesome icon list */
-
-.fa-ul {
-  list-style-type: none !important;
-  margin-left: 2.5em !important;
-  padding-left: 0 !important;
+/* Espacement des anciennes listes d’icônes INSPE */
+.fa-ul > li + li {
+  margin-top: 0.5rem;
 }
 
-.fa-ul li {
-  margin-bottom: 0.5em !important;
-}
-
-/* Colored numbered list */
+/* ======================================================
+   Listes numérotées — compatibilité INSPE
+   ====================================================== */
 
 .custom-numbers,
 .numbers {
-  list-style: none;
+  counter-reset: inspe-counter;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
   margin: 0;
-  padding-left: 24px;
+  padding-inline-start: 24px;
+  list-style: none;
 }
 
-ol.custom-numbers li.list-group-item::before {
-  color: var(--secondary);
+.custom-numbers > li.list-group-item,
+.numbers > li.list-group-item {
+  counter-increment: inspe-counter;
 }
 
-ol.custom-numbers .list-group-item,
-.numbers li.list-group-item {
-  counter-increment: my-awesome-counter;
+.custom-numbers > li.list-group-item::before,
+.numbers > li.list-group-item::before {
+  content: counter(inspe-counter) ". ";
+  margin-inline-end: 1rem;
+  font-weight: 700;
 }
 
-.custom-numbers li.list-group-item::before,
-.numbers li.list-group-item::before {
-  content: counter(my-awesome-counter) ". ";
-  font-weight: bold;
-  margin-right: 1rem;
+/* Variante avec numéros colorés */
+.custom-numbers > li.list-group-item::before {
+  color: var(--inspe-secondary);
 }
 
-.list-group-item:last-child {
-  border-bottom-width: 1px !important;
-}
+/* ======================================================
+   Utilitaires de couleurs UE — compatibilité INSPE
+   ====================================================== */
 
-/* List with bullets */
-
-.list-bullets li::before {
-  background: var(--inspe-secondary);
-}
-
-/* UE color utilities */
+/* Jaune / UE2 */
 
 .text-ue2,
 .text-jaune {
@@ -449,17 +413,14 @@ ol.custom-numbers .list-group-item,
   background-color: var(--inspe-yellow) !important;
 }
 
+.border-ue2,
+.border-jaune,
 hr.tiret-ue2,
 hr.tiret-jaune {
-  border: 1px solid var(--inspe-yellow) !important;
-  width: 75px;
-  margin: 1.5rem 0 1rem 0rem;
+  border-color: var(--inspe-yellow) !important;
 }
 
-.border-ue2,
-.border-jaune {
-  border: 1px solid var(--inspe-yellow) !important;
-}
+/* Violet */
 
 .text-violet {
   color: var(--inspe-violet-text) !important;
@@ -469,15 +430,12 @@ hr.tiret-jaune {
   background-color: var(--inspe-violet) !important;
 }
 
+.border-violet,
 hr.tiret-violet {
-  border: 1px solid var(--inspe-violet-text) !important;
-  width: 75px;
-  margin: 1.5rem 0 1rem 0rem;
+  border-color: var(--inspe-violet-text) !important;
 }
 
-.border-violet {
-  border: 1px solid var(--inspe-violet-text) !important;
-}
+/* Bleu */
 
 .text-bleu {
   color: var(--inspe-blue) !important;
@@ -487,51 +445,42 @@ hr.tiret-violet {
   background-color: var(--inspe-blue) !important;
 }
 
+.border-bleu,
 hr.tiret-bleu {
-  border: 1px solid var(--inspe-blue) !important;
-  width: 75px;
-  margin: 1.5rem 0 1rem 0rem;
+  border-color: var(--inspe-blue) !important;
 }
 
-.border-bleu {
-  border: 1px solid var(--inspe-blue) !important;
-}
+/* Rouge */
 
 .text-rouge {
-  color: #cf2f44 !important;
+  color: var(--inspe-red) !important;
 }
 
 .bg-rouge {
-  background-color: #cf2f44 !important;
+  background-color: var(--inspe-red) !important;
 }
 
+.border-rouge,
 hr.tiret-rouge {
-  border: 1px solid #cf2f44 !important;
-  width: 75px;
-  margin: 1.5rem 0 1rem 0rem;
+  border-color: var(--inspe-red) !important;
 }
 
-.border-rouge {
-  border: 1px solid #cf2f44 !important;
-}
+/* Vert */
 
 .text-vert {
-  color: #00693c !important;
+  color: var(--inspe-green) !important;
 }
 
 .bg-vert {
-  background-color: #00693c !important;
+  background-color: var(--inspe-green) !important;
 }
 
+.border-vert,
 hr.tiret-vert {
-  border: 1px solid #00693c !important;
-  width: 75px;
-  margin: 1.5rem 0 1rem 0rem;
+  border-color: var(--inspe-green) !important;
 }
 
-.border-vert {
-  border: 1px solid #00693c !important;
-}
+/* Orange */
 
 .text-orange {
   color: var(--inspe-orange) !important;
@@ -541,15 +490,12 @@ hr.tiret-vert {
   background-color: var(--inspe-orange) !important;
 }
 
+.border-orange,
 hr.tiret-orange {
-  border: 1px solid var(--inspe-orange) !important;
-  width: 75px;
-  margin: 1.5rem 0 1rem 0rem;
+  border-color: var(--inspe-orange) !important;
 }
 
-.border-orange {
-  border: 1px solid var(--inspe-orange) !important;
-}
+/* Gris */
 
 .text-gris {
   color: var(--inspe-secondary) !important;
@@ -559,15 +505,12 @@ hr.tiret-orange {
   background-color: var(--inspe-secondary) !important;
 }
 
+.border-gris,
 hr.tiret-gris {
-  border: 1px solid var(--inspe-secondary) !important;
-  width: 75px;
-  margin: 1.5rem 0 1rem 0rem;
+  border-color: var(--inspe-secondary) !important;
 }
 
-.border-gris {
-  border: 1px solid var(--inspe-secondary) !important;
-}
+/* Teal */
 
 .text-teal {
   color: var(--inspe-teal) !important;
@@ -577,756 +520,428 @@ hr.tiret-gris {
   background-color: var(--inspe-teal) !important;
 }
 
+.border-teal,
 hr.tiret-teal {
-  border: 1px solid var(--inspe-teal) !important;
-  width: 75px;
-  margin: 1.5rem 0 1rem 0rem;
+  border-color: var(--inspe-teal) !important;
 }
 
+/* Bordures */
+
+.border-ue2,
+.border-jaune,
+.border-violet,
+.border-bleu,
+.border-rouge,
+.border-vert,
+.border-orange,
+.border-gris,
 .border-teal {
-  border: 1px solid var(--inspe-teal) !important;
+  border-width: var(--bs-border-width, 1px) !important;
+  border-style: solid !important;
+}
+
+/* Tirets décoratifs */
+
+hr.tiret-ue2,
+hr.tiret-jaune,
+hr.tiret-violet,
+hr.tiret-bleu,
+hr.tiret-rouge,
+hr.tiret-vert,
+hr.tiret-orange,
+hr.tiret-gris,
+hr.tiret-teal {
+  width: 75px;
+  margin: 1.5rem 0 1rem;
+  border-width: var(--bs-border-width, 1px) !important;
+  border-style: solid !important;
 }
 
 hr.tiret-dark {
-  border: 1px solid var(--inspe-dark) !important;
   width: 105px;
-  margin: 1.5rem 0 1rem 0rem;
-  border-radius: 0.2rem;
+  margin: 1.5rem 0 1rem;
+  border: var(--bs-border-width, 1px) solid var(--inspe-dark) !important;
+  border-radius: var(--bs-border-radius-sm, 0.2rem);
 }
 
 /* Module banner presentation */
-
 .partie {
-  font-weight: 300 !important;
+  width: 100%;
+  margin-inline: auto;
   padding: 1rem !important;
-  border-top-left-radius: 0.25rem !important;
-  border-top-right-radius: 0.25rem !important;
-  font-size: 1.75rem !important;
+
+  color: var(--bs-white, #fff);
+  background-color: var(--inspe-secondary);
+
+  border-radius: var(--bs-border-radius, 0.25rem) var(--bs-border-radius, 0.25rem) 0 0 !important;
+
   font-family: var(--inspe-font) !important;
-  display: flex !important;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-  background-color: var(--inspe-secondary) !important;
-  color: #ffffff !important;
-}
-
-/* Moodle 3.11 adjustments */
-
-/* Loading indicator */
-
-.pace .pace-progress {
-  background-color: var(--inspe-secondary) !important;
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  right: 100%;
-  width: 100%;
-  height: 3px;
+  font-size: 1.75rem !important;
+  font-weight: 300 !important;
 }
 
 /* Drop shadows */
 
 /* Container shadow */
-
 .ombre {
-  box-shadow: var(--inspe-soft-shadow) !important;
-  -webkit-box-shadow: var(--inspe-soft-shadow) !important;
-  -moz-box-shadow: var(--inspe-soft-shadow) !important;
+  box-shadow: var(--card-shadow) !important;
 }
 
 /* Text shadow */
-
 .text-ombre {
   text-shadow: 1px 1px 1px #444;
-}
-
-/* Download button */
-
-.btn-download {
-  color: #212529 !important;
-  background-color: transparent !important;
-  border-color: #f8f9fa !important;
-  display: inline-block !important;
-  font-style: normal !important;
-  font-variant: normal !important;
-  text-rendering: auto !important;
-  line-height: 1 !important;
-  margin-bottom: 0 !important;
-  text-align: center !important;
-  text-shadow: none !important;
-  vertical-align: middle !important;
-  cursor: pointer !important;
-  background-image: none !important;
-  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5) inset !important;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5) inset !important;
-}
-
-.btn-download:hover {
-  background-color: transparent !important;
 }
 
 /* Competency and expectation buttons */
 
 .comp-btn {
-  position: relative !important;
-  padding: 0.75rem 1.25rem !important;
-  margin-bottom: 1rem !important;
-  border: 1px solid transparent;
-  border-radius: 0.25rem !important;
-  padding: 0.25rem !important;
-  margin-right: 0.5rem !important;
-  font-size: 0.875rem !important;
-  line-height: 1.5 !important;
-  background-color: #f8f9fa !important;
-  border-left: 2px solid var(--inspe-secondary) !important;
-  color: #7f858d !important;
-  border-color: #dee7f5 !important;
-  border-left-color: var(--inspe-secondary) !important;
-  transition: all 0.2s ease-in-out;
+  margin: 0 0.5rem 1rem 0;
+  padding: 0.25rem;
+
+  color: var(--bs-gray-600, #657789);
+  background-color: var(--ametice-surface-soft, #f3f6f8);
+
+  border: var(--bs-border-width, 1px) solid var(--ametice-border, #d2dbe3);
+  border-inline-start-width: 2px;
+  border-inline-start-color: var(--inspe-secondary);
+  border-radius: var(--bs-border-radius, 0.25rem);
+
+  font-size: 0.875rem;
+  line-height: 1.5;
+
+  transition: background-color 0.2s ease-in-out;
 }
 
 .comp-btn:hover {
-  background-color: #dae0e5 !important;
-  transition: all 0.2s ease-in-out;
+  background-color: var(--ametice-platinum, #e6ebef);
 }
 
 /* =============================================
    Utilities
 ============================================= */
-/* Opacity */
-.opacity-0,
-.opacity-0h5 {
-  opacity: 0 !important;
-}
-.opacity-1 {
-  opacity: 0.2 !important;
-}
-.opacity-2 {
-  opacity: 0.4 !important;
-}
-.opacity-3 {
-  opacity: 0.6 !important;
-}
-.opacity-4 {
-  opacity: 0.8 !important;
-}
-.opacity-5 {
-  opacity: 1 !important;
-}
+/* =============================================
+   FAD PE — UE right column
+   ============================================= */
 
-.opacity-0h5 {
-  transition: opacity 0.25s ease-in-out !important;
-  -moz-transition: opacity 0.25s ease-in-out !important;
-  -webkit-transition: opacity 0.25s ease-in-out !important;
-}
+/* Title tile */
 
-.opacity-0h5:hover {
-  opacity: 1 !important;
-}
-
-/* NEO-specific styles */
-
-/* UE right column */
 .bouton-titre {
   position: relative;
   min-width: 90%;
-  word-wrap: break-word;
-  background-color: #fff;
+  height: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+
+  overflow-wrap: break-word;
+  text-align: start;
+
+  background-color: var(--bs-white, #fff);
   background-clip: border-box;
-  border-radius: 0.25rem;
-  text-align: left !important;
-  padding: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
-  height: 100% !important;
-  box-shadow:
-    0 1px 1px rgba(0, 0, 0, 0.12),
-    0 1px 1px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  font-weight: bold;
+  border-radius: var(--bs-border-radius, 0.25rem);
+  box-shadow: var(--card-shadow);
+
+  font-weight: 700;
+
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Title color variants */
+
+.bouton-titre-home,
+.bouton-titre-bleu,
+.bouton-titre-jaune {
+  border: 0 solid var(--inspe-button-accent);
+  border-block-end-width: 1px;
+  border-inline-start-width: 3px;
+  color: var(--inspe-button-accent);
 }
 
 .bouton-titre-home {
-  border-style: solid;
-  border-width: 0 0 1px 3px;
-  border-color: #68696b;
-  color: #68696b;
-}
-
-.bouton-titre-home:hover {
-  box-shadow:
-    0 4px 28px rgba(0, 0, 0, 0.25),
-    0 5px 5px rgba(0, 0, 0, 0.22);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  cursor: pointer;
+  --inspe-button-accent: var(--inspe-secondary);
 }
 
 .bouton-titre-bleu {
-  border-style: solid;
-  border-width: 0 0 1px 3px;
-  border-color: var(--inspe-blue);
-  color: var(--inspe-blue);
+  --inspe-button-accent: var(--inspe-blue);
 }
 
 .bouton-titre-jaune {
-  border-style: solid;
-  border-width: 0 0 1px 3px;
-  border-color: var(--inspe-yellow);
-  color: var(--inspe-yellow);
+  --inspe-button-accent: var(--inspe-yellow);
+}
+
+.bouton-titre-home:hover,
+.bouton-titre-home:focus-visible,
+.bouton-titre-home:focus-within {
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* Colored content tiles */
+
+.bouton-jaune,
+.bouton-bleu,
+.bouton-rose,
+.bouton-vert {
+  position: relative;
+  display: flex;
+  height: 100%;
+  margin-inline-start: 0.9375rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+
+  overflow-wrap: break-word;
+
+  background-color: var(--bs-white, #fff);
+  background-clip: border-box;
+  border-inline-start: 3px solid var(--inspe-button-accent);
+  border-radius: var(--bs-border-radius, 0.25rem);
+  box-shadow: var(--card-shadow);
+
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .bouton-jaune {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  /*-ms-flex-direction: column;
-  ! flex-direction: column;
-  min-width: 30%;*/
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border-radius: 0.25rem;
-  border-left: 3px solid var(--inspe-yellow) !important;
-  /*-ms-flex: 1 0 0%;
-    flex: 1 0 0%;*/
-  /*margin-right: 15px;*/
-  margin-left: 15px;
-  /*! text-align: left !important; */
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
-  margin-bottom: 0.5rem !important;
-  height: 100% !important;
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  justify-content: space-between !important;
-}
-
-.bouton-jaune:hover {
-  box-shadow:
-    0 4px 28px rgba(0, 0, 0, 0.25),
-    0 5px 5px rgba(0, 0, 0, 0.22);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  cursor: pointer;
+  --inspe-button-accent: var(--inspe-yellow);
 }
 
 .bouton-bleu {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  /*-ms-flex-direction: column;
-  ! flex-direction: column;
-  min-width: 30%;*/
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border-radius: 0.25rem;
-  border-left: 3px solid var(--inspe-blue) !important;
-  /*-ms-flex: 1 0 0%;
-    flex: 1 0 0%;*/
-  /*margin-right: 15px;*/
-  margin-left: 15px;
-  /*! text-align: left !important; */
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
-  margin-bottom: 0.5rem !important;
-  height: 100% !important;
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  justify-content: space-between !important;
-}
-
-.bouton-bleu:hover {
-  box-shadow:
-    0 4px 28px rgba(0, 0, 0, 0.25),
-    0 5px 5px rgba(0, 0, 0, 0.22);
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --inspe-button-accent: var(--inspe-blue);
 }
 
 .bouton-rose {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  /*min-width: 30%;*/
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border-radius: 0.25rem;
-  border-left: 3px solid #cf2f44 !important;
-  /*-ms-flex: 1 0 0%;
-    flex: 1 0 0%;*/
-  /*margin-right: 15px;*/
-  margin-left: 15px;
-  text-align: left !important;
-  padding: 0.5rem 0.5rem 0.5rem 0 !important;
-  margin-bottom: 0.5rem !important;
-  height: 100% !important;
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.bouton-rose:hover {
-  box-shadow:
-    0 4px 28px rgba(0, 0, 0, 0.25),
-    0 5px 5px rgba(0, 0, 0, 0.22);
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --inspe-button-accent: var(--inspe-red, #cf2f44);
 }
 
 .bouton-vert {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
+  --inspe-button-accent: var(--inspe-green, #00693c);
+}
+
+/* Horizontal layout */
+
+.bouton-jaune,
+.bouton-bleu {
+  justify-content: space-between;
+}
+
+/* Vertical layout */
+
+.bouton-rose,
+.bouton-vert {
   flex-direction: column;
-  /*min-width: 30%;*/
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border-radius: 0.25rem;
-  border-left: 3px solid #00693c !important;
-  /*-ms-flex: 1 0 0%;
-    flex: 1 0 0%;*/
-  /*margin-right: 15px;*/
-  margin-left: 15px;
-  text-align: left !important;
-  padding: 0.5rem 0.5rem 0.5rem 0 !important;
-  margin-bottom: 0.5rem !important;
-  height: 100% !important;
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding-inline-start: 0;
+  text-align: start;
 }
 
-.bouton-vert:hover {
-  box-shadow:
-    0 4px 28px rgba(0, 0, 0, 0.25),
-    0 5px 5px rgba(0, 0, 0, 0.22);
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+/* Interaction */
+
+.bouton-jaune:hover,
+.bouton-jaune:focus-within,
+.bouton-bleu:hover,
+.bouton-bleu:focus-within,
+.bouton-rose:hover,
+.bouton-rose:focus-within,
+.bouton-vert:hover,
+.bouton-vert:focus-within {
+  box-shadow: var(--card-shadow-hover);
 }
 
-/* Activity icons: Boost palette (#343a40) with squared corners */
+/* ======================================================
+   Format Grid — présentation de la section 0
+   ====================================================== */
 
-.activityiconcontainer {
-  /*! background-color: #a4a7aa !important; */
-  border-radius: 5px !important;
-  -webkit-filter: grayscale(40%) !important;
-  filter: saturate(0%);
-}
-
-/* Extra scrollbar on section image view (resolved?)
-#region-main {
-  overflow-x: visible !important ;
-}*/
-
-/**scrollbar violet trop voyant**/
-#page,
-.drawercontent {
-  scrollbar-color: #e3e7ea transparent !important;
-}
-
-/** Section title aligned left
-.single-section h3.sectionname {
-  text-align: left !important;
-  clear: both;
-  margin-left: 8.5% !important;
-}**/
-
-/** Hide section 0 title (grid format update: 2022-09-15)**/
-
-.grid #section-0 .course-section-header .sectionname {
+/* Masquer le titre de la section 0 */
+.format-grid #section-0 .course-section-header .sectionname {
   display: none !important;
 }
 
-/**Delete border and goto arrow section 0 version Moodle 4.4.1 : 15/07/2024**/
-.grid #section-0 .section-item {
-  border: none !important;
-}
-.grid .section_goto.bulk-hidden.ml-auto {
-  display: none;
+/* Supprimer le cadre de la section 0 */
+.format-grid #section-0 > .section-item {
+  border: 0 !important;
 }
 
-/* Design Filter codes*/
-.blockCourse .card-deck .card {
-  min-width: 250px !important;
+/* Masquer la flèche « Aller à la section » de la section 0 */
+.format-grid #section-0 .section_goto {
+  display: none !important;
 }
 
-/* Font Awesome icon helpers */
+/* =============================================
+   Font Awesome icon helpers — legacy INSPE
+   ============================================= */
 
-.icons::before {
+.icons::before,
+.competences::before,
+.ects::before,
+.modules::before,
+.objectifs::before,
+.chatFad::before,
+.forumFad::before,
+.tutorFad::before,
+.tiret::before,
+.lienExt::before,
+.menu-icon::before,
+.download::before,
+.important::before,
+.back::before {
   display: inline-block;
-  margin-right: var(--fa-pull-margin, 0.5em);
+  margin-inline-end: var(--fa-pull-margin, 0.5em);
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  line-height: 1;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .competences::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
   content: "\f085";
 }
 
 .ects::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
   content: "\f19d";
 }
 
 .modules::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
   content: "\f0e8";
 }
 
-/*.ue::before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 600;
-    content: "\f126";
-}*/
-
 .objectifs::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
   content: "\f140";
 }
 
 .chatFad::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
   content: "\f086";
 }
 
 .forumFad::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
   content: "\f0c0";
 }
 
 .tutorFad::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
   content: "\f4c4";
 }
 
 .tiret::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
   content: "\f068";
 }
 
 .lienExt::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
   content: "\f0c1";
 }
 
 .menu-icon::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
   content: "\f0c9";
 }
 
 .download::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
   content: "\f019";
 }
 
 .important::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
   content: "\f071";
 }
 
 .back::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
   content: "\f0a8";
 }
 
-a[data-toggle="collapse"] i.fas:before {
-  content: "\f107";
-  /* angle-down */
+/* Bootstrap 5 — indicateur d’ouverture d’un collapse */
+
+[data-bs-toggle="collapse"][aria-expanded="false"] i.fas::before,
+[data-bs-toggle="collapse"][aria-expanded="false"] i.fa-solid::before {
+  content: "\f107"; /* angle-down */
 }
 
-a[data-toggle="collapse"].collapsed i.fas:before {
-  content: "\f106";
-  /* angle-up */
+[data-bs-toggle="collapse"][aria-expanded="true"] i.fas::before,
+[data-bs-toggle="collapse"][aria-expanded="true"] i.fa-solid::before {
+  content: "\f106"; /* angle-up */
 }
-
-/* Automatically add instruction icon (Moodle v4) */
-/*
-.activity-header #intro .no-overflow::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
-  content: "\f51c";
-  font-size: 2.8rem;
-  display: inline-block;
-  float: left;
-  margin-right: var(--fa-pull-margin,.3em);
-}*/
 
 .cache {
   display: none !important;
-}
-
-/* Align section titles, banners, and navigation text */
-.course-content .single-section .section-navigation .mdl-left {
-  font-weight: 200 !important;
-  margin-bottom: 2%;
-}
-
-.course-content .single-section .section-navigation .mdl-right {
-  font-weight: 200 !important;
-  margin-bottom: 2%;
-}
-/* Add Font Awesome arrows for section navigation (customizable and collapsed formats) */
-#page-course-view-section-topics,
-#page-course-view-section-topcoll {
-  .larrow {
-    display: none !important;
-  }
-
-  .rarrow {
-    display: none !important;
-  }
-  .course-content .single-section .section-navigation {
-    .nextsection::after {
-      font-family: "Font Awesome 6 Free";
-      font-weight: 400;
-      content: "\f35a";
-      margin-right: 10px;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      display: var(--fa-display, inline-block);
-      font-style: normal;
-      font-variant: normal;
-      line-height: 1;
-      text-rendering: auto;
-      margin-left: 0.25rem !important;
-    }
-    .prevsection::before {
-      font-family: "Font Awesome 6 Free";
-      font-weight: 400;
-      content: "\f359";
-      margin-right: 10px;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      display: var(--fa-display, inline-block);
-      font-style: normal;
-      font-variant: normal;
-      line-height: 1;
-      text-rendering: auto;
-      margin-right: 0.25rem !important;
-    }
-  }
-}
-
-@media (min-width: 576px) {
-  .section .label .mod-indent-outer {
-    padding-left: 0px;
-    display: block;
-  }
-
-  .course-content ul.section {
-    margin: 0rem;
-  }
-}
-
-/* Folder activity: remove original light-blue icon */
-
-/*.fp-icon {
-  display: none;
-}*/
-
-.fp-filename-icon {
-  margin-top: 0px !important;
-}
-
-/* Index */
-.courseindex .courseindex-item.courseindex-section-title a {
-  font-family: var(--inspe-font) !important;
-}
-
-.index-subtitle {
-  font-weight: 700;
-  color: var(--secondary);
-}
-
-.courseindex .courseindex-item.pageitem .index-subtitle:hover {
-  color: #ffffff;
-}
-
-/* fAD PE FAQ course block */
-
-.block_fcl_content {
-  color: #000 !important;
-}
-
-.block-fcl__rubric a {
-  font-family: var(--inspe-font);
-}
-
-.block-fcl__list__link {
-  color: #495057 !important;
-  font-size: smaller !important;
-}
-
-.block-fcl__list__link:hover {
-  text-decoration: none !important;
 }
 
 /* ==========================================
 * CUSTOM UTIL CLASSES
 * ==========================================
 */
-/* --------------------------------------
-Card rotating cross
--------------------------------------------
-*/
+/* =============================================
+   Collapse indicator — rotating cross
+   ============================================= */
 
-/* Horizontal line */
-.collapsible-link::before {
-  content: "";
-  width: 14px;
-  height: 2px;
-  background: var(--bs-dark);
-  position: absolute;
-  top: calc(50% - 1px);
-  right: 1rem;
-  display: block;
-  transition: all 0.3s;
-  /* color: white !important; */
+.collapsible-link,
+.collapsible-link-light,
+.collapsible-link-dark {
+  --inspe-collapse-icon-color: var(--bs-dark, #212529);
+
+  position: relative;
+  padding-inline-end: 3rem;
 }
 
-/* Vertical line */
-.collapsible-link::after {
-  content: "";
-  width: 2px;
-  height: 14px;
-  background: var(--bs-dark);
-  position: absolute;
-  top: calc(50% - 7px);
-  right: calc(1rem + 6px);
-  display: block;
-  transition: all 0.3s;
-}
-
-.bg-dark .collapsible-link::before {
-  content: "";
-  width: 14px;
-  height: 2px;
-  background: #fff;
-  position: absolute;
-  top: calc(50% - 1px);
-  right: 1rem;
-  display: block;
-  transition: all 0.3s;
-}
-
-.bg-dark .collapsible-link::after {
-  content: "";
-  width: 2px;
-  height: 14px;
-  background: #fff;
-  position: absolute;
-  top: calc(50% - 7px);
-  right: calc(1rem + 6px);
-  display: block;
-  transition: all 0.3s;
-}
-/* --------------------------------------
-Light rotating cross
--------------------------------------------
-*/
-/* Horizontal line */
-.collapsible-link-light::before {
-  content: "";
-  width: 14px;
-  height: 2px;
-  background: #fff;
-  position: absolute;
-  top: calc(50% - 1px);
-  right: 1rem;
-  display: block;
-  transition: all 0.3s;
-}
-
-/* Vertical line */
-.collapsible-link-light::after {
-  content: "";
-  width: 2px;
-  height: 14px;
-  background: #fff;
-  position: absolute;
-  top: calc(50% - 7px);
-  right: calc(1rem + 6px);
-  display: block;
-  transition: all 0.3s;
-}
-/* --------------------------------------
-Dark rotating cross
--------------------------------------------
-*/
-/* Horizontal line */
-.collapsible-link-dark::before {
-  content: "";
-  width: 14px;
-  height: 2px;
-  background: #000;
-  position: absolute;
-  top: calc(50% - 1px);
-  right: 1rem;
-  display: block;
-  transition: all 0.3s;
-}
-
-/* Vertical line */
+.collapsible-link::before,
+.collapsible-link::after,
+.collapsible-link-light::before,
+.collapsible-link-light::after,
+.collapsible-link-dark::before,
 .collapsible-link-dark::after {
   content: "";
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-end: 1rem;
+  display: block;
+  background-color: var(--inspe-collapse-icon-color);
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+/* Trait horizontal */
+.collapsible-link::before,
+.collapsible-link-light::before,
+.collapsible-link-dark::before {
+  width: 14px;
+  height: 2px;
+  transform: translateY(-1px);
+}
+
+/* Trait vertical */
+.collapsible-link::after,
+.collapsible-link-light::after,
+.collapsible-link-dark::after {
   width: 2px;
   height: 14px;
-  background: #000;
-  position: absolute;
-  top: calc(50% - 7px);
-  right: calc(1rem + 6px);
-  display: block;
-  transition: all 0.3s;
+  margin-inline-end: 6px;
+  transform: translateY(-7px);
 }
 
+/* Variantes */
+.collapsible-link-light,
+.bg-dark .collapsible-link {
+  --inspe-collapse-icon-color: var(--bs-white, #fff);
+}
+
+.collapsible-link-dark {
+  --inspe-collapse-icon-color: var(--bs-dark, #212529);
+}
+
+/* Élément ouvert : le + devient un − */
 .collapsible-link[aria-expanded="true"]::after,
-.collapsible-link-dark[aria-expanded="true"]::after,
-.collapsible-link-light[aria-expanded="true"]::after {
-  transform: rotate(90deg) translateX(-1px);
+.collapsible-link-light[aria-expanded="true"]::after,
+.collapsible-link-dark[aria-expanded="true"]::after {
+  transform: translateY(-7px) rotate(90deg);
 }
 
-.collapsible-link[aria-expanded="true"]::before,
-.collapsible-link-dark[aria-expanded="true"]::before,
-.collapsible-link-light[aria-expanded="true"]::before {
-  transform: rotate(180deg);
+@media (prefers-reduced-motion: reduce) {
+  .collapsible-link::before,
+  .collapsible-link::after,
+  .collapsible-link-light::before,
+  .collapsible-link-light::after,
+  .collapsible-link-dark::before,
+  .collapsible-link-dark::after {
+    transition: none;
+  }
 }
 
 /*============================================*
 Images for categories
 *=============================================*/
 /*==Filter codes category==*/
-.fc-categorycards .card-img-overlay {
-  min-height: 95% !important;
-  border-radius: 0px !important;
-  font-weight: 400;
-  font-family: "Titillium Web", sans-serif;
-  text-shadow: none !important;
-}
-
 .fc-categorycards {
   justify-content: center;
 }
@@ -1338,317 +953,18 @@ Images for categories
 }
 
 /* Formatting for fadPe category */
-#fadPe .card-deck .card .card-img-top {
-  height: 100px !important;
-  max-width: 350px !important;
-  padding-top: 0% !important;
+#fadPe .card-img-top {
+  height: 100px;
+  max-width: 350px;
+  padding-top: 0 !important;
 }
 
 #fadPe .card-deck {
-  justify-content: center !important;
+  justify-content: center;
 }
-
-/* Bdd tertiary-navigation sticky buttons "Save and export as preset" */
-
-.tertiary-navigation .navitem {
-  margin-right: 5px !important;
-}
-
-/* Poodll ReadAloud (Read Aloud) */
-
-.box.py-3.mod_intro_box.mod_readaloud_center {
-  display: none !important;
-}
-
-/* Improve Poodll Read Aloud Activity Logo */
-
-.readaloud .activityiconcontainer.assessment .activityicon {
-  filter: none !important;
-}
-
-.modicon_readaloud .icon.activityicon {
-  filter: none !important;
-}
-
-/* Interview table */
-.tbody-space::before {
-  content: "\200C";
-  display: block;
-  line-height: 1rem;
-  background-color: white !important;
-}
-
-/*Comments in Moodle DataBase activity*/
-.comment-link {
-  color: #fff;
-  background-color: #5a0cb9;
-  border: 1px solid transparent;
-  border-radius: 0.5rem;
-  padding: 0.375rem 0.75rem;
-  font-size: 0.9375rem;
-  line-height: 1.5;
-  margin-top: 0.25rem;
-  transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-}
-
-.comment-link:hover {
-  background-color: #490a95;
-  border-color: #430989;
-  text-decoration: none;
-  color: #fff;
-}
-
-/* Styles for the comment container */
-.comment-ctrl {
-  position: relative;
-  min-width: 0;
-  min-height: 1px;
-  padding: 1.25rem;
-  margin-top: 0.25rem;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.5rem;
-  word-wrap: break-word;
-}
-
-/* Remove box shadow on buttons when focused */
-[role="button"]:focus {
-  box-shadow: none !important;
-}
-
-/* Styling for H5P Drag-n-Drop */
-/* --------------------------- */
-
-/* Styling for the H5P label */
-.h5p-label {
-  background-color: rgb(12, 135, 20) !important;
-  color: #ffffff !important;
-}
-
-/* Styling for the H5P draggable element */
-.h5p-dragquestion .h5p-draggable {
-  /* Add a box shadow */
-  -webkit-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
-  /* Set the background color */
-  background: #fbfbfb !important;
-}
-
-/* Styling for the H5P draggable element when hovered */
-.h5p-dragquestion
-  .h5p-draggable:not(.ui-state-disabled).h5p-draggable-hover:not(.h5p-correct):not(.h5p-wrong) {
-  /* Add a border */
-  border: 0.1em solid rgb(212, 190, 216);
-  /* Set the background color */
-  background-color: #5a0cb9 !important;
-  /* Set the text color */
-  color: #ffffff;
-}
-
-/* Styling for Glossary */
-/* --------- General ------------ */
-
-/* Styling for concept headings and glossary category headers */
-.concept h4 {
-  padding: 0.2em;
-  font-size: 2rem !important;
-}
-
-.glossarycategoryheader h3 {
-  color: var(--light) !important;
-  padding: 0.5em;
-}
-
-/* Styling for the time element */
-.time {
-  font-size: small !important;
-  font-weight: 400 !important;
-  font-style: italic !important;
-}
-
-/* Styling for the entry header */
-.entryheader {
-  padding: 0.75rem 1.25rem;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-/* Styling for the glossary entry */
-.entry {
-  padding: 1.25rem;
-}
-
-/* Styling for the glossary post */
-.glossarypost {
-  word-break: break-word !important;
-  word-wrap: break-word !important;
-  position: relative;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.5rem;
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
-  flex: 1 1 auto;
-  min-height: 1px;
-}
-
-/* Styling for the glossary show entry page content */
-#page-mod-glossary-showentry #page-content {
-  min-width: 100% !important;
-  /* Set the minimum width to 100% */
-}
-
-/* --------- glossary and video-js mm24 style ------------ */
-
-.glossarycategoryheader {
-  background-color: color-mix(in srgb, var(--secondary), #0000 5%);
-  border-radius: 5px;
-  margin-bottom: 1em !important;
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.glossarypost label {
-  margin-right: 0.5rem;
-}
-
-.concept h4::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  background: var(--secondary);
-  border-radius: 25%;
-  margin-top: 15px;
-  margin-bottom: 5px;
-}
-
-.card-contrib .speaker a {
-  color: var(--secondary) !important;
-}
-
-.card-contrib .speaker:hover a {
-  color: var(--secondary) !important;
-}
-
-.card-contrib .row.no-gutters {
-  gap: 5px;
-}
-
-.confirmation-message .row.no-gutters {
-  flex-direction: column !important;
-}
-
-.confirmation-message .row.no-gutters .col-md-2 {
-  max-width: 70% !important;
-}
-
-.block_glossary_random .col-lg-5.col-sm-12,
-.block_glossary_random .col-lg-8.col-sm-12 {
-  flex: 0 0 100% !important;
-  max-width: 100% !important;
-}
-
-.cite.text-long {
-  height: auto !important;
-  overflow-y: hidden !important;
-  background-color: var(--light) !important;
-}
-
-.glossaryexplain {
-  display: none;
-}
-
-.table-primary,
-.table-primary > th,
-.table-primary > td {
-  border-radius: 5px;
-}
-
-.text-long {
-  width: 100%;
-  height: 200px;
-  overflow-y: scroll;
-  scrollbar-color: var(--secondary) var(--light);
-  scrollbar-width: thin;
-  border: 1px solid #f5f5f5;
-  border-radius: 0.25rem !important;
-  padding: 1rem;
-  box-shadow:
-    inset -5px -5px 9px rgba(255, 255, 255, 0.45),
-    inset 5px 5px 9px rgba(94, 104, 121, 0.3);
-}
-
-/*.video-js {
-  color: var(--light) !important;
-  background-color: transparent !important;
-  font-size: .5em !important;
-	
-  .vjs-time-tooltip,
-  .vjs-volume-tooltip {
-    display: none !important;
-  }
-}
-
-.video-js .vjs-control-bar {
-
-  background-color: color-mix(in srgb,var(--secondary),#0000 60%) !important;
-  border-radius: 5px !important;
-}
-
-.vjs-menu-button-popup .vjs-menu .vjs-menu-content {
-  display: none !important;
-}
-
-.editor_atto_wrap audio {
-  max-width: 150px !important;
-}
-
-.bg-secondary, .bg-dark{
-.video-js {
-  color: var(--light) !important;
-  background-color: transparent !important;
-  font-size: .5em !important;
-	
-  .vjs-time-tooltip,
-  .vjs-volume-tooltip {
-    display: none !important;
-  }
-}
-
-.video-js .vjs-control-bar {
-
-  background-color: color-mix(in srgb,var(--secondary),#0000 50%) !important;
-  border-radius: 5px !important;
-}
-
-.vjs-menu-button-popup .vjs-menu .vjs-menu-content {
-  display: none !important;
-}
-
-.editor_atto_wrap audio {
-  max-width: 150px !important;
-}
-}*/
 
 /* Styling for Questionnaire */
 /* ------------------------- */
-
-/* Styling for the text editor in the questionnaire container */
-.qn-container .editor_atto_content {
-  border: 1px solid #8f959e;
-  border-top: 1px solid rgb(143, 149, 158);
-}
 
 /* Styling for the questionnaire question */
 .qn-question {
@@ -1656,24 +972,6 @@ Images for categories
   background-color: #6a737b;
   border-radius: 5px;
   color: white !important;
-}
-
-/* Hide the default activity icon in the questionnaire */
-.activitytitle.media.modtype_questionnaire.position-relative.align-self-start img.activityicon {
-  display: none !important;
-}
-
-/* Add a custom icon for the questionnaire */
-.activitytitle.media.modtype_questionnaire.position-relative.align-self-start
-  .activityiconcontainer::before {
-  /* Use Font Awesome 6 Free for the custom icon */
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
-  content: "\f682";
-  font-size: xxx-large !important;
-  color: #be7093;
-  /* The commented out font-size property may not be necessary */
-  /*! font-size: var(--fa-font-light); */
 }
 
 /* Glossary: FAQ FAD */
@@ -1766,83 +1064,6 @@ a.badge-moodle:hover {
   background-color: #d39e00 !important;
 }
 
-/* Table of contents */
-.tableOfContentsFixed {
-  /* Set the style for the fixed table of contents */
-  position: fixed;
-  max-width: 25%;
-}
-
-.bookContent {
-  /* Set the margin for the content of the book */
-  margin-left: 25%;
-}
-
-.table-of-contents {
-  /* Set the style for the table of contents */
-  font-size: 0.8rem;
-  margin-bottom: 0;
-  padding-left: 10%;
-  list-style: none;
-  /* Remove default bullet points */
-}
-
-.table-of-contents,
-.table-of-contents ul {
-  /* Remove default padding and margin from the table of contents and its list items */
-  padding: 4%;
-}
-
-.table-of-contents li {
-  /* Set the margin for the list items in the table of contents */
-  margin: 5% 2%;
-}
-
-.table-of-contents__left-border {
-  /* Add a left border to the table of contents */
-  border-left: 1px solid #1f683d;
-}
-
-.table-of-contents__link {
-  display: block;
-}
-
-.table-of-contents__link--active,
-.table-of-contents__link--active code,
-.table-of-contents__link:hover,
-.table-of-contents__link:hover code {
-  color: #1f683d;
-  text-decoration: none;
-}
-
-.bookContent h2 {
-  margin-top: 3rem !important;
-}
-
-/* Boost Union dropdown button fix (allow multi-line labels) */
-.tertiary-navigation .btn > div {
-  white-space: normal !important;
-}
-/* Database width correction */
-@media (min-width: 768px) {
-  body.mediumwidth #page.drawers .main-inner {
-    max-width: 100% !important;
-  }
-}
-/*-------------------------------------
-  Shadow around empty avatars
-  -------------------------------------*/
-.userinitials {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-}
-
-/*--------------------------------------
-Rounded userpicture in courses
--------------------------------------*/
-.userpicture {
-  border-radius: 50% !important;
-}
-
 /*--------------------------------------
 Form Input Width - id custom-form
 --------------------------------------*/
@@ -1868,10 +1089,6 @@ hover card-img-top link (filter code) course category
     -webkit-transition: all 1s;
     transition: all 1s;
   }
-  .tertiary-navigation {
-    padding: 2em;
-    background-color: #f8f9fa;
-  }
 }
 
 /*----------------------------------------------
@@ -1879,11 +1096,11 @@ hover card-img-top link (filter code) course category
   -----------------------------------------------*/
 .logo_inspe:hover {
   filter: brightness(70%);
-  transition: all 1s;
+  transition: filter 0.2s ease;
 }
 
 .logo_inspe {
-  transition: 1s all;
+  transition: filter 0.2s ease;
 }
 /* Highlight accent (mm24 style) */
 .line-left {
@@ -1891,7 +1108,7 @@ hover card-img-top link (filter code) course category
   display: block;
   width: 100px;
   height: 3px;
-  background: var(--secondary);
+  background: var(--inspe-secondary);
   border-radius: 25%;
   margin-top: 15px;
   margin-bottom: 5px;
