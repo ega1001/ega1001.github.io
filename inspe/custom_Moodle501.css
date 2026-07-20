@@ -963,17 +963,6 @@ Images for categories
   justify-content: center;
 }
 
-/* Styling for Questionnaire */
-/* ------------------------- */
-
-/* Styling for the questionnaire question */
-.qn-question {
-  padding: 0.25em 5px;
-  background-color: #6a737b;
-  border-radius: 5px;
-  color: white !important;
-}
-
 /* Glossary: FAQ FAD */
 /*Faq Content*/
 .faq-content ul {
