@@ -1924,6 +1924,15 @@ font-family: 'Titillium Web', sans-serif;
 }
 }*/
 
+/* Styling for Questionnaire */
+/* ------------------------- */
+
+/* Styling for the text editor in the questionnaire container */
+.qn-container .editor_atto_content {
+  border: 1px solid #8f959e;
+  border-top: 1px solid rgb(143, 149, 158);
+}
+
 /* Styling for the questionnaire question */
 .qn-question {
 	padding: 0.25em 5px;
